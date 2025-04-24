@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us - Divine Yatra</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #6e3f98;
+      --accent: #d4c0e4;
+      --light: #f8f5f0;
+      --dark: #333;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--light);
+      color: var(--dark);
+    }
+
+    header {
+      background: linear-gradient(135deg, #e8dff3, #f4effb);
+      text-align: center;
+      padding: 70px 20px 40px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      color: var(--primary);
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      color: #555;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      color: var(--primary);
+      margin-bottom: 30px;
+      text-align: center;
+      position: relative;
+    }
+
+    .section-title::before {
+      content: "🌸";
+      position: absolute;
+      left: -30px;
+      top: 0;
+    }
+
+    .section-title::after {
+      content: "";
+      display: block;
+      width: 80px;
+      height: 3px;
+      background: var(--primary);
+      margin: 10px auto 0;
+      border-radius: 2px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 25px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      color: var(--primary);
+    }
+
+    .team-slider-wrapper {
+      position: relative;
+    }
+
+    .team-slider {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      scroll-behavior: smooth;
+      gap: 20px;
+      padding-bottom: 20px;
+    }
+
+    .team-member {
+      min-width: 250px;
+      background: white;
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      scroll-snap-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .team-member img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 10px;
+      border: 3px solid var(--accent);
+    }
+
+    .slider-btn {
+      position: absolute;
+      top: 40%;
+      transform: translateY(-50%);
+      background: var(--primary);
+      color: white;
+      border: none;
+      padding: 10px;
+      font-size: 18px;
+      cursor: pointer;
+      border-radius: 50%;
+    }
+
+    .slider-btn.left {
+      left: -20px;
+    }
+
+    .slider-btn.right {
+      right: -20px;
+    }
+
+    footer {
+      background: #2c2c2c;
+      color: #eee;
+      padding: 30px 20px;
+      text-align: center;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 768px) {
+      .slider-btn {
+        display: none;
+      }
+    }
+
+        /* Container Styles */
+        .footer .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+        position: relative;
+        z-index: 1;
+    }
+
+    /* Footer Sections */
+    .footer-sections {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 40px;
+    }
+
+    /* Footer Section Styles */
+    .footer-section {
+        flex: 1;
+        min-width: 240px;
+        padding: 20px;
+    }
+
+    .footer-section h4 {
+        font-size: 20px;
+        margin-bottom: 20px;
+        color: #f9a602;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        border-bottom: 2px solid #f9a602;
+        padding-bottom: 5px;
+    }
+
+    .footer-section p {
+        font-size: 15px;
+        line-height: 1.6;
+        color: #e2e2e2;
+    }
+
+    /* Media Shortcuts */
+    .media-shortcuts ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .media-shortcuts ul li {
+        margin: 12px 0;
+    }
+
+    .media-shortcuts ul li a {
+        color: #f4f4f4;
+        text-decoration: none;
+        font-size: 16px;
+        display: inline-block;
+        transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    .media-shortcuts ul li a:hover {
+        color: #f9a602;
+        transform: translateY(-3px);
+    }
+
+    /* Stay Connected Section */
+    .social-media ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .social-media ul li {
+        margin: 12px 0;
+    }
+
+    .social-media ul li a {
+        color: #f4f4f4;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        transition: transform 0.3s ease, color 0.3s ease;
+    }
+
+    .social-media ul li a i {
+        margin-left: 8px;
+        transition: transform 0.3s ease;
+    }
+
+    .social-media ul li a:hover {
+        transform: scale(1.1);
+        color: #f9a602;
+    }
+
+    .social-media ul li a:hover i {
+        transform: rotate(360deg);
+    }
+
+    /* TripAdvisor Section */
+    .tripadvisor-box {
+        display: flex;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.1);
+        padding: 12px;
+        border-radius: 8px;
+        margin-top: 12px;
+        transition: background-color 0.3s ease;
+    }
+
+    .tripadvisor-box img {
+        width: 30px;
+        height: 30px;
+        margin-right: 12px;
+    }
+
+    .tripadvisor-box:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    /* Footer Bottom */
+    .footer-bottom {
+        text-align: center;
+        padding: 15px 0;
+        background: #f0edeb;
+        border-top: 1px solid #333;
+        color: #999;
+        font-size: 14px;
+    }
+
+    /* Transparent Footer Links */
+    .footer .small-links {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 15px;
+    }
+
+    .footer .footer-link {
+        color: rgba(255, 255, 255, 0.7);
+        text-decoration: none;
+        padding: 8px 12px;
+        border-radius: 4px;
+        transition: color 0.3s ease, background-color 0.3s ease;
+    }
+
+    .footer .footer-link:hover {
+        color: #f9a602;
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+        .footer-sections {
+            flex-direction: column;
+        }
+
+        .footer-section {
+            margin-bottom: 30px;
+        }
+    }
+
+    body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  color: #413d3d;
+}
+
+/* Support Bar */
+.support-bar {
+  background-color: #be5f06; /* Dark Blue */
+  color: #ecf0f1;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.support-bar a {
+  color: #ecf0f1;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.support-bar a:hover {
+  color: #00ffff;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #be5f06; /* Dark Blue */
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative; /* Default position before becoming sticky */
+  z-index: 999;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .logo img {
+  height: 120px; /* Increased logo size */
+}
+
+.nav-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links li {
+  display: inline-block;
+}
+
+.nav-links a {
+  color: #ecf0f1;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 12px 18px;
+  display: inline-block;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-links a:hover {
+  background-color: #3498db;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+/* Search Bar */
+.search-bar {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  background-color: #ecf0f1;
+  border-radius: 6px;
+  padding: 3px 10px;
+  width: 160px;
+  transition: width 0.3s ease;
+  position: relative;
+}
+
+.search-bar input {
+  border: none;
+  background: transparent;
+  font-size: 14px;
+  padding: 8px;
+  width: 130px;
+  outline: none;
+  transition: width 0.3s ease;
+}
+
+.search-bar input:focus {
+  width: 180px; /* Expands the search input when focused */
+  padding: 8px 15px;
+}
+
+/* Sticky class styles */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Keep it on top of other elements */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional shadow for sticky state */
+}
+
+/* Gods Images Section */
+.gods-section {
+  background-color: #be5f06;
+  padding: 30px 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 0; /* Removed gap between support bar and this section */
+}
+
+.gods-section img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #3498db;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gods-section img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px rgba(52, 152, 219, 0.7);
+}
+
+/* Mantra Section */
+.mantra-bar {
+  background-color: #be5f06;
+  color: #ecf0f1;
+  text-align: center;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 0; /* Removed gap between this and other sections */
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-links a {
+    padding: 10px 15px;
+    font-size: 16px;
+  }
+
+  .search-bar {
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 0;
+  }
+
+  .search-bar input {
+    width: 85%;
+  }
+}
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>About Divine Yatra</h1>
+  <p>Embracing Spiritual Journeys with Modern Grace</p>
+</header>
+
+<section>
+  <h2 class="section-title">🌟 Vision & Mission</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Our Vision</h3>
+      <p>To become the most divine, reliable and trusted partner for spiritual travelers around the globe.</p>
+    </div>
+    <div class="card">
+      <h3>Our Mission</h3>
+      <p>We aim to simplify sacred journeys while preserving their spiritual sanctity and cultural essence.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2 class="section-title">🛕 Our Journey</h2>
+  <div class="card">
+    <p>Founded in 2011, Kailash Supreme Holy Divine Yatra emerged as a visionary travel agency blending spiritual purpose with professional execution. Our roots are grounded in values of devotion, respect, and hospitality as we guide thousands to Kailash Mansarovar, Lumbini, Muktinath, and beyond.</p>
+  </div>
+</section>
+
+<section>
+  <h2 class="section-title">💼 Our Services</h2>
+  <div class="grid">
+    <div class="card">🔱 Kailash Mansarovar Yatra</div>
+    <div class="card">🔱 12 Jyotirlingas, 51 Shakti Peethas, 108 Siddha Peethas & 4 Adi Shakti Peethas Holy Divine Yatra</div>
+    <div class="card">🙏 Buddhist Pilgrimage Tours</div>
+    <div class="card">🏞️ Spiritual Trekking</div>
+    <div class="card">✈️ Flights, Visa, Permits</div>
+    <div class="card">🧘‍♂️ Meditation Retreats</div>
+    <div class="card">🧘‍♂️ Deep Spiritual Tantra Sadhana</div>
+    <div class="card">🕉️ Vedic Hindu Holy Pilgrimages Services Across The Globe</div>
+    <div class="card">🌟 Vedic Astrology Services</div>
+    <div class="card">🙏 Vedic Puja</div>
+    <div class="card">💫 Divine Treatments</div>
+    <div class="card">✨ Divine Intervention</div>    
+  </div>
+</section>
+
+<section>
+  <h2 class="section-title">🏆 Recognitions</h2>
+  <div class="card">
+    <p>🏅 Best Spiritual Tour Operator - 2024<br>
+       🌟 100% Customer Satisfaction Rating<br>
+       🤝 Collaborations with Government Boards</p>
+  </div>
+</section>
+
+<section>
+  <h2 class="section-title">🧑‍🤝‍🧑 Our Team</h2>
+  <div class="team-slider-wrapper">
+    <button class="slider-btn left" onclick="scrollTeam(-1)">❮</button>
+    <div class="team-slider" id="teamSlider">
+      <div class="team-member">
+        <img src="images/ceo.jpeg" alt="Team Member 1">
+        <h4>Manisha Pandey</h4>
+        <p>Founder & CEO</p>
+      </div>
+      <div class="team-member">
+        <img src="images/kailash-lasha-3.jpeg" alt="Team Member 2">
+        <h4>Guru Pandey</h4>
+        <p>Sr. Divine Spritual Leader</p>
+      </div>
+      <div class="team-member">
+        <img src="images/nabin-moktan.jpeg" alt="Team Member 4">
+        <h4>Nabin Moktan</h4>
+        <p>Senior Spritual Tour Leader</p>
+      </div>
+      <div class="team-member">
+        <img src="images/jagannath.jpeg" alt="Team Member 4">
+        <h4>Jagannath Pandey</h4>
+        <p>Head Priest/Pandit</p>
+      </div>
+      <div class="team-member">
+        <img src="images/Kailash-Mountain-Image.jpg" alt="Team Member 3">
+        <h4>Milan Pandey</h4>
+        <p>Administrator</p>
+      </div>
+      <div class="team-member">
+        <img src="images/Hem-Bahadur.jpeg" alt="Team Member 4">
+        <h4>Hem Bahadur Ramtel</h4>
+        <p>Health Assistance</p>
+      </div>
+      <div class="team-member">
+        <img src="images/yogi-arya.jpg" alt="Team Member 4">
+        <h4>Yogi Arya</h4>
+        <p>Yoga & Meditation Guru</p>
+      </div>
+      <div class="team-member">
+        <img src="images/manju-sapkota.png" alt="Team Member 4">
+        <h4>Manju Sapkota</h4>
+        <p>Holy Tour Guide</p>
+      </div>
+      <div class="team-member">
+        <img src="images/Raj-Guru.jpeg" alt="Team Member 4">
+        <h4>Raj Guru/Jagat Guru Birendra Kapar</h4>
+        <p>Senior Astrologer</p>
+      </div>
+    </div>
+    <button class="slider-btn right" onclick="scrollTeam(1)">❯</button>
+  </div>
+</section>
+
+<section>
+  <h2 class="section-title">🌍 Global Reach</h2>
+  <div class="grid">
+    <div class="card">🇳🇵 Nepal</div>
+    <div class="card">🇮🇳 India</div>
+    <div class="card">🇨🇳 Tibet</div>
+    <div class="card">🌏 Asia-wide & Global</div>
+  </div>
+</section>
+
+<section>
+  <h2 class="section-title">💬 Testimonials</h2>
+  <div class="card">
+    <p>“From the moment I arrived, everything was exceptionally well-organized by Guru Pandey and his dedicated team. Our guide was deeply knowledgeable and spiritually grounded, making each site visit meaningful and insightful. The hotels were clean, comfortable, and located conveniently close to the major destinations. Transportation was timely and safe, and meals provided were both nutritious and delicious. Every part of the journey reflected careful planning, genuine hospitality, and a deep respect for the spiritual essence of the pilgrimage. I returned home with not just memories, but a renewed soul.”</p>
+    <p><strong>— MOGAN MARIAPPAN</strong><br><em>Penang, Malaysia</em></p>
+  </div>
+</section>
+
+
+<section id="gallery" style="padding: 60px 20px; background-color: #fff;">
+  <div style="text-align: center; margin-bottom: 40px;">
+    <h2 style="font-size: 2.5rem; color: #6e3f98; position: relative; display: inline-block;">
+      📸 Our Journey in Frames
+      <div style="height: 4px; background: #d4c0e4; width: 50%; margin: 10px auto 0;"></div>
+    </h2>
+    <p style="color: #777; font-size: 1rem; margin-top: 10px;">
+      A glimpse into the divine moments and destinations we've experienced with our Yatris.
+    </p>
+  </div>
+
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; max-width: 1200px; margin: 0 auto;">
+    <div style="overflow: hidden; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.08);">
+      <img src="images/kailash-heli.jpeg" alt="Gallery Image 1" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
+    </div>
+    <div style="overflow: hidden; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.08);">
+      <img src="images/kailash-mansarovar-yatra.jpg" alt="Gallery Image 2" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
+    </div>
+    <div style="overflow: hidden; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.08);">
+      <img src="images/kailash-shiv-puran.png" alt="Gallery Image 3" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
+    </div>
+    <div style="overflow: hidden; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.08);">
+      <img src="images/kailash-mansarovar-pitra.jpg" alt="Gallery Image 4" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
+    </div>
+    <div style="overflow: hidden; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.08);">
+      <img src="images/kailash-mounain-lasha.jpeg" alt="Gallery Image 5" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
+    </div>
+    <div style="overflow: hidden; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.08);">
+      <img src="images/kailash-nepalgunj.jpeg" alt="Gallery Image 6" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
+    </div>
+    <div style="overflow: hidden; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.08);">
+      <img src="images/kailash-mansarovar.jpeg" alt="Gallery Image 6" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
+    </div>
+    <div style="overflow: hidden; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.08);">
+      <img src="images/Kailash-Mountain-Image.jpg" alt="Gallery Image 6" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;">
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2 class="section-title">🤝 Associated With</h2>
+  <div class="grid">
+    <div class="card">🏔️ Nepal Tourism Board</div>
+    <div class="card">🙏 India Pilgrimage Council</div>
+    <div class="card">🌍 World Hindu Federation Nepal</div>
+    <div class="card">🏨 Hotel Association Nepal</div>
+    <div class="card">🥾 Trekking Association Nepal</div>
+    <div class="card">✈️ Himalaya Airlines</div>    
+  </div>
+</section>
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  footer {
+    width: 100%;
+    background: linear-gradient(to right, #bd5602);
+    color: #fff;
+    padding: 50px 0 30px;
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  .row {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .col {
+    flex-basis: 25%;
+    padding: 20px;
+  }
+
+  .col:nth-child(2),
+  .col:nth-child(3) {
+    flex-basis: 25%;
+  }
+
+  .footer_logo {
+    width: 130px;
+    position: relative;
+    top: -23px;
+    left: -20px;
+  }
+
+  .footer_about {
+    position: relative;
+    top: -23px;
+  }
+
+  .col h3 {
+    width: fit-content;
+    margin-bottom: 60px;
+    position: relative;
+  }
+
+  .footer_email {
+    width: fit-content;
+    border-bottom: 1px solid #f66335;
+    margin: 20px 0;
+  }
+
+  .col ul li {
+    list-style: none;
+    margin-bottom: 12px;
+  }
+
+  .col ul li a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .col form {
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #f66335;
+    margin-bottom: 50px;
+  }
+
+  .col form .icon {
+    font-size: 18px;
+    margin-right: 10px;
+  }
+
+  .col form input {
+    width: 100%;
+    background: transparent;
+    color: #ccc;
+    border: 0;
+    outline: none;
+  }
+
+  .col form button {
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+  }
+
+  .col form button .icon_right {
+    font-size: 16px;
+    color: #ccc;
+  }
+
+  .col .social_icons {
+    display: flex;
+  }
+
+  .col .social_icons .social_icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: #fff;
+    background: #f66335;
+    margin-right: 15px;
+    padding: 5px;
+    cursor: pointer;
+  }
+
+  hr {
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 20px auto;
+  }
+
+  footer .copyright {
+    text-align: center;
+  }
+
+  .bottom_line {
+    width: 100%;
+    height: 5px;
+    background: #767676;
+    border-radius: 3px;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    overflow: hidden;
+  }
+
+  .bottom_line span {
+    width: 15px;
+    height: 100%;
+    background: #f66335;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    animation: moveline 2s linear infinite;
+  }
+
+  @keyframes moveline {
+    0% {
+      left: -20px;
+    }
+    100% {
+      left: 100%;
+    }
+  }
+</style>
+</head>
+<body>
+
+<footer>
+  <div class="row">
+    <div class="col">
+      <img src="images/vvfdd-removebg-preview.png" class="footer_logo" alt="MuktiYatra Logo">
+      <p class="footer_about">
+        With over 20 years of dedicated service, MuktiYatra is the world’s most trusted Kailash Mansarovar Yatra tour operator, offering a transformative spiritual journey that connects pilgrims with the divine and leads them towards liberation and inner peace.
+      </p>
+    </div>
+    <div class="col">
+      <h3>Office
+        <div class="bottom_line"><span></span></div>
+      </h3>
+      <p>Guhyeshwari Shaktipeeth Temple</p>
+      <p class="footer_email">kailashyatra365@gmail.com</p>
+      <h4>+977-9823669370 (Whatsapp/Viber)<br>+977-9761726460</h4>
+    </div>
+    <div class="col">
+      <h3>Links
+        <div class="bottom_line"><span></span></div>
+      </h3>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="destination.html">DESTINATIONS</a></li>
+        <li><a href="contact.html">CONTACT US</a></li>
+      </ul>
+    </div>
+    <div class="col">
+      <h3>Newsletter
+        <div class="bottom_line"><span></span></div>
+      </h3>
+      <form>
+        <ion-icon class="icon" name="mail"></ion-icon>
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit">
+          <ion-icon class="icon_right" name="arrow-round-forward"></ion-icon>
+        </button>
+      </form>
+      <div class="social_icons">
+        <a href="https://facebook.com/" target="_blank">
+          <ion-icon class="social_icon" name="logo-facebook"></ion-icon>
+        </a>
+        <a href="https://wa.me/9823669370" target="_blank">
+          <ion-icon class="social_icon" name="logo-whatsapp"></ion-icon>
+        </a>
+        <a href="#" target="_blank">
+          <ion-icon class="social_icon" name="logo-twitter"></ion-icon>
+        </a>
+        <a href="https://www.instagram.com/kailashyatra.official/" target="_blank">
+          <ion-icon class="social_icon" name="logo-instagram"></ion-icon>
+        </a>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <p class="copyright">MuktiYatra Pvt. Ltd Ⓒ 2005 - 2025, All Rights Reserved</p>
+</footer>
+
+
+</footer>   
+
+<script>
+  function scrollTeam(direction) {
+    const slider = document.getElementById('teamSlider');
+    const scrollAmount = 300;
+    slider.scrollBy({
+      left: direction * scrollAmount,
+      behavior: 'smooth'
+    });
+  }
+
+    // Add hover effect
+    const galleryImages = document.querySelectorAll("#gallery img");
+  galleryImages.forEach(img => {
+    img.addEventListener("mouseover", () => {
+      img.style.transform = "scale(1.05)";
+    });
+    img.addEventListener("mouseout", () => {
+      img.style.transform = "scale(1)";
+    });
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kailash Booking Form</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom, #f0f8ff, #e0f7fa);
+      margin: 0;
+      padding: 0;
+    }
+
+    .form-container {
+      max-width: 600px;
+      background: white;
+      padding: 30px;
+      margin: 50px auto;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    form label {
+      display: block;
+      margin-top: 20px;
+      font-weight: bold;
+      color: #2c3e50;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 12px;
+      margin-top: 8px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      box-sizing: border-box;
+    }
+
+    button[type="submit"] {
+      margin-top: 30px;
+      width: 100%;
+      background-color: #00796b;
+      color: white;
+      border: none;
+      padding: 15px;
+      font-size: 16px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button[type="submit"]:hover {
+      background-color: #004d40;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <h2 style="text-align:center; color:#2c3e50;">For Group Joining <br>Book Your Kailash Full Moon Trip</h2>
+    <form name="booking-form" method="POST" data-netlify="true" action="/thank-you">
+      <input type="hidden" name="form-name" value="booking-form" />
+
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" required placeholder="John Doe">
+
+      <label for="email">Your Email</label>
+      <input type="email" id="email" name="email" required placeholder="email@example.com">
+
+      <label for="mobile">Mobile Number</label>
+      <input type="tel" id="mobile" name="mobile" required placeholder="+1 234 567 8900">
+
+      <label for="clients">Number of Clients</label>
+      <input type="number" id="clients" name="clients" required min="1" value="1">
+
+      <label for="country">Country</label>
+      <input type="text" id="country" name="country" required placeholder="Country">
+
+      <label for="city">City</label>
+      <input type="text" id="city" name="city" required placeholder="City">
+
+      <label for="trip-date">Select Departure Date</label>
+      <select id="trip-date" name="trip-date" required>
+        <option value="">-- Select a Departure Date --</option>
+        <!-- 2025 -->
+        <option value="May 12, 2025">May 12, 2025</option>
+        <option value="June 11, 2025">June 11, 2025</option>
+        <option value="July 10, 2025">July 10, 2025</option>
+        <option value="August 9, 2025">August 9, 2025</option>
+        <option value="September 7, 2025">September 7, 2025</option>
+        <option value="October 7, 2025">October 7, 2025</option>
+        <option value="November 5, 2025">November 5, 2025</option>
+        <option value="December 5, 2025">December 5, 2025</option>
+
+        <!-- 2026 -->
+        <option value="January 10, 2026">January 10, 2026</option>
+        <option value="February 9, 2026">February 9, 2026</option>
+        <option value="March 11, 2026">March 11, 2026</option>
+        <option value="April 10, 2026">April 10, 2026</option>
+        <option value="May 10, 2026">May 10, 2026</option>
+        <option value="June 8, 2026">June 8, 2026</option>
+        <option value="July 8, 2026">July 8, 2026</option>
+        <option value="August 6, 2026">August 6, 2026</option>
+        <option value="September 4, 2026">September 4, 2026</option>
+        <option value="October 3, 2026">October 3, 2026</option>
+        <option value="November 2, 2026">November 2, 2026</option>
+        <option value="December 1, 2026">December 1, 2026</option>
+        <option value="December 31, 2026">December 31, 2026</option>
+
+        <!-- 2027 -->
+        <option value="January 30, 2027">January 30, 2027</option>
+        <option value="February 28, 2027">February 28, 2027</option>
+        <option value="March 30, 2027">March 30, 2027</option>
+        <option value="April 28, 2027">April 28, 2027</option>
+        <option value="May 27, 2027">May 27, 2027</option>
+        <option value="June 26, 2027">June 26, 2027</option>
+        <option value="July 25, 2027">July 25, 2027</option>
+        <option value="August 24, 2027">August 24, 2027</option>
+        <option value="September 23, 2027">September 23, 2027</option>
+        <option value="October 22, 2027">October 22, 2027</option>
+        <option value="November 21, 2027">November 21, 2027</option>
+        <option value="December 21, 2027">December 21, 2027</option>
+      </select>
+
+      <label for="trip-type">Type of Trip</label>
+      <select id="trip-type" name="trip-type" required>
+        <option value="Budget" selected>Budget</option>
+      </select>
+
+      <label for="payment">Payment Option</label>
+      <select id="payment" name="payment" required>
+        <option value="Bank Transfer" selected>Bank Transfer</option>
+        <option value="Credit Card">Credit Card</option>
+        <option value="Cash">Cash</option>
+      </select>
+
+      <button type="submit">Submit Booking</button>
+    </form>
+  </div>
+
+  <script>
+    // Auto-select trip date from URL
+    window.addEventListener('DOMContentLoaded', () => {
+      const urlParams = new URLSearchParams(window.location.search);
+      const selectedDate = urlParams.get('date');
+      if (selectedDate) {
+        const tripDateDropdown = document.getElementById('trip-date');
+        for (let i = 0; i < tripDateDropdown.options.length; i++) {
+          if (tripDateDropdown.options[i].value === selectedDate) {
+            tripDateDropdown.selectedIndex = i;
+            break;
+          }
+        }
+      }
+    });
+  </script>
+
+</body>
+</html>

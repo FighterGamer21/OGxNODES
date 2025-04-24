@@ -1,0 +1,94 @@
+<style>
+  .kailash-glance-section {
+    background: #c24e01;
+    padding: 80px 20px;
+    font-family: 'Inter', sans-serif;
+  }
+
+  .kailash-glance-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .kailash-glance-title {
+    font-size: 32px;
+    color: #19324d;
+    margin-bottom: 50px;
+    font-weight: 600;
+  }
+
+  .glance-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 40px;
+  }
+
+  .glance-item {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 16px;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+  }
+
+  .glance-item:hover {
+    transform: translateY(-5px);
+  }
+
+  .glance-icon {
+    font-size: 36px;
+    color: #007b9e;
+    margin-bottom: 15px;
+  }
+
+  .glance-label {
+    font-size: 17px;
+    font-weight: 500;
+    color: #19324d;
+    margin-bottom: 6px;
+  }
+
+  .glance-desc {
+    font-size: 14px;
+    color: #555;
+  }
+</style>
+
+<!-- You can use your own SVG icons or replace with images -->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+<div class="kailash-glance-section">
+  <div class="kailash-glance-container">
+    <h2 class="kailash-glance-title">Kailash Yatra at a Glance</h2>
+
+    <div class="glance-grid">
+      <div class="glance-item">
+        <div class="glance-icon"><i class="fas fa-mountain"></i></div>
+        <div class="glance-label">Mount Kailash</div>
+        <div class="glance-desc">6,638m sacred peak & abode of Lord Shiva.</div>
+      </div>
+      <div class="glance-item">
+        <div class="glance-icon"><i class="fas fa-water"></i></div>
+        <div class="glance-label">Lake Mansarovar</div>
+        <div class="glance-desc">Holy lake at 4,590m with spiritual purification.</div>
+      </div>
+      <div class="glance-item">
+        <div class="glance-icon"><i class="fas fa-walking"></i></div>
+        <div class="glance-label">Parikrama</div>
+        <div class="glance-desc">52km trekking around Kailash in 3 days.</div>
+      </div>
+      <div class="glance-item">
+        <div class="glance-icon"><i class="fas fa-temperature-low"></i></div>
+        <div class="glance-label">Climate</div>
+        <div class="glance-desc">Alpine dry weather: 5°C to -5°C in season.</div>
+      </div>
+      <div class="glance-item">
+        <div class="glance-icon"><i class="fas fa-calendar-check"></i></div>
+        <div class="glance-label">Best Time</div>
+        <div class="glance-desc">Ideal months: May to September.</div>
+      </div>
+    </div>
+  </div>
+</div>

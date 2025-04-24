@@ -1,0 +1,1914 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Holy Kailash Mansarovar Tour</title>
+  <style>
+  .support-bar {
+    background-color: #be5f06;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .support-bar a {
+    color: #ecf0f1;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+
+  .support-bar a:hover {
+    color: #00ffff;
+  }
+
+  .mantra-bar {
+    background-color: #be5f06;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .gods-section {
+    background-color: #be5f06;
+    padding: 30px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .gods-section img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #3498db;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .gods-section img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(52, 152, 219, 0.7);
+  }
+
+  .navbar {
+  background-color: #be5f06;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.navbar.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.navbar + .content {
+  margin-top: 0; /* This should ensure no gap below the navbar */
+}
+
+.navbar .logo img {
+  height: 120px;
+}
+
+.nav-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links li {
+  display: inline-block;
+}
+
+.nav-links a {
+  color: #ecf0f1;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 12px 18px;
+  display: inline-block;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-links a:hover {
+  background-color: #3498db;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  background-color: #ecf0f1;
+  border-radius: 6px;
+  padding: 3px 10px;
+  width: 160px;
+  transition: width 0.3s ease;
+  position: relative;
+}
+
+.search-bar input {
+  border: none;
+  background: transparent;
+  font-size: 14px;
+  padding: 8px;
+  width: 130px;
+  outline: none;
+  transition: width 0.3s ease;
+}
+
+.search-bar input:focus {
+  width: 180px;
+  padding: 8px 15px;
+}
+
+
+  .promo-video-full video {
+    width: 100%;
+    height: auto;
+  }
+
+  .video-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+  }
+
+  #health-tips {
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+  }
+
+  #health-tips-content h3 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .line {
+    width: 50px;
+    height: 2px;
+    background-color: #3498db;
+    margin: 10px auto;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  ul li {
+    font-size: 16px;
+    margin: 8px 0;
+  }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #be5f06;;
+      color: #1e2a38;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* Header: Two-sided grid layout */
+    header {
+      display: grid;
+      grid-template-columns: 1fr 1fr; /* Two columns, 1st for image, 2nd for content */
+      gap: 20px; /* Space between the columns */
+      align-items: center;
+      padding: 20px;
+      background: #be5f06;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    /* Carousel Styles */
+    .carousel {
+      position: relative;
+      width: 100%;
+      height: 400px;
+      overflow: hidden;
+    }
+
+    .carousel-images {
+      display: flex;
+      animation: slide 20s infinite;
+      width: 100%;
+    }
+
+    .carousel-images img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+
+    @keyframes slide {
+      0%, 20% { transform: translateX(0); }
+      25%, 45% { transform: translateX(-100%); }
+      50%, 70% { transform: translateX(-200%); }
+      75%, 95% { transform: translateX(-300%); }
+      100% { transform: translateX(0); }
+    }
+
+    /* Content section on right */
+    .intro {
+      background: linear-gradient(to right, #e6f0fa, #d6e7f5);
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .intro h1 {
+      font-size: 26px;
+      color: #0a3c6d;
+    }
+
+    .intro p {
+      font-size: 16px;
+      margin-top: 15px;
+    }
+
+    .intro button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #0a68d4;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    /* Mobile Responsiveness */
+    @media (max-width: 768px) {
+      header {
+        grid-template-columns: 1fr; /* Stack the content and carousel */
+        gap: 10px; /* Reduced gap between stacked sections */
+      }
+
+      .carousel {
+        height: 250px; /* Smaller carousel height for mobile */
+      }
+
+      .carousel-images img {
+        height: auto;
+        max-height: 100%; /* Keeps aspect ratio on mobile */
+      }
+    }
+
+    /* WhatsApp floating button */
+    .whatsapp-vertical {
+      position: fixed;
+      right: 0;
+      top: 40%;
+      width: 50px;
+      height: 160px;
+      background-color: #25d366;
+      color: white;
+      writing-mode: vertical-rl;
+      text-orientation: mixed;
+      text-align: center;
+      font-size: 14px;
+      font-weight: bold;
+      border-radius: 10px 0 0 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+      gap: 8px;
+      z-index: 999;
+      animation: floatIn 0.8s ease-out;
+    }
+
+    .whatsapp-vertical img {
+      width: 24px;
+      height: 24px;
+      transform: rotate(90deg);
+    }
+
+    @keyframes floatIn {
+      from {
+        transform: translateX(100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+
+    .expertise {
+      text-align: center;
+      padding: 40px 20px;
+      background: #be5f06;
+    }
+    .expertise h2 {
+      margin-bottom: 20px;
+      color: #094f91;
+    }
+    .features {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+    .feature-box {
+      background: #fff;
+      padding: 20px;
+      margin: 10px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      max-width: 300px;
+    }
+    .feature-box h3 {
+      color: #0a4c8b;
+      margin-bottom: 10px;
+    }
+    .content-section {
+      display: flex;
+      flex-wrap: wrap;
+      background: #be5f06;
+      padding: 40px 20px;
+    }
+    .tabs {
+      flex: 2;
+      margin-right: 20px;
+    }
+    .tab-buttons {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+    }
+    .tab-buttons button {
+      padding: 10px;
+      border: none;
+      background: #be5f06;;
+      cursor: pointer;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+    .tab-buttons button.active {
+      background: #0a68d4;
+      color: white;
+    }
+    .tab-content {
+      display: none;
+    }
+    .tab-content.active {
+      display: block;
+      background: #f9f9f9;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    .tab-content ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    .tab-content li::before {
+      content: "✓ ";
+      color: #0a68d4;
+    }
+    .trip-facts {
+      flex: 1;
+      background: #eaf3fb;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    .trip-facts h4 {
+      margin-top: 0;
+      color: #0a3c6d;
+    }
+    .trip-facts p {
+      margin: 5px 0;
+    }
+    @media (max-width: 768px) {
+      header, .intro, .carousel, .content-section, .tabs, .trip-facts {
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+      }
+      .carousel, .intro {
+        width: 100%;
+      }
+      .trip-facts {
+        margin-top: 20px;
+      }
+    }
+
+    .review-videos video {
+      width: 100%;
+      margin-top: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .ask-expertise-btn {
+      position: fixed;
+      left: 20px;
+      bottom: 20px;
+      width: 50px;
+      height: 50px;
+      background-color: #0a68d4;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .ask-expertise-popup {
+      position: fixed;
+      left: 20px;
+      bottom: 80px;
+      width: 250px;
+      height: 120px;
+      background-color: #be5f06;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      display: none;
+      text-align: center;
+    }
+
+    .ask-expertise-popup h4 {
+      font-size: 18px;
+      color: #094f91;
+      margin-top: 20px;
+    }
+
+    .whatsapp-vertical {
+      position: fixed;
+      right: 0;
+      top: 40%;
+      width: 50px;
+      height: 160px;
+      background-color: #25d366;
+      color: white;
+      writing-mode: vertical-rl;
+      text-orientation: mixed;
+      text-align: center;
+      font-size: 14px;
+      font-weight: bold;
+      border-radius: 10px 0 0 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+      gap: 8px;
+      z-index: 999;
+      animation: floatIn 0.8s ease-out;
+    }
+
+    .whatsapp-vertical img {
+      width: 24px;
+      height: 24px;
+      transform: rotate(90deg);
+    }
+
+    @keyframes floatIn {
+      from {
+        transform: translateX(100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    .pdf-float-box {
+  position: fixed;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #fff;
+  border-radius: 8px 0 0 8px;
+  padding: 16px;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  z-index: 999;
+  max-width: 300px;
+  border-left: 5px solid #0077cc;
+}
+
+.brochure-text h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #222;
+}
+
+.brochure-text p {
+  margin: 4px 0 12px;
+  font-size: 13px;
+  color: #555;
+}
+
+.download-btn {
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  font-weight: bold;
+  font-size: 13px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.download-btn:hover {
+  background-color: #005fa3;
+}
+
+.brochure-icon img {
+  width: 32px;
+  height: auto;
+}
+
+.quick-facts-section {
+    padding: 60px 20px;
+    background: #be5f06;
+    font-family: 'Segoe UI', sans-serif;
+    color: #333;
+  }
+
+  .container {
+    max-width: 1100px;
+    margin: auto;
+  }
+
+  .section-title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #004080;
+    text-align: center;
+  }
+
+  .facts-grid, .why-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+  }
+
+  .fact-item, .why-box {
+    background: #fff;
+    padding: 20px 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+
+  .fact-item h3, .why-box h4 {
+    font-size: 18px;
+    color: #1a3c64;
+    margin-bottom: 10px;
+  }
+
+  .fact-item p, .why-box p {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .intro-text {
+    font-size: 17px;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  @media screen and (max-width: 600px) {
+    .section-title {
+      font-size: 22px;
+    }
+  }
+
+  .safety-wrapper {
+      display: flex;
+      gap: 30px;
+      align-items: flex-start;
+      justify-content: space-between;
+      margin: 40px 20px;
+      flex-wrap: wrap;
+    }
+
+    .safety-left {
+      flex: 1 1 60%;
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.06);
+      font-size: 16px;
+      line-height: 1.7;
+      color: #333;
+    }
+
+    .safety-left h2 {
+      margin-bottom: 20px;
+      color: #003366;
+    }
+
+    .safety-right {
+      flex: 1 1 30%;
+      position: sticky;
+      top: 100px;
+    }
+
+    .toggle-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .toggle-card {
+      background: #fff;
+      border: 1px solid #d0e2f3;
+      border-radius: 14px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      overflow: hidden;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .toggle-header {
+      padding: 15px 20px;
+      background: #eaf4ff;
+      color: #003366;
+      font-weight: bold;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .toggle-body {
+      padding: 15px 20px;
+      font-size: 15px;
+      color: #333;
+      display: none;
+    }
+
+    .toggle-body.show {
+      display: block;
+      animation: fadeIn 0.3s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-5px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .safety-wrapper {
+        flex-direction: column;
+      }
+
+      .safety-left, .safety-right {
+        flex: 1 1 100%;
+        position: static;
+      }
+    }
+
+/* Floating rectangle box */
+.download-box {
+  position: fixed;
+  right: 0;
+  top: 45%;
+  background: #003366;
+  color: white;
+  padding: 10px 8px;
+  font-size: 14px;
+  writing-mode: vertical-rl;
+  text-align: center;
+  border-radius: 12px 0 0 12px;
+  box-shadow: -2px 2px 8px rgba(0,0,0,0.2);
+  cursor: pointer;
+  z-index: 999;
+  transition: background 0.3s;
+}
+.download-box:hover {
+  background: #0055aa;
+}
+
+/* Popup overlay */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Left hanging download box */
+.left-download-box {
+  position: fixed;
+  left: 0;
+  top: 45%;
+  background: #003366;
+  color: white;
+  padding: 10px 8px;
+  font-size: 14px;
+  writing-mode: vertical-rl;
+  text-align: center;
+  border-radius: 0 12px 12px 0;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+  cursor: pointer;
+  z-index: 999;
+  transition: background 0.3s;
+}
+.left-download-box:hover {
+  background: #0055aa;
+}
+
+/* Popup overlay */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Popup content */
+.popup-content {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 14px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+  animation: popupFadeIn 0.3s ease;
+}
+
+@keyframes popupFadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* Close button inside popup */
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 18px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #999;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+.close-btn:hover {
+  color: #003366;
+}
+
+/* Download button */
+.download-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 25px;
+  background: #003366;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+.download-btn:hover {
+  background: #0055aa;
+}
+.enquiry-button {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      z-index: 999;
+      background: #007bff;
+      color: #fff;
+      padding: 12px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-family: Arial, sans-serif;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .enquiry-form-container {
+      display: none;
+      position: fixed;
+      right: 20px;
+      bottom: 80px;
+      width: 300px;
+      background: #fff;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+      font-family: Arial, sans-serif;
+      z-index: 1000;
+    }
+
+    .enquiry-form-container h3 {
+      margin-top: 0;
+      color: #333;
+    }
+
+    .enquiry-form-container input,
+    .enquiry-form-container textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 8px;
+      margin-bottom: 12px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    .enquiry-form-container button[type="submit"] {
+      background-color: #28a745;
+      color: white;
+      border: none;
+      padding: 10px 16px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .close-btn {
+      float: right;
+      background: transparent;
+      border: none;
+      font-size: 18px;
+      cursor: pointer;
+      color: #666;
+    }
+
+    .confirmation {
+      color: green;
+      font-size: 14px;
+      margin-top: 10px;
+    }
+
+                    /* General Footer Styles */
+                    .footer {
+            background: linear-gradient(to right, #be5f06, #be5f06);
+            color: #e9ecef;
+            padding: 50px 0;
+            font-family: 'Roboto', sans-serif;
+            text-align: left;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Background Pattern */
+        .footer:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://www.transparenttextures.com/patterns/white-wall.png') repeat;
+            opacity: 0.05;
+            z-index: 0;
+        }
+
+        /* Container Styles */
+        .footer .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Footer Sections */
+        .footer-sections {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        /* Footer Section Styles */
+        .footer-section {
+            flex: 1;
+            min-width: 240px;
+            padding: 20px;
+        }
+
+        .footer-section h4 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: #ffc107;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 2px solid #ffc107;
+            padding-bottom: 5px;
+        }
+
+        .footer-section p {
+            font-size: 15px;
+            line-height: 1.7;
+            color: #d1d1d1;
+        }
+
+        /* Media Shortcuts */
+        .media-shortcuts ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .media-shortcuts ul li {
+            margin: 15px 0;
+        }
+
+        .media-shortcuts ul li a {
+            color: #e9ecef;
+            text-decoration: none;
+            font-size: 16px;
+            display: inline-block;
+            position: relative;
+            transition: color 0.3s ease, transform 0.3s ease;
+            padding: 5px 0;
+        }
+
+        .media-shortcuts ul li a:hover {
+            color: #ffc107;
+            transform: translateY(-3px);
+        }
+
+        /* Stay Connected Section */
+        .social-media ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .social-media ul li {
+            margin: 15px 0;
+        }
+
+        .social-media ul li a {
+            color: #e9ecef;
+            font-size: 18px;
+            /* Increased font size */
+            display: flex;
+            align-items: center;
+            transition: transform 0.3s ease, color 0.3s ease;
+            position: relative;
+        }
+
+        .social-media ul li a i {
+            margin-left: 8px;
+            /* Space between text and icon */
+            transition: transform 0.3s ease;
+        }
+
+        .social-media ul li a:hover {
+            transform: scale(1.1);
+            color: #ffc107;
+            /* Highlight color */
+        }
+
+        .social-media ul li a:hover i {
+            transform: rotate(360deg);
+            /* Icon rotation effect on hover */
+        }
+
+        /* TripAdvisor Section */
+        .tripadvisor-box {
+            display: flex;
+            align-items: center;
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 15px;
+            transition: background-color 0.3s ease;
+        }
+
+        .tripadvisor-box img {
+            width: 35px;
+            height: 35px;
+            margin-right: 15px;
+        }
+
+        .tripadvisor-box:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        /* Footer Bottom */
+        .footer-bottom {
+            text-align: center;
+            padding: 15px 0;
+            background: #000000;
+            border-top: 1px solid #333;
+            color: #999;
+            font-size: 13px;
+        }
+
+        /* Transparent Footer Links */
+        .footer .small-links {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 15px;
+        }
+
+        .footer .footer-link {
+            color: rgba(255, 255, 255, 0.7);
+            /* Transparent white */
+            text-decoration: none;
+            padding: 8px 12px;
+            border-radius: 4px;
+            transition: color 0.3s ease, background-color 0.3s ease;
+        }
+
+        .footer .footer-link:hover {
+            color: #ffc107;
+            /* Highlight on hover */
+            background-color: rgba(255, 255, 255, 0.2);
+            /* Slight background on hover */
+        }
+
+        /* Shortcuts with Size Transformations */
+        .footer .footer-link {
+            font-size: 18px;
+            /* Increased size */
+            font-weight: bold;
+            /* Make links bold */
+            transition: transform 0.3s ease;
+            /* Add transition for scaling */
+        }
+
+        .footer .footer-link:hover {
+            transform: scale(1.1);
+            /* Scale on hover */
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .footer-sections {
+                flex-direction: column;
+                /* Stack sections on smaller screens */
+            }
+
+            .footer-section {
+                margin-bottom: 30px;
+            }
+        }
+
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .footer-sections {
+                flex-direction: column;
+            }
+        }
+        
+  </style>
+</head>
+<body>
+  
+<!-- Support Bar -->
+<div class="support-bar">
+  <a href="tel:+9779849834756">📞 Call Us: +977 9849834756</a> |
+  <a href="https://wa.me/9849834756" target="_blank">💬 WhatsApp Support</a> |
+  <a href="mailto:kailashyatra365@gmail.com">✉ Email Support</a>
+</div>
+
+<!-- Mantra Bar -->
+<div class="mantra-bar">
+  <p>"Om Tryambakam Yajamahe Sugandhim Pushtivardhanam, Urvarukamiva Bandhanan Mrityor Mukshiya Maamritat"</p>
+  <p><strong>ॐ त्र्यंबकं यजामहे सुगंधिं पुष्टिवर्धनम्, उर्वारुकमिव बन्धनान्मृत्योर्मोक्षीय मांमृतात्।</strong></p>
+</div>
+
+<!-- Gods Images Section -->
+<div class="gods-section">
+  <img src="images/Shiv-Image.png" alt="Lord Shiva">
+  <img src="images/Narayan-Image.jpg" alt="Lord Narayan">
+  <img src="images/Ganesh-Image.jpg" alt="Lord Ganesh">
+  <img src="images/Mahakali-Image.jpeg" alt="Goddess Mahakali">
+  <img src="images/Durga-Image.png" alt="Goddess Durga">
+  <img src="images/Rishabh-Image.jpg" alt="Rishabh">
+  <img src="images/Buddha-Image.png" alt="Buddha">
+  <img src="images/Murugan-Image.png" alt="Lord Murugan">
+</div>
+
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="logo">
+    <img src="images/Kailash-Yatra-Images.png" alt="Kailash Yatra">
+  </div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="destination.html">Destinations</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="terms-conditions">Terms & Conditions</a></li>
+  </ul>
+  <div class="search-bar">
+    <input type="text" placeholder="Search..." id="searchInput">
+  </div>
+</nav> 
+
+  <div class="container">
+    <header>
+      <!-- Left Column: Image Slider -->
+      <div class="carousel">
+        <div class="carousel-images">
+          <img src="images/kailash-nepalganj-luxury-2.jpeg" alt="Kailash View 1"/>
+          <img src="images/kailash-nepalganj-luxury.jpeg" alt="Kailash View 2"/>
+          <img src="images/kailash-nepalganj-luxury-1.jpeg" alt="Mansarovar Lake"/>
+          <img src="images/kailash-mounain-lasha.jpeg" alt="Pilgrimage Group"/>
+        </div>
+      </div>
+
+      <!-- Right Column: Content -->
+      <div class="intro">
+        <h1>The Holy Kailash Mansarovar Tour Via Nepalganj (10–13 Days)  - Overland Luxury</h1>
+        <p>The Holy Kailash Mansarovar Tour Via Nepalganj offers a luxurious pilgrimage experience, combining spiritual enrichment with comfort. Over 10–13 days, you will travel from Kathmandu to Tibet, visiting key sacred sites such as Kerung, Saga, and the serene Mansarovar Lake. The journey includes 4-star hotel accommodations, private transportation, and gourmet meals, ensuring a seamless and comfortable experience. Optional Parikrama and spiritual rituals at Mansarovar Lake deepen the spiritual journey, while professional guides and dedicated support staff ensure your safety and comfort throughout the tour. This luxury tour is perfect for those seeking both spiritual solace and a high level of comfort in a breathtakingly beautiful setting</p>
+        <a href="book.html">
+          <button type="button">Book Now</button>
+        </a>        
+      </div>
+  </div> 
+
+    <section class="expertise">
+      <h2>Why Choose Us?</h2>
+      <div class="features">
+        <div class="feature-box">
+          <h3>Experienced Spritual Guides</h3>
+          <p>Our professional guides ensure your safety, comfort, and spiritual experience throughout the journey.</p>
+        </div>
+        <div class="feature-box">
+          <h3>Ground All-Inclusive Packages</h3>
+          <p>Includes transport, accommodation, meals, permits, and emergency support from start to finish.</p>
+        </div>
+        <div class="feature-box">
+          <h3>Spiritual Significance</h3>
+          <p>Visit one of the holiest places on Earth, believed to bring salvation and enlightenment to all who complete the yatra.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <div class="tabs">
+        <div class="tab-buttons">
+          <button class="tab-btn active" data-tab="itinerary">Itinerary</button>
+          <button class="tab-btn" data-tab="inclusions">Inclusions</button>
+          <button class="tab-btn" data-tab="exclusions">Exclusions</button>
+          <button class="tab-btn" data-tab="faq">FAQ</button>
+          <button class="tab-btn" data-tab="reviews">Reviews</button>
+          <button class="tab-btn" data-tab="remarks">Remarks</button>
+          <button class="tab-btn" data-tab="cancellation">Cancellation</button>
+          <button class="tab-btn" data-tab="gear">Recommended Gears </button>
+        </div>
+
+        <div id="itinerary" class="tab-content active">
+          <ul>
+            <li><strong>Day 1:</strong> Arrival in Kathmandu (1,400 m) – Meet and greet at the airport. Transfer to 4-star hotel. Evening briefing and welcome dinner.</li>
+            
+            <li><strong>Day 2:</strong> Kathmandu sightseeing (Pashupatinath & Budhanilkantha), then fly to Nepalganj (150 m) – Flight duration: 1 hour. Overnight at a deluxe hotel.</li>
+            
+            <li><strong>Day 3:</strong> Fly Nepalganj to Simikot (2,910 m) – Flight time: 1 hour. Acclimatization day and overnight at best available lodge.</li>
+            
+            <li><strong>Day 4:</strong> Helicopter to Hilsa (3,640 m), cross into Tibet, and drive to Taklakot/Purang (4,020 m) – Helicopter time: 20 min; Drive: 1 hour. Overnight in guesthouse.</li>
+            
+            <li><strong>Day 5:</strong> Acclimatization day in Taklakot (4,020 m) – Rest and light walk around to adapt to altitude. Optional light hiking for better acclimatization.</li>
+            
+            <li><strong>Day 6:</strong> Drive to Mansarovar Lake (4,590 m) – Travel time: 2.5–3 hours (approx. 80 km). Perform spiritual rituals by the lake. Overnight at guesthouse near the lake.</li>
+            
+            <li><strong>Day 7:</strong> Morning rituals at Mansarovar. Optional short hike to Chiu Monastery. Return drive to Taklakot (4,020 m) – Travel time: 3 hours. Overnight stay.</li>
+            
+            <li><strong>Day 8:</strong> Drive to Hilsa (3,640 m), helicopter to Simikot (2,910 m) – Drive: 1 hour; Helicopter: 20 min. Overnight at Simikot lodge.</li>
+            
+            <li><strong>Day 9:</strong> Fly from Simikot to Nepalganj (1 hr), then to Kathmandu (1 hr) – Return to 4-star hotel in Kathmandu. Leisure time or optional shopping.</li>
+            
+            <li><strong>Day 10:</strong> Final departure or extension – Transfer to airport for onward journey or continue stay in Kathmandu.</li>
+          </ul>                                  
+        </div>
+
+        <div id="inclusions" class="tab-content">
+          <ul>
+            <li><strong>4-star hotel accommodation in Kathmandu with twin/triple sharing basis</strong></li>
+            <li><strong>Luxury accommodation in Tibet (Taklakot, Mansarovar, etc.)</strong></li>
+            <li><strong>All vegetarian meals throughout the journey (breakfast, lunch & dinner)</strong></li>
+            <li><strong>Private luxury vehicle transportation in Nepal & Tibet</strong></li>
+            <li><strong>All necessary Tibet permits, including Tibet Entry Permit & Kailash Region Permit</strong></li>
+            <li><strong>China Group Visa Recommendation Letter</strong></li>
+            <li><strong>One English-speaking Tibetan guide and experienced Nepali tour coordinator</strong></li>
+            <li><strong>Support staff including Nepali cook and helpers during the Tibet part of the journey</strong></li>
+            <li><strong>Yak & Yakman for carrying Kitchen Equipment during Kailash Parikrama</strong></li>
+            <li><strong>First aid kit with basic high-altitude medicines and oxygen cylinders</strong></li>
+            <li><strong>Free Kailash Yatra duffle bag, cap, badge & group ID card</strong></li>
+            <li><strong>One day sightseeing in Kathmandu including Pashupatinath and Budhanilkantha</strong></li>
+            <li><strong>Local SIM card for Group Leader use in Tibet (subject to network coverage)</strong></li>
+            <li><strong>All applicable taxes and service charges</strong></li>
+            <li><strong>Kailash Mansarovar Parikrama (circumambulation) included</strong></li>
+          </ul>                  
+        </div>
+
+        <div id="exclusions" class="tab-content">
+          <ul>
+            <li><strong>International airfare to/from Kathmandu</strong></li>
+            <li><strong>Travel and personal insurance (strongly recommended)</strong></li>
+            <li><strong>If Needed, Cost for medical emergency, evacuation, and hospitalization</strong></li>
+            <li><strong>Extra hotel nights in case of early arrival or late departure in Kathmandu</strong></li>
+            <li><strong>Extra hotel night & meals at Darchen (Waiting for Group's Arrival)</strong></li>
+            <li><strong>Meals not mentioned in the itinerary (e.g. personal snacks, drinks)</strong></li>
+            <li><strong>Any kind of personal expenses, tips, or donations</strong></li>
+            <li><strong>Riding pony or personal porter during Parikrama (if needed)</strong></li>
+            <li><strong>Charan Sparsh, Ashtapad Visit</strong></li>
+            <li><strong>Multiple Visa fees for Nepal (for non-Indian passport holders)</strong></li>
+            <li><strong>China Group Single Entry Visa Fee</strong></li>
+            <li><strong>If Indian Nationality GST and TCS as per Indian government rules</strong></li>
+            <li><strong>Package cost deposit via bank (SWIFT transfer, includes commission)</strong></li>
+            <li><strong>Expenses arising due to natural calamities, landslides, political unrest, or flight cancellation</strong></li>
+            <li><strong>Single supplement available at an additional 30% charge</strong></li>
+            <li><strong>Tips as a token of gratitude for the staff are appreciated</strong></li>
+            <li><strong>Medical doctor support available on request for $100 per person</strong></li>
+            <li><strong>Yoga/Meditation teacher available on request for an additional $70 per person</strong></li>
+            <li><strong>Priest service available on request at an additional $50 per person</strong></li>
+            <li><strong>Any services not specifically mentioned under "Inclusions"</strong></li>
+            <li><strong>Private transportation available upon request at additional charges</strong></li>
+          </ul>        
+        </div>
+        <div id="reviews" class="tab-content">
+          <div class="review-videos">
+            <video src="images/client-reviews.mp4" controls></video>
+          </div>
+        </div>
+      </div>
+
+      <div id="remarks" class="tab-content">
+        <ul>
+          <li><strong>Nepal Tourist Visa:</strong> Indian passport holders do not require a visa to visit Nepal.</li>
+          <li>However, when traveling to Tribhuvan International Airport in Kathmandu from any international airport in India, Indian citizens must present either a valid Indian passport or a Voter Identity Card (Indian Electoral Card).</li>
+          <li>Please note that Aadhaar Cards and Driving Licenses are not accepted as valid documents for boarding a flight to Kathmandu from Indian airports.</li>
+          <li>For all non-Indian passport holders, a Nepal visa is available on arrival at Kathmandu International Airport.</li>
+          <li>Non-Indian passport holders may also apply for the Nepal entry visa online to save time upon arrival at the airport.</li>
+        </ul>
+
+        <ul>
+          <li><strong>Tibet Group Travel Visa:</strong></li>
+          <li>Indian passport holders, regardless of their country of residence or geographical location, must present their original passport at the China Embassy in New Delhi through the tour company that has obtained the necessary Tibet entry permit and invitations for them.</li>
+          <li>The China Embassy in Delhi takes a minimum of 4-5 working days to process the visa decision.</li>
+          <li>All other travelers holding a non-Indian passport (including NRIs with non-Indian passports, OCI cardholders, and Green Card holders) must go through biometrics at the China Visa Center in Kathmandu for submission of their China entry visa application.</li>
+          <li>The original passport, visa application documents, and recent color photographs (in a prescribed size and format) are required to be submitted to the Chinese Embassy in Kathmandu.</li>
+          <li>The Chinese Embassy takes a minimum of 3-4 working days to process the visa decision.</li>
+        </ul>
+
+        <ul>
+          <li><strong>Important Remark: Safety Precautions</strong></li>
+          <li>As you are now traveling in high altitude, there may be some discomfort or health-related issues.</li>
+          <li>It is advised to all travelers to drink as much liquid as possible, including soup, juice, tea, coffee, or hot water.</li>
+          <li>This will help in rehydration and improving your breathing system.</li>
+        </ul>
+        
+        <ul class="kailash-yatra-tips">
+          <li>
+            <strong>Accommodation Note:</strong> Hotel/Guest House/Camping on twin sharing basis.
+            <br>
+            <em>Note:</em> During the 3-day Kailash Parvat Parikarma, no attached toilet or bathroom accommodations are available. Toilets and bathrooms are separate/open, as per Tibetan traditions.
+          </li>
+        
+          <li>
+            <strong>Booking Timeline:</strong> Normal booking requires at least 45 days in advance. 
+            <br>
+            <em>Note:</em> For full moon departures, earlier booking confirmation is required due to limited facilities en route.
+          </li>
+        
+          <li>
+            <strong>Yatra Booking Process:</strong> Booking is confirmed upon paying 30% of the total cost in advance.
+          </li>
+        
+          <li>
+            <strong>Special Offer Validity:</strong> Last-minute or other special booking offers are valid up to 10 days from the initial conversation.
+          </li>
+        
+          <li>
+            <strong>For Yatris Aged 70 and Above:</strong>
+            <ul>
+              <li>Must submit a medical examination report from a government hospital within 6 months before travel.</li>
+              <li>USD $1000 security deposit is required by Tibetan/Chinese authorities before entering Tibet.</li>
+              <li>Health check by Tibetan doctors is mandatory before Parikarma. Participation is allowed only upon approval.</li>
+              <li>All dues must be cleared before the yatra departure from Kathmandu.</li>
+            </ul>
+          </li>
+        
+          <li>
+            <strong>Meal Information:</strong>
+            <ul>
+              <li><strong>Kathmandu:</strong> Pure vegetarian Satvik meals provided at the hotel or a local restaurant.</li>
+              <li><strong>Kailash Route:</strong> Meals provided by the company catering team.</li>
+              <li><strong>Meal Timings:</strong> 
+                <ul>
+                  <li><strong>B:</strong> Breakfast (06:00–07:00)</li>
+                  <li><strong>L:</strong> Lunch (12:00–13:00)</li>
+                  <li><strong>D:</strong> Dinner (20:00–21:30)</li>
+                </ul>
+              </li>
+              <li><strong>Note 1:</strong> During the SAGA to DARCHEN and DARCHEN to SAGA drives, lunch is served in an open park area due to long road distances.</li>
+              <li><strong>Note 2:</strong> During Kailash Parvat Kora, there are no food preparation spots on the trail. Packing lunch will be provided for the 3-day trek.</li>
+            </ul>
+          </li>
+        
+          <li>
+            <strong>Astapad Visit (Optional):</strong> Additional day trip available at USD $60.00 per person, if permitted by the government.
+          </li>
+        </ul>
+      </div>
+      <div id="cancellation" class="tab-content">
+        <ul>
+          <li>📌 Cancellation made 30 days or more before the departure date: 25% of the total package cost will be charged.</li>
+          <li>📌 Cancellation made between 15 to 29 days before the departure: 50% of the total package cost will be charged.</li>
+          <li>📌 Cancellation made less than 15 days before the departure: 100% of the total package cost will be charged.</li>
+          <li>📌 No refund will be provided for no-shows or any unused services during the tour.</li>
+          <li>📌 In case of visa rejection or delays from authorities (China/Nepal), standard cancellation charges will still apply.</li>
+          <li>📌 Any cancellation due to personal, medical, or unforeseen circumstances will be subject to the above policies.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="gear" class="tab-content">
+      <ul>
+        <li><strong>High-Quality Trekking Shoes</strong> - Comfortable, durable shoes with good grip for long walks on rugged terrain.</li>
+        <li><strong>Warm Clothing</strong> - Layered clothing, including thermal wear, fleece jackets, and a waterproof outer layer for varying weather conditions.</li>
+        <li><strong>Sleeping Bag</strong> - A sleeping bag rated for cold temperatures to keep you warm during the night.</li>
+        <li><strong>Waterproof Backpack</strong> - A sturdy, waterproof backpack to carry your essentials and protect them from rain or snow.</li>
+        <li><strong>Personal Medications</strong> - Bring necessary prescription medications and a basic first-aid kit for emergencies.</li>
+        <li><strong>Sun Protection</strong> - Sunscreen, sunglasses, and a hat to protect against the high-altitude sun.</li>
+        <li><strong>Gloves, Beanie, and Warm Socks</strong> - Essential for protecting extremities from cold temperatures.</li>
+        <li><strong>Portable Water Bottle</strong> - Stay hydrated by carrying a reusable water bottle. Make sure it’s easy to carry and refill.</li>
+        <li><strong>Headlamp or Torch</strong> - A reliable light source for night-time activities or in case of power outages.</li>
+        <li><strong>Snacks</strong> - Carry energy bars, nuts, or dried fruit to keep your energy levels up during the trek.</li>
+        <li><strong>Camera or Phone</strong> - To capture your spiritual journey and the beautiful scenery.</li>
+        <li><strong>Passport and Important Documents</strong> - Keep all travel documents, permits, and identification in a safe place.</li>
+        <li><strong>Rain Poncho</strong> - Lightweight, waterproof poncho to protect you from rain or snow.</li>
+        <li><strong>Lightweight Trekking Poles</strong> - To assist with balance and reduce strain on knees during uphill or downhill trekking.</li>
+        <li><strong>Gaiters</strong> - To keep dirt, stones, and snow from entering your shoes and socks while trekking.</li>
+        <li><strong>Compression Bags</strong> - To help organize and compress clothing, saving space in your backpack.</li>
+        <li><strong>Blister Prevention and First-Aid Kit</strong> - Carry blister pads, adhesive bandages, and antiseptic cream for any injuries.</li>
+        <li><strong>Portable Charger</strong> - A power bank to keep your phone or other electronics charged during the journey.</li>
+        <li><strong>Water Purification Tablets</strong> - To purify water from streams or other natural sources during the trek.</li>
+        <li><strong>Multi-tool or Swiss Army Knife</strong> - For any emergency situations where you may need a tool to fix something or cut rope.</li>
+        <li><strong>Hand Warmers</strong> - To keep your hands warm in extremely cold weather.</li>
+        <li><strong>Dry Bags</strong> - For storing electronics, documents, and other items that need to stay dry.</li>
+        <li><strong>Emergency Whistle</strong> - For safety in case of emergencies to signal for help.</li>
+      </ul>
+    </div>
+  </div>
+
+  <aside class="trip-facts">
+    <h4>Trip Facts</h4>
+    <p><strong>Duration:</strong> 10 Days</p>
+    <p><strong>Tour Price:</strong> Ask Us</p>
+    <p><strong>Destination:</strong> Kailash Mansarovar</p>
+    <p><strong>Maximum Altitude:</strong> 5,640 meters (Dolma-la Pass)</p>
+    <p><strong>Group Size:</strong> 5–25 People</p>
+    <p><strong>Individual Tour:</strong> Not Permitted By Tibetian Authority (If You Are Individual Contact Us To Make A Group For It)</p>
+    <p><strong>Departure:</strong> Kathmandu</p>
+    <p><strong>Travel Mode:</strong> By Road + Helicopter Transport</p>
+    <p><strong>Physical Rating:</strong> Moderate to Challenging</p>
+    <p><strong>Spiritual Significance:</strong> Mount Kailash is revered by Hindus, Buddhists, Jains & Bonpos</p>
+    <p><strong>Non Religion Peoples:</strong> Non-religious people travel to Mount Kailash for its breathtaking natural beauty, spiritual significance, and the opportunity to experience one of the most challenging and rewarding treks in the world</p>
+    <p><strong>Kailash Trek Seasons:</strong> April to mid-October each year</p>
+    <p><strong>Special Celebration Package:</strong> Advanced booking confirmation needed at least 6 months in advance</p>
+    <p><strong>Individual Pilgrimages/Travellers:</strong> Not allowed by the Tibetan Tourism Authority. Group travel only</p>
+    <p><strong>Tibet Travel Restrictions:</strong> Tibet allows only group tours. Individual pilgrimages or solo travelers are not permitted.</p>
+    <p><strong>Client Arrival:</strong>Kailash Kathmandu, Nepal</p>
+    <p><strong>Arrival Location:</strong> Tribhuvan International Airport (KTM), Kathmandu, Nepal</p>
+  </aside>
+  
+    </section>
+  </div>
+
+  <a href="https://wa.me/9849834756" target="_blank" class="whatsapp-vertical">
+    <span>WhatsApp Support</span>
+  </a>
+
+  <button class="ask-expertise-btn" onclick="toggleExpertisePopup()">?</button>
+  <div class="ask-expertise-popup" id="expertisePopup">
+    <h4>Ask the Adventure Expertise</h4>
+  </div>
+
+
+<!-- Hanging Itinerary Box (Left Side) -->
+<div class="left-download-box" onclick="openItineraryPopup()">
+  📄<br>Download Itinerary PDF
+</div>
+
+<!-- Popup Modal -->
+<div id="itineraryPopup" class="popup-overlay">
+  <div class="popup-content">
+    <span class="close-btn" onclick="closeItineraryPopup()">×</span>
+    <h3>Download Detailed Itinerary</h3>
+    <p>Click below to get the complete Kailash Mansarovar Yatra itinerary in PDF format.</p>
+    <a href="images/Buddha-Image.png" download class="download-btn">⬇️ Download PDF</a>
+  </div>
+</div>
+
+
+
+  <section class="quick-facts-section">
+    <div class="container">
+      <h2 class="section-title">Kailash Yatra Quick Facts</h2>
+      <div class="facts-grid">
+        <div class="fact-item">
+          <h3>Mt. Kailash and Lake Mansarovar</h3>
+          <p>Mt. Kailash is believed to be Lord Shiva's abode and Lake Mansarovar is a spiritually charged freshwater lake. Considered sacred in Hinduism, Buddhism, Jainism, and Bon, this region draws pilgrims from around the globe.</p>
+        </div>
+        <div class="fact-item">
+          <h3>Weather conditions in TAR Region</h3>
+          <p>TAR (Tibet Autonomous Region) is high in altitude with cold temperatures throughout the year. Best travel months are May to September. Sudden weather changes are common so layered clothing is advised.</p>
+        </div>
+        <div class="fact-item">
+          <h3>Location, People and Language</h3>
+          <p>Located in the Tibet Autonomous Region (China), most residents speak Tibetan and Mandarin. English is less common. Pilgrims should respect local customs and follow regulations set by the Chinese government.</p>
+        </div>
+        <div class="fact-item">
+          <h3>Routes to visit Kailash Mansarovar</h3>
+          <p>1. Via Kathmandu - Gyirong <br>2. Via Nepalgunj - Hilsa - Kailash  <br>3. Via Kathmandu - Lasha Kailash</p>
+        </div>
+        <div class="fact-item">
+          <h3>Currency</h3>
+          <p>Renminbi (Yuan) is the official currency. You should carry enough cash in small denominations. Credit/debit cards are not widely accepted in remote regions. Currency exchange is best done in Kathmandu or Lhasa.</p>
+        </div>
+        <div class="fact-item">
+          <h3>Do’s and Don’ts for Kailash Yatra</h3>
+          <p>Do carry proper clothing, stay hydrated, follow guides, and respect Tibetan customs. Avoid plastic use, don’t touch sacred symbols without permission, and always consult a doctor before your trip due to high altitude.</p>
+        </div>
+      </div>
+  
+      <div class="why-us">
+        <h2 class="section-title">Why KailashYatra</h2>
+        <p class="intro-text"><strong>Know why we are the best tour operators for Kailash Mansarovar Yatra</strong></p>
+        <p>Kailash Mansarovar Yatra is a challenging pilgrimage and requires expert handling. <strong>KailashYatra</strong> ensures a spiritual, comfortable, and safe journey for every devotee.</p>
+        
+        <div class="why-grid">
+          <div class="why-box">
+            <h4>Experienced Vedic Spritual Team</h4>
+            <p>We have a highly experienced team for Kailash Mansarovar Yatra, handling both group and private pilgrimages with care and precision.</p>
+          </div>
+          <div class="why-box">
+            <h4>Travel Safety is our top priority</h4>
+            <p>Our staff closely monitors all groups with 24/7 ground support. Emergency evacuation and medical care are always on standby.</p>
+          </div>
+          <div class="why-box">
+            <h4>Award winning services and post-tour assistance</h4>
+            <p>We are recognized for excellence in pilgrimage tours. Our relationship doesn’t end after the trip — we assist you even post-tour.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="safety-wrapper">
+    <!-- Left Side: Full Safety Info -->
+    <div class="safety-left">
+      <h2>🛡️ Safety During Kailash Mansarovar Yatra</h2>
+      <p>
+        At <strong>KailashYatra Pvt. Ltd.</strong>, your safety is our utmost priority. 🚑<br><br>
+        💨 High-altitude passes require proper acclimatization.<br>
+        🧘‍♂️ Light yoga and breathing exercises are highly recommended before departure.<br>
+        🏥 A complete medical check-up is mandatory before joining the tour.<br>
+        🧤 Pack warm gear: woolens, jackets, gloves, thermals, and walking sticks.<br>
+        🚱 Stay hydrated and avoid alcohol or smoking to minimize altitude sickness.<br>
+        📞 24x7 emergency support and first aid will be available throughout the journey.<br>
+        🙏 Respect local customs and follow all guide instructions during rituals.
+      </p>
+    </div>
+
+    <!-- Right Side: Sticky Toggle Column -->
+    <div class="safety-right">
+      <div class="toggle-stack">
+        <!-- Toggle 1 -->
+        <div class="toggle-card" onclick="toggleSafetyBox('box1', 'arrow1')">
+          <div class="toggle-header">
+            <span>ℹ️ Quick Safety Note</span>
+            <span id="arrow1">▼</span>
+          </div>
+          <div class="toggle-body" id="box1">
+            <p>Prepare for high-altitude conditions 💨. Stay hydrated 🚰, follow your guide 👣, and rest well 💤.</p>
+          </div>
+        </div>
+
+        <!-- Toggle 2 -->
+        <div class="toggle-card" onclick="toggleSafetyBox('box2', 'arrow2')">
+          <div class="toggle-header">
+            <span>🧘 Acclimatization Tips</span>
+            <span id="arrow2">▼</span>
+          </div>
+          <div class="toggle-body" id="box2">
+            <p>Take it slow 🐢 on day 1. Practice deep breathing, stay warm, and avoid physical exertion.</p>
+          </div>
+        </div>
+
+        <!-- Toggle 3 -->
+        <div class="toggle-card" onclick="toggleSafetyBox('box3', 'arrow3')">
+          <div class="toggle-header">
+            <span>🩺 Medical Info</span>
+            <span id="arrow3">▼</span>
+          </div>
+          <div class="toggle-body" id="box3">
+            <p>Inform us of any chronic conditions. Oxygen support and emergency evacuation are available.</p>
+          </div>
+        </div>
+
+        <!-- Toggle 4 -->
+        <div class="toggle-card" onclick="toggleSafetyBox('box4', 'arrow4')">
+          <div class="toggle-header">
+            <span>🎒 Packing Checklist</span>
+            <span id="arrow4">▼</span>
+          </div>
+          <div class="toggle-body" id="box4">
+            <p>Warm layers, power banks, walking sticks, and ID documents are essential. No plastic bottles allowed.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Floating Button -->
+<div class="enquiry-button" onclick="toggleEnquiryForm()">Quick Enquiry</div>
+
+<!-- Enquiry Form -->
+<div class="enquiry-form-container" id="enquiryForm">
+  <button class="close-btn" onclick="toggleEnquiryForm()">×</button>
+  <h3>Quick Enquiry</h3>
+  <form name="quick-enquiry" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="#" onsubmit="handleSubmit(event)">
+    <input type="hidden" name="form-name" value="quick-enquiry" />
+    <p hidden>
+      <label>Don’t fill this out: <input name="bot-field" /></label>
+    </p>
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <textarea name="message" placeholder="Your Message" rows="3" required></textarea>
+    <button type="submit">Send</button>
+    <div class="confirmation" id="confirmationMsg" style="display: none;">✔️ Enquiry submitted! Please check your email.</div>
+  </form>
+</div>
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  footer {
+    width: 100%;
+    background: linear-gradient(to right, #bd5602);
+    color: #fff;
+    padding: 50px 0 30px;
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  .row {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .col {
+    flex-basis: 25%;
+    padding: 20px;
+  }
+
+  .col:nth-child(2),
+  .col:nth-child(3) {
+    flex-basis: 25%;
+  }
+
+  .footer_logo {
+    width: 130px;
+    position: relative;
+    top: -23px;
+    left: -20px;
+  }
+
+  .footer_about {
+    position: relative;
+    top: -23px;
+  }
+
+  .col h3 {
+    width: fit-content;
+    margin-bottom: 60px;
+    position: relative;
+  }
+
+  .footer_email {
+    width: fit-content;
+    border-bottom: 1px solid #f66335;
+    margin: 20px 0;
+  }
+
+  .col ul li {
+    list-style: none;
+    margin-bottom: 12px;
+  }
+
+  .col ul li a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .col form {
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #f66335;
+    margin-bottom: 50px;
+  }
+
+  .col form .icon {
+    font-size: 18px;
+    margin-right: 10px;
+  }
+
+  .col form input {
+    width: 100%;
+    background: transparent;
+    color: #ccc;
+    border: 0;
+    outline: none;
+  }
+
+  .col form button {
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+  }
+
+  .col form button .icon_right {
+    font-size: 16px;
+    color: #ccc;
+  }
+
+  .col .social_icons {
+    display: flex;
+  }
+
+  .col .social_icons .social_icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: #fff;
+    background: #f66335;
+    margin-right: 15px;
+    padding: 5px;
+    cursor: pointer;
+  }
+
+  hr {
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 20px auto;
+  }
+
+  footer .copyright {
+    text-align: center;
+  }
+
+  .bottom_line {
+    width: 100%;
+    height: 5px;
+    background: #767676;
+    border-radius: 3px;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    overflow: hidden;
+  }
+
+  .bottom_line span {
+    width: 15px;
+    height: 100%;
+    background: #f66335;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    animation: moveline 2s linear infinite;
+  }
+
+  @keyframes moveline {
+    0% {
+      left: -20px;
+    }
+    100% {
+      left: 100%;
+    }
+  }
+</style>
+</head>
+<body>
+
+<footer>
+  <div class="row">
+    <div class="col">
+      <img src="images/vvfdd-removebg-preview.png" class="footer_logo" alt="MuktiYatra Logo">
+      <p class="footer_about">
+        With over 20 years of dedicated service, MuktiYatra is the world’s most trusted Kailash Mansarovar Yatra tour operator, offering a transformative spiritual journey that connects pilgrims with the divine and leads them towards liberation and inner peace.
+      </p>
+    </div>
+    <div class="col">
+      <h3>Office
+        <div class="bottom_line"><span></span></div>
+      </h3>
+      <p>Guhyeshwari Shaktipeeth Temple</p>
+      <p class="footer_email">kailashyatra365@gmail.com</p>
+      <h4>+977-9823669370 (Whatsapp/Viber)<br>+977-9761726460</h4>
+    </div>
+    <div class="col">
+      <h3>Links
+        <div class="bottom_line"><span></span></div>
+      </h3>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="destination.html">DESTINATIONS</a></li>
+        <li><a href="contact.html">CONTACT US</a></li>
+      </ul>
+    </div>
+    <div class="col">
+      <h3>Newsletter
+        <div class="bottom_line"><span></span></div>
+      </h3>
+      <form>
+        <ion-icon class="icon" name="mail"></ion-icon>
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit">
+          <ion-icon class="icon_right" name="arrow-round-forward"></ion-icon>
+        </button>
+      </form>
+      <div class="social_icons">
+        <a href="https://facebook.com/" target="_blank">
+          <ion-icon class="social_icon" name="logo-facebook"></ion-icon>
+        </a>
+        <a href="https://wa.me/9823669370" target="_blank">
+          <ion-icon class="social_icon" name="logo-whatsapp"></ion-icon>
+        </a>
+        <a href="#" target="_blank">
+          <ion-icon class="social_icon" name="logo-twitter"></ion-icon>
+        </a>
+        <a href="https://www.instagram.com/kailashyatra.official/" target="_blank">
+          <ion-icon class="social_icon" name="logo-instagram"></ion-icon>
+        </a>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <p class="copyright">MuktiYatra Pvt. Ltd Ⓒ 2005 - 2025, All Rights Reserved</p>
+</footer>
+  <script>
+      window.onscroll = function() {stickyNavbar()};
+  var navbar = document.querySelector(".navbar");
+  var sticky = navbar.offsetTop;
+
+  function stickyNavbar() {
+    if (window.pageYOffset > sticky) {
+      navbar.classList.add("sticky");
+    } else {
+      navbar.classList.remove("sticky");
+    }
+  }
+  function toggleEnquiryForm() {
+    const form = document.getElementById('enquiryForm');
+    form.style.display = form.style.display === 'block' ? 'none' : 'block';
+  }
+
+  function handleSubmit(event) {
+    event.preventDefault();
+    const form = event.target;
+    const formData = new FormData(form);
+
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData).toString(),
+    })
+    .then(() => {
+      document.getElementById('confirmationMsg').style.display = 'block';
+      fetch("/.netlify/functions/send-confirmation-email", {
+        method: "POST",
+        body: JSON.stringify({
+          email: formData.get("email"),
+          name: formData.get("name")
+        }),
+        headers: {
+          "Content-Type": "application/json"
+        }
+      });
+      form.reset();
+    })
+    .catch((error) => alert("Failed to submit enquiry. Please try again."));
+  }
+  </script>
+  
+  <script>
+    document.querySelectorAll(".tab-btn").forEach(btn => {
+      btn.addEventListener("click", () => {
+        document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
+        document.querySelectorAll(".tab-content").forEach(c => c.classList.remove("active"));
+        btn.classList.add("active");
+        document.getElementById(btn.dataset.tab).classList.add("active");
+      });
+    });
+
+    function toggleExpertisePopup() {
+      const popup = document.getElementById("expertisePopup");
+      popup.style.display = popup.style.display === "block" ? "none" : "block";
+    }
+
+    function toggleSafetyBox(bodyId, arrowId) {
+      const box = document.getElementById(bodyId);
+      const arrow = document.getElementById(arrowId);
+      box.classList.toggle('show');
+      arrow.textContent = box.classList.contains('show') ? '▲' : '▼';
+    }
+
+  function openItineraryPopup() {
+    document.getElementById('itineraryPopup').style.display = 'flex';
+  }
+
+  function closeItineraryPopup() {
+    document.getElementById('itineraryPopup').style.display = 'none';
+  }
+</script>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/67f3e3f065eaaf1908c52eae/1io8b4p6f';
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
+  })();
+  </script>
+  <!--End of Tawk.to Script-->
+</body>
+</html>

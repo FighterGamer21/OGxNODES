@@ -1,0 +1,1811 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Holy Kailash Mansarovar Tour</title>
+  <style>
+  .support-bar {
+    background-color: #be5f06;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .support-bar a {
+    color: #ecf0f1;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+
+  .support-bar a:hover {
+    color: #00ffff;
+  }
+
+  .mantra-bar {
+    background-color: #be5f06;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .gods-section {
+    background-color: #be5f06;
+    padding: 30px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .gods-section img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #3498db;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .gods-section img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(52, 152, 219, 0.7);
+  }
+
+  .navbar {
+  background-color: #be5f06;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.navbar.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.navbar + .content {
+  margin-top: 0; /* This should ensure no gap below the navbar */
+}
+
+.navbar .logo img {
+  height: 120px;
+}
+
+.nav-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links li {
+  display: inline-block;
+}
+
+.nav-links a {
+  color: #ecf0f1;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 12px 18px;
+  display: inline-block;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-links a:hover {
+  background-color: #3498db;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  background-color: #ecf0f1;
+  border-radius: 6px;
+  padding: 3px 10px;
+  width: 160px;
+  transition: width 0.3s ease;
+  position: relative;
+}
+
+.search-bar input {
+  border: none;
+  background: transparent;
+  font-size: 14px;
+  padding: 8px;
+  width: 130px;
+  outline: none;
+  transition: width 0.3s ease;
+}
+
+.search-bar input:focus {
+  width: 180px;
+  padding: 8px 15px;
+}
+
+
+  .promo-video-full video {
+    width: 100%;
+    height: auto;
+  }
+
+  .video-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+  }
+
+  #health-tips {
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+  }
+
+  #health-tips-content h3 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .line {
+    width: 50px;
+    height: 2px;
+    background-color: #3498db;
+    margin: 10px auto;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  ul li {
+    font-size: 16px;
+    margin: 8px 0;
+  }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #be5f06;;
+      color: #1e2a38;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* Header: Two-sided grid layout */
+    header {
+      display: grid;
+      grid-template-columns: 1fr 1fr; /* Two columns, 1st for image, 2nd for content */
+      gap: 20px; /* Space between the columns */
+      align-items: center;
+      padding: 20px;
+      background: #be5f06;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    /* Carousel Styles */
+    .carousel {
+      position: relative;
+      width: 100%;
+      height: 400px;
+      overflow: hidden;
+    }
+
+    .carousel-images {
+      display: flex;
+      animation: slide 20s infinite;
+      width: 100%;
+    }
+
+    .carousel-images img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+
+    @keyframes slide {
+      0%, 20% { transform: translateX(0); }
+      25%, 45% { transform: translateX(-100%); }
+      50%, 70% { transform: translateX(-200%); }
+      75%, 95% { transform: translateX(-300%); }
+      100% { transform: translateX(0); }
+    }
+
+    /* Content section on right */
+    .intro {
+      background: linear-gradient(to right, #e6f0fa, #d6e7f5);
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .intro h1 {
+      font-size: 26px;
+      color: #0a3c6d;
+    }
+
+    .intro p {
+      font-size: 16px;
+      margin-top: 15px;
+    }
+
+    .intro button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #0a68d4;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    /* Mobile Responsiveness */
+    @media (max-width: 768px) {
+      header {
+        grid-template-columns: 1fr; /* Stack the content and carousel */
+        gap: 10px; /* Reduced gap between stacked sections */
+      }
+
+      .carousel {
+        height: 250px; /* Smaller carousel height for mobile */
+      }
+
+      .carousel-images img {
+        height: auto;
+        max-height: 100%; /* Keeps aspect ratio on mobile */
+      }
+    }
+
+    /* WhatsApp floating button */
+    .whatsapp-vertical {
+      position: fixed;
+      right: 0;
+      top: 40%;
+      width: 50px;
+      height: 160px;
+      background-color: #25d366;
+      color: white;
+      writing-mode: vertical-rl;
+      text-orientation: mixed;
+      text-align: center;
+      font-size: 14px;
+      font-weight: bold;
+      border-radius: 10px 0 0 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+      gap: 8px;
+      z-index: 999;
+      animation: floatIn 0.8s ease-out;
+    }
+
+    .whatsapp-vertical img {
+      width: 24px;
+      height: 24px;
+      transform: rotate(90deg);
+    }
+
+    @keyframes floatIn {
+      from {
+        transform: translateX(100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+
+    .expertise {
+      text-align: center;
+      padding: 40px 20px;
+      background: #be5f06;
+    }
+    .expertise h2 {
+      margin-bottom: 20px;
+      color: #094f91;
+    }
+    .features {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+    .feature-box {
+      background: #fff;
+      padding: 20px;
+      margin: 10px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      max-width: 300px;
+    }
+    .feature-box h3 {
+      color: #0a4c8b;
+      margin-bottom: 10px;
+    }
+    .content-section {
+      display: flex;
+      flex-wrap: wrap;
+      background: #be5f06;
+      padding: 40px 20px;
+    }
+    .tabs {
+      flex: 2;
+      margin-right: 20px;
+    }
+    .tab-buttons {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+    }
+    .tab-buttons button {
+      padding: 10px;
+      border: none;
+      background: #be5f06;;
+      cursor: pointer;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+    .tab-buttons button.active {
+      background: #0a68d4;
+      color: white;
+    }
+    .tab-content {
+      display: none;
+    }
+    .tab-content.active {
+      display: block;
+      background: #f9f9f9;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    .tab-content ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    .tab-content li::before {
+      content: "✓ ";
+      color: #0a68d4;
+    }
+    .trip-facts {
+      flex: 1;
+      background: #eaf3fb;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    .trip-facts h4 {
+      margin-top: 0;
+      color: #0a3c6d;
+    }
+    .trip-facts p {
+      margin: 5px 0;
+    }
+    @media (max-width: 768px) {
+      header, .intro, .carousel, .content-section, .tabs, .trip-facts {
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+      }
+      .carousel, .intro {
+        width: 100%;
+      }
+      .trip-facts {
+        margin-top: 20px;
+      }
+    }
+
+    .review-videos video {
+      width: 100%;
+      margin-top: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .ask-expertise-btn {
+      position: fixed;
+      left: 20px;
+      bottom: 20px;
+      width: 50px;
+      height: 50px;
+      background-color: #0a68d4;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .ask-expertise-popup {
+      position: fixed;
+      left: 20px;
+      bottom: 80px;
+      width: 250px;
+      height: 120px;
+      background-color: #be5f06;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      display: none;
+      text-align: center;
+    }
+
+    .ask-expertise-popup h4 {
+      font-size: 18px;
+      color: #094f91;
+      margin-top: 20px;
+    }
+
+    .whatsapp-vertical {
+      position: fixed;
+      right: 0;
+      top: 40%;
+      width: 50px;
+      height: 160px;
+      background-color: #25d366;
+      color: white;
+      writing-mode: vertical-rl;
+      text-orientation: mixed;
+      text-align: center;
+      font-size: 14px;
+      font-weight: bold;
+      border-radius: 10px 0 0 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+      gap: 8px;
+      z-index: 999;
+      animation: floatIn 0.8s ease-out;
+    }
+
+    .whatsapp-vertical img {
+      width: 24px;
+      height: 24px;
+      transform: rotate(90deg);
+    }
+
+    @keyframes floatIn {
+      from {
+        transform: translateX(100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    .pdf-float-box {
+  position: fixed;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #fff;
+  border-radius: 8px 0 0 8px;
+  padding: 16px;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  z-index: 999;
+  max-width: 300px;
+  border-left: 5px solid #0077cc;
+}
+
+.brochure-text h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #222;
+}
+
+.brochure-text p {
+  margin: 4px 0 12px;
+  font-size: 13px;
+  color: #555;
+}
+
+.download-btn {
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  font-weight: bold;
+  font-size: 13px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.download-btn:hover {
+  background-color: #005fa3;
+}
+
+.brochure-icon img {
+  width: 32px;
+  height: auto;
+}
+
+.quick-facts-section {
+    padding: 60px 20px;
+    background: #be5f06;
+    font-family: 'Segoe UI', sans-serif;
+    color: #333;
+  }
+
+  .container {
+    max-width: 1100px;
+    margin: auto;
+  }
+
+  .section-title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #004080;
+    text-align: center;
+  }
+
+  .facts-grid, .why-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+  }
+
+  .fact-item, .why-box {
+    background: #fff;
+    padding: 20px 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+
+  .fact-item h3, .why-box h4 {
+    font-size: 18px;
+    color: #1a3c64;
+    margin-bottom: 10px;
+  }
+
+  .fact-item p, .why-box p {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .intro-text {
+    font-size: 17px;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  @media screen and (max-width: 600px) {
+    .section-title {
+      font-size: 22px;
+    }
+  }
+
+  .safety-wrapper {
+      display: flex;
+      gap: 30px;
+      align-items: flex-start;
+      justify-content: space-between;
+      margin: 40px 20px;
+      flex-wrap: wrap;
+    }
+
+    .safety-left {
+      flex: 1 1 60%;
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.06);
+      font-size: 16px;
+      line-height: 1.7;
+      color: #333;
+    }
+
+    .safety-left h2 {
+      margin-bottom: 20px;
+      color: #003366;
+    }
+
+    .safety-right {
+      flex: 1 1 30%;
+      position: sticky;
+      top: 100px;
+    }
+
+    .toggle-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .toggle-card {
+      background: #fff;
+      border: 1px solid #d0e2f3;
+      border-radius: 14px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      overflow: hidden;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .toggle-header {
+      padding: 15px 20px;
+      background: #eaf4ff;
+      color: #003366;
+      font-weight: bold;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .toggle-body {
+      padding: 15px 20px;
+      font-size: 15px;
+      color: #333;
+      display: none;
+    }
+
+    .toggle-body.show {
+      display: block;
+      animation: fadeIn 0.3s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-5px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .safety-wrapper {
+        flex-direction: column;
+      }
+
+      .safety-left, .safety-right {
+        flex: 1 1 100%;
+        position: static;
+      }
+    }
+
+/* Floating rectangle box */
+.download-box {
+  position: fixed;
+  right: 0;
+  top: 45%;
+  background: #003366;
+  color: white;
+  padding: 10px 8px;
+  font-size: 14px;
+  writing-mode: vertical-rl;
+  text-align: center;
+  border-radius: 12px 0 0 12px;
+  box-shadow: -2px 2px 8px rgba(0,0,0,0.2);
+  cursor: pointer;
+  z-index: 999;
+  transition: background 0.3s;
+}
+.download-box:hover {
+  background: #0055aa;
+}
+
+/* Popup overlay */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Left hanging download box */
+.left-download-box {
+  position: fixed;
+  left: 0;
+  top: 45%;
+  background: #003366;
+  color: white;
+  padding: 10px 8px;
+  font-size: 14px;
+  writing-mode: vertical-rl;
+  text-align: center;
+  border-radius: 0 12px 12px 0;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+  cursor: pointer;
+  z-index: 999;
+  transition: background 0.3s;
+}
+.left-download-box:hover {
+  background: #0055aa;
+}
+
+/* Popup overlay */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Popup content */
+.popup-content {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 14px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+  animation: popupFadeIn 0.3s ease;
+}
+
+@keyframes popupFadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* Close button inside popup */
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 18px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #999;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+.close-btn:hover {
+  color: #003366;
+}
+
+/* Download button */
+.download-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 25px;
+  background: #003366;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+.download-btn:hover {
+  background: #0055aa;
+}
+.enquiry-button {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      z-index: 999;
+      background: #007bff;
+      color: #fff;
+      padding: 12px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-family: Arial, sans-serif;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .enquiry-form-container {
+      display: none;
+      position: fixed;
+      right: 20px;
+      bottom: 80px;
+      width: 300px;
+      background: #fff;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+      font-family: Arial, sans-serif;
+      z-index: 1000;
+    }
+
+    .enquiry-form-container h3 {
+      margin-top: 0;
+      color: #333;
+    }
+
+    .enquiry-form-container input,
+    .enquiry-form-container textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 8px;
+      margin-bottom: 12px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    .enquiry-form-container button[type="submit"] {
+      background-color: #28a745;
+      color: white;
+      border: none;
+      padding: 10px 16px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .close-btn {
+      float: right;
+      background: transparent;
+      border: none;
+      font-size: 18px;
+      cursor: pointer;
+      color: #666;
+    }
+
+    .confirmation {
+      color: green;
+      font-size: 14px;
+      margin-top: 10px;
+    }
+
+                    /* General Footer Styles */
+                    .footer {
+            background: linear-gradient(to right, #be5f06, #be5f06);
+            color: #e9ecef;
+            padding: 50px 0;
+            font-family: 'Roboto', sans-serif;
+            text-align: left;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Background Pattern */
+        .footer:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://www.transparenttextures.com/patterns/white-wall.png') repeat;
+            opacity: 0.05;
+            z-index: 0;
+        }
+
+        /* Container Styles */
+        .footer .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Footer Sections */
+        .footer-sections {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        /* Footer Section Styles */
+        .footer-section {
+            flex: 1;
+            min-width: 240px;
+            padding: 20px;
+        }
+
+        .footer-section h4 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: #ffc107;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 2px solid #ffc107;
+            padding-bottom: 5px;
+        }
+
+        .footer-section p {
+            font-size: 15px;
+            line-height: 1.7;
+            color: #d1d1d1;
+        }
+
+        /* Media Shortcuts */
+        .media-shortcuts ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .media-shortcuts ul li {
+            margin: 15px 0;
+        }
+
+        .media-shortcuts ul li a {
+            color: #e9ecef;
+            text-decoration: none;
+            font-size: 16px;
+            display: inline-block;
+            position: relative;
+            transition: color 0.3s ease, transform 0.3s ease;
+            padding: 5px 0;
+        }
+
+        .media-shortcuts ul li a:hover {
+            color: #ffc107;
+            transform: translateY(-3px);
+        }
+
+        /* Stay Connected Section */
+        .social-media ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .social-media ul li {
+            margin: 15px 0;
+        }
+
+        .social-media ul li a {
+            color: #e9ecef;
+            font-size: 18px;
+            /* Increased font size */
+            display: flex;
+            align-items: center;
+            transition: transform 0.3s ease, color 0.3s ease;
+            position: relative;
+        }
+
+        .social-media ul li a i {
+            margin-left: 8px;
+            /* Space between text and icon */
+            transition: transform 0.3s ease;
+        }
+
+        .social-media ul li a:hover {
+            transform: scale(1.1);
+            color: #ffc107;
+            /* Highlight color */
+        }
+
+        .social-media ul li a:hover i {
+            transform: rotate(360deg);
+            /* Icon rotation effect on hover */
+        }
+
+        /* TripAdvisor Section */
+        .tripadvisor-box {
+            display: flex;
+            align-items: center;
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 15px;
+            transition: background-color 0.3s ease;
+        }
+
+        .tripadvisor-box img {
+            width: 35px;
+            height: 35px;
+            margin-right: 15px;
+        }
+
+        .tripadvisor-box:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        /* Footer Bottom */
+        .footer-bottom {
+            text-align: center;
+            padding: 15px 0;
+            background: #000000;
+            border-top: 1px solid #333;
+            color: #999;
+            font-size: 13px;
+        }
+
+        /* Transparent Footer Links */
+        .footer .small-links {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 15px;
+        }
+
+        .footer .footer-link {
+            color: rgba(255, 255, 255, 0.7);
+            /* Transparent white */
+            text-decoration: none;
+            padding: 8px 12px;
+            border-radius: 4px;
+            transition: color 0.3s ease, background-color 0.3s ease;
+        }
+
+        .footer .footer-link:hover {
+            color: #ffc107;
+            /* Highlight on hover */
+            background-color: rgba(255, 255, 255, 0.2);
+            /* Slight background on hover */
+        }
+
+        /* Shortcuts with Size Transformations */
+        .footer .footer-link {
+            font-size: 18px;
+            /* Increased size */
+            font-weight: bold;
+            /* Make links bold */
+            transition: transform 0.3s ease;
+            /* Add transition for scaling */
+        }
+
+        .footer .footer-link:hover {
+            transform: scale(1.1);
+            /* Scale on hover */
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .footer-sections {
+                flex-direction: column;
+                /* Stack sections on smaller screens */
+            }
+
+            .footer-section {
+                margin-bottom: 30px;
+            }
+        }
+
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .footer-sections {
+                flex-direction: column;
+            }
+        }
+        
+  </style>
+</head>
+<body>
+  
+<!-- Support Bar -->
+<div class="support-bar">
+  <a href="tel:+9779849834756">📞 Call Us: +977 9849834756</a> |
+  <a href="https://wa.me/9849834756" target="_blank">💬 WhatsApp Support</a> |
+  <a href="mailto:kailashyatra365@gmail.com">✉ Email Support</a>
+</div>
+
+<!-- Mantra Bar -->
+<div class="mantra-bar">
+  <p>"Om Tryambakam Yajamahe Sugandhim Pushtivardhanam, Urvarukamiva Bandhanan Mrityor Mukshiya Maamritat"</p>
+  <p><strong>ॐ त्र्यंबकं यजामहे सुगंधिं पुष्टिवर्धनम्, उर्वारुकमिव बन्धनान्मृत्योर्मोक्षीय मांमृतात्।</strong></p>
+</div>
+
+<!-- Gods Images Section -->
+<div class="gods-section">
+  <img src="images/Shiv-Image.png" alt="Lord Shiva">
+  <img src="images/Narayan-Image.jpg" alt="Lord Narayan">
+  <img src="images/Ganesh-Image.jpg" alt="Lord Ganesh">
+  <img src="images/Mahakali-Image.jpeg" alt="Goddess Mahakali">
+  <img src="images/Durga-Image.png" alt="Goddess Durga">
+  <img src="images/Rishabh-Image.jpg" alt="Rishabh">
+  <img src="images/Buddha-Image.png" alt="Buddha">
+  <img src="images/Murugan-Image.png" alt="Lord Murugan">
+</div>
+
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="logo">
+    <img src="images/Kailash-Yatra-Images.png" alt="Kailash Yatra">
+  </div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="destination.html">Destinations</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="terms-conditions">Terms & Conditions</a></li>
+  </ul>
+  <div class="search-bar">
+    <input type="text" placeholder="Search..." id="searchInput">
+  </div>
+</nav> 
+
+  <div class="container">
+    <header>
+      <!-- Left Column: Image Slider -->
+      <div class="carousel">
+        <div class="carousel-images">
+          <img src="images/Kailash-Mansarovar-LAke.jpeg" alt="Kailash View 1"/>
+          <img src="images/kailash-mansarovar-yatra.jpg" alt="Kailash View 2"/>
+          <img src="images/kailash-lasha-3.jpeg" alt="Mansarovar Lake"/>
+          <img src="images/kailash-lasha4.jpeg" alt="Pilgrimage Group"/>
+        </div>
+      </div>
+
+<!-- Right Column: Content -->
+<div class="intro">
+    <h1>कैलाश मानसरोवर, सगरमाथा बेस क्याम्प ल्हासा सहित यात्रा</h1>
+    <p>कैलाश मानसरोवर, सगरमाथा बेस क्याम्प ल्हासा सहित यात्रा एक अद्वितीय और धार्मिक रूप से महत्वपूर्ण यात्रा है। यह यात्रा न केवल कैलाश मानसरोवर तक, बल्कि सगरमाथा बेस क्याम्प और ल्हासा (तिब्बत) के ऐतिहासिक स्थल तक फैली हुई है। इन स्थलों की यात्रा करते हुए, आपको हिमालय की विशालता, तिब्बती संस्कृति और आध्यात्मिकता का अद्वितीय अनुभव मिलेगा।</p>  
+    <a href="book.html">
+      <button type="button">बुक गर्नुहोस्</button>
+    </a>        
+  </div>
+  </div> 
+  
+  <section class="expertise">
+    <h2>हामीलाई किन छान्ने?</h2>
+    <div class="features">
+      <div class="feature-box">
+        <h3>अनुभवी आध्यात्मिक मार्गदर्शक</h3>
+        <p>हाम्रा अनुभवी गाइडहरूले सम्पूर्ण यात्रामा तपाईको सुरक्षा, सन्तोष, र आध्यात्मिक अनुभव सुनिश्चित गर्छन्।</p>
+      </div>
+      <div class="feature-box">
+        <h3>सर्वसमावेशी प्याकेजहरू</h3>
+        <p>यात्रा प्रारम्भदेखि अन्त्यसम्म यातायात, आवास, खाना, अनुमति पत्र, आपतकालीन सेवा सबै समावेश गरिएको छ।</p>
+      </div>
+      <div class="feature-box">
+        <h3>आध्यात्मिक महत्व</h3>
+        <p>पृथ्वीका सबैभन्दा पवित्र स्थानहरू मध्ये एक भ्रमण गर्नुहोस्, जसले मोक्ष र आत्मज्ञान दिन्छ भन्ने विश्वास गरिन्छ।</p>
+      </div>
+    </div>
+  </section>
+  
+  <section class="content-section">
+    <div class="tabs">
+      <div class="tab-buttons">
+        <button class="tab-btn active" data-tab="itinerary">यात्रा कार्यक्रम</button>
+        <button class="tab-btn" data-tab="inclusions">सामेल सेवाहरू</button>
+        <button class="tab-btn" data-tab="exclusions">समावेश नभएको</button>
+        <button class="tab-btn" data-tab="faq">सोधिने प्रश्न</button>
+        <button class="tab-btn" data-tab="reviews">प्रशंसा</button>
+        <button class="tab-btn" data-tab="remarks">टिप्पणीहरू</button>
+        <button class="tab-btn" data-tab="cancellation">रद्द नीति</button>
+        <button class="tab-btn" data-tab="gear">सिफारिस गरिएका सामानहरू</button>
+      </div>
+  
+      <div id="itinerary" class="tab-content">
+        <h4>यात्रा कार्यक्रम</h4>
+        <ul>
+          <li><strong>पहिलो दिन:</strong> काठमाडौंबाट टिमुरे प्रस्थान, टिमुरेमा होटलमा बसाइ।</li>
+          <li><strong>दोस्रो दिन:</strong> नेपाल–चीन सीमा पार गरी तिब्बतको केरुङ बजार पुग्ने, केरुङमा होटलमा बसाइ।</li>
+          <li><strong>तेस्रो दिन:</strong> केरुङबाट दिउँसो सागातर्फ प्रस्थान, सागामा होटलमा बसाइ।</li>
+          <li><strong>चौथो दिन:</strong> आज सागामा विश्राम, सागामा होटलमा बसाइ।</li>
+          <li><strong>पाँचौँ दिन:</strong> सागाबाट मानसरोवर जाने, दूरी लामो हुनेछ, मानसरोवरमा गेस्टहाउसमा बसाइ।</li>
+          <li><strong>छैटौँ दिन:</strong> मानसरोवरमा पूजा–पाठ गरिसकेपछि साँझतिर दार्चेन जाने, दार्चेनमा होटलमा बसाइ।</li>
+          <li><strong>सातौँ दिन:</strong> परिक्रमा प्रारम्भ — दार्चेनबाट दिराफुक जाने, दिराफुक गेस्टहाउसमा बसाइ।</li>
+          <li><strong>आठौँ दिन:</strong> दोस्रो दिनको परिक्रमा — दिराफुकदेखि डोल्मा-ला पास हुँदै जुथुलफुक जाने, जुथुलफुक गेस्टहाउसमा बसाइ।</li>
+          <li><strong>नवौँ दिन:</strong> जुथुलफुकबाट दार्चेन हुँदै सागा फर्कने, सागामा होटलमा बसाइ।</li>
+          <li><strong>दशौँ दिन:</strong> सागाबाट शिगात्से (४५० किमी) प्रस्थान, शिगात्सेमा होटलमा बसाइ।</li>
+          <li><strong>एघारौँ दिन:</strong> शिगात्सेदेखि ग्यान्त्से हुँदै ल्हासा (३५० किमी) प्रस्थान, ल्हासामा होटलमा बसाइ।</li>
+          <li><strong>बाह्रौँ दिन:</strong> ल्हासा दर्शन (पोताला दरबार, जोखाङ गुम्बा, भर्खोर बजार), बेलुकी ल्हासा सहर घुमफिर, ल्हासामा होटलमा बसाइ।</li>
+          <li><strong>तेह्रौँ दिन:</strong> ल्हासामा दिनभर घुमफिर, होटलमा बसाइ।</li>
+          <li><strong>चौधौँ दिन:</strong> ल्हासाबाट तिङ्री (५३० किमी) प्रस्थान, तिब्बतको उत्तरतर्फ सगरमाथा आधार शिविर भ्रमण, तिङ्रीमा होटलमा बसाइ।</li>
+          <li><strong>पन्ध्रौँ दिन:</strong> तिङ्रीबाट केरुङ फर्कने, केरुङमा होटलमा बसाइ।</li>
+          <li><strong>सोह्रौँ दिन:</strong> नेपाल–चीन सीमा पार गरी काठमाडौं फर्कने, काठमाडौंमा पुगेर यात्रा समापन।</li>
+        </ul>        
+      </div>
+  
+      <div id="inclusions" class="tab-content">
+        <ul class="inclusions-list">
+                <li>कैलाश मानसरोवर, सगरमाथा बेस क्याम्प, ल्हासा यात्रा को पूर्ण मार्गदर्शन र व्यवस्थापन।</li>
+                <li>सम्पूर्ण यात्रा क्रममा (३ स्टार - ल्हासा) होटेलहरूमा आवास।</li>
+                <li>यात्रा अवधि भरी ताजगी/शाकाहारी र आरामदायक भोजन व्यवस्थापन।</li>
+                <li>प्रोफेशनल गाइड र टूर लिडरहरूको साथ यात्रा सुरक्षा र मार्गदर्शन।</li>
+                <li>आवश्यक तिब्बत परमिट र कागजात व्यवस्थापन।</li>
+                <li>कैलाश मानसरोवर परिक्रमा</li>
+                <li>तिब्बत र नेपाल सरकारको आधिकारिक सुरक्षा कभर।</li>
+                <li>आपतकालीन चिकित्सा सहायता र प्राथमिक उपचार व्यवस्थापन।</li>
+                <li>कैलाश मानसरोवर, सगरमाथा बेस क्याम्प र ल्हासा सम्मको यात्रा गर्ने परिवहन। - <stong>पर्यटक मिनी बस</stong></li>
+                <li>तिब्बत र नेपालका प्रमुख धार्मिक र सांस्कृतिक स्थानहरूको भ्रमण।</li>
+              </ul>
+      </div>
+  
+      <div id="exclusions" class="tab-content">
+        <ul>
+            <li>यात्रा बीमा र व्यक्तिगत स्वास्थ्य बीमा।</li>
+            <li>व्यक्तिगत खर्च जस्तै शॉपिङ, अतिरिक्त भोजन र पेय पदार्थ।</li>
+            <li>हवाई टिकट, घरेलु र अन्तर्राष्ट्रिय यात्रा लागत।</li>
+            <li>स्वास्थ्य सम्बन्धी अन्य खर्च जस्तै दवाइ, उपचार।</li>
+            <li>व्यक्तिगत सामान जस्तै मोजा, जुत्ता, कपडा आदि।</li>
+            <li>कैलाश मानसरोवर परिक्रमा लागत।</li>
+            <li>अनियोजित होटल बसोबास।</li>
+            <li>अनियोजित अन्य गतिविधिहरूको लागत।</li>
+            <li>कर्मचारीहरूलाई दिइने टिप्स।</li>
+            <li>कसैको कुनै व्यक्तिगत उपचार वा अन्य प्रकारको विशेष सेवाहरू।</li>
+            <li>अवांछित वातावरणीय घटनाहरू (जस्तै खतरनाक मौसम) कारण असुविधा र अतिरिक्त खर्च।</li>
+          </ul>
+      </div>
+  
+      <div id="reviews" class="tab-content">
+        <div class="review-videos">
+          <video src="images/client-reviews.mp4" controls></video>
+        </div>
+      </div>
+  
+      <div id="remarks" class="tab-content">
+        <ul>
+          <li><strong>उच्च उचाइ सावधानी:</strong> प्रचुर मात्रामा पानी पिउनुहोस् र शरीरलाई विश्राम दिनुहोस्।</li>
+          <li><strong>बुकिङ प्रक्रिया:</strong> ३०% अग्रिम भुक्तानी पछि पुष्टि।</li>
+          <li><strong>७० वर्षभन्दा माथिका यात्रुहरू:</strong> स्वास्थ्य प्रमाणपत्र अनिवार्य।</li>
+          <li><strong>खाना:</strong> काठमाडौंमा सतविक भोजन, कैलाश मार्गमा समूह कुकिङ।</li>
+          <li><strong>आस्थापद यात्रा (वैकल्पिक):</strong> USD $60 थप शुल्क लाग्छ।</li>
+        </ul>
+      </div>
+  
+      <div id="cancellation" class="tab-content">
+        <ul>
+          <li>📌 ३० दिनअगाडि रद्द गर्दा: २५% शुल्क लाग्छ।</li>
+          <li>📌 १५–२९ दिनअगाडि: ५०% शुल्क लाग्छ।</li>
+          <li>📌 १५ दिनभित्र: १००% शुल्क लाग्छ।</li>
+          <li>📌 नो-शो वा प्रयोग नभएको सेवामा कुनै फिर्ता हुँदैन।</li>
+        </ul>
+      </div>
+  
+      <div id="gear" class="tab-content">
+        <ul>
+          <li><strong>सबल ट्रेकिङ जुत्ता</strong> - चिसो, ढुंगामाटो बाटोको लागि उपयुक्त।</li>
+          <li><strong>तातो लुगा</strong> - थरिथरि तहको कपडा, रेनकोट।</li>
+          <li><strong>सुत्ने झोला</strong> - चिसो रातको लागि उपयुक्त।</li>
+          <li><strong>पानी प्रतिरोधी झोला</strong></li>
+          <li><strong>औषधि</strong> - व्यक्तिगत औषधि र प्राथमिक उपचार किट।</li>
+          <li><strong>सनस्क्रिन, चस्मा, टोपी</strong></li>
+          <li><strong>हातमोजा, मोजा, टोपी</strong></li>
+          <li><strong>पोर्टेबल पानीको बोतल</strong></li>
+          <li><strong>हेडलाइट वा टर्च</strong></li>
+          <li><strong>स्न्याक्स</strong> - एनर्जी बार, ड्राई फ्रुट्स आदि।</li>
+          <li><strong>क्यामेरा वा मोबाइल</strong></li>
+          <li><strong>पासपोर्ट</strong> - मूल प्रति अनिवार्य।</li>
+        </ul>
+      </div>
+    </div>
+    <div class="trip-facts">
+        <h2>यात्रा विवरणहरू</h2>
+            <ul>
+                <li><strong>यात्राको उपयुक्त समय:</strong> अप्रिलदेखि अक्टोबरसम्म उत्तम मानिन्छ।</li>
+                <li><strong>यात्राको अवधि:</strong> १६ दिन।</li>
+                <li><strong>यात्राको मार्गहरू:</strong>
+                    <ul>
+                        <li>१. काठमाण्डौबाट गिरीरोङ हुँदै ल्हासा।</li>
+                    </ul>
+                </li>
+                <li><strong>मौसम:</strong> उच्च उचाइ भएको क्षेत्र भएकाले चिसो र सुक्खा मौसम।</li>
+                <li><strong>धार्मिक महत्त्व:</strong> हिन्दु, बौद्ध, जैन र बोन धर्मका भक्तजनहरूको लागि पवित्र स्थल।</li>
+                <li><strong>संस्कृति र परम्परा:</strong> स्थानीय तिब्बती संस्कृति र परम्पराको सम्मान गर्नु आवश्यक छ।</li>
+                <li><strong>स्वास्थ्य:</strong> उच्च उचाइको कारण शारीरिक परीक्षण र अनुकूलन आवश्यक छ।</li>
+                <li><strong>सुरक्षा:</strong> गाइडको निर्देशन पालना गर्नुहोस् र आपतकालीन सेवाहरूको जानकारी राख्नुहोस्।</li>
+                <li><strong>मुद्रा:</strong> चिनियाँ युआन (रेन्मिन्बी) र नेपाली रुपैयाँ प्रयोग हुन्छ।</li>
+            </ul>
+        </div>
+        
+      </div>
+  </section>
+  
+
+  <a href="https://wa.me/9849834756" target="_blank" class="whatsapp-vertical">
+    <span>व्हाट्सएप सहयोग</span>
+  </a>
+  
+  <button class="ask-expertise-btn" onclick="toggleExpertisePopup()">?</button>
+  <div class="ask-expertise-popup" id="expertisePopup">
+    <h4>यात्रा विशेषज्ञसँग सोध्नुहोस्</h4>
+  </div>
+  
+  <!-- Hanging Itinerary Box (Left Side) -->
+  <div class="left-download-box" onclick="openItineraryPopup()">
+    📄<br>यात्रा तालिका PDF डाउनलोड
+  </div>
+  
+  <!-- Popup Modal -->
+  <div id="itineraryPopup" class="popup-overlay">
+    <div class="popup-content">
+      <span class="close-btn" onclick="closeItineraryPopup()">×</span>
+      <h3>विस्तृत यात्रा तालिका डाउनलोड गर्नुहोस्</h3>
+      <p>पूर्ण कैलाश मानसरोवर यात्रा तालिका PDF रूपमा प्राप्त गर्न तल क्लिक गर्नुहोस्।</p>
+      <a href="images/Buddha-Image.png" download class="download-btn">⬇️ PDF डाउनलोड गर्नुहोस्</a>
+    </div>
+  </div>
+  
+  <section class="quick-facts-section">
+    <div class="container">
+      <h2 class="section-title">कैलाश यात्रा संक्षिप्त तथ्यहरू</h2>
+      <div class="facts-grid">
+        <div class="fact-item">
+          <h3>माउन्ट कैलाश र मानसरोवर ताल</h3>
+          <p>माउन्ट कैलाशलाई भगवान शिवको निवास मानिन्छ र मानसरोवर ताल एक आध्यात्मिक शक्ति भएको पवित्र ताल हो। हिन्दु, बौद्ध, जैन र बोन धर्मका लागि पवित्र मानिएको यस स्थानमा विश्वभरका भक्तजनहरू आउने गर्छन्।</p>
+        </div>
+        <div class="fact-item">
+          <h3>TAR क्षेत्रमा मौसम</h3>
+          <p>तिब्बत स्वायत्त क्षेत्र (TAR) उच्च उचाइमा अवस्थित छ, जहाँ वर्षभर चिसो मौसम रहन्छ। यात्रा गर्न सबैभन्दा उपयुक्त महिना मेदेखि सेप्टेम्बरसम्म हो। अचानक मौसम परिवर्तन सम्भव भएकाले लेयर गरिएको कपडा लगाउनु सल्लाह दिइन्छ।</p>
+        </div>
+        <div class="fact-item">
+          <h3>स्थान, मानिस र भाषा</h3>
+          <p>तिब्बत स्वायत्त क्षेत्र (चीन) मा अवस्थित, यहाँका अधिकांश बासिन्दा तिब्बती र म्यान्डारिन भाषा बोल्छन्। अंग्रेजी कम प्रयोग हुन्छ। यात्रुले स्थानीय संस्कारको सम्मान गर्नु पर्छ र चिनियाँ सरकारले तोकेको नियम पालना गर्नु पर्छ।</p>
+        </div>
+        <div class="fact-item">
+          <h3>कैलाश जानका मार्गहरू</h3>
+          <p>१. काठमाडौं - ग्यरॉन्ग मार्ग <br>२. नेपालगञ्ज - हिल्सा - कैलाश <br>३. काठमाडौं - ल्हासा - कैलाश</p>
+        </div>
+        <div class="fact-item">
+          <h3>मुद्रा</h3>
+          <p>रेन्मिन्बी (युआन) आधिकारिक मुद्रा हो। साना दरमा नगद लिएर जानु उपयुक्त हुन्छ। डेबिट/क्रेडिट कार्ड टाढाका क्षेत्रहरूमा चल्दैनन्। मुद्रा विनिमय काठमाडौं वा ल्हासामा गर्नु उपयुक्त हुन्छ।</p>
+        </div>
+        <div class="fact-item">
+          <h3>कैलाश यात्राको लागि गर्नुपर्ने र नगर्नुपर्ने कुरा</h3>
+          <p>सही कपडा, पानी पिउने, गाइडको निर्देशन पालन गर्ने, र तिब्बती संस्कृति सम्मान गर्ने। प्लास्टिकको प्रयोग नगर्नुहोस्, पवित्र प्रतीकहरू अनुमति बिना नछुनुहोस्, र उच्च उचाइको कारण डाक्टरको सल्लाह लिनुहोस्।</p>
+        </div>
+      </div>
+  
+      <div class="why-us">
+        <h2 class="section-title">किन KailashYatra?</h2>
+        <p class="intro-text"><strong>हामी कैलाश मानसरोवर यात्रा व्यवस्थापनमा उत्कृष्ट किन हौं भनेर जान्नुहोस्</strong></p>
+        <p>कैलाश मानसरोवर यात्रा कठिन यात्रा हो र अनुभव आवश्यक हुन्छ। <strong>KailashYatra</strong> तपाईलाई आध्यात्मिक, सुरक्षित र आरामदायक यात्रा सुनिश्चित गर्दछ।</p>
+        
+        <div class="why-grid">
+          <div class="why-box">
+            <h4>अनुभवी वैदिक आध्यात्मिक टोली</h4>
+            <p>हाम्रो टोलीले व्यक्तिगत तथा समूह दुबै यात्रा ध्यानपूर्वक सञ्चालन गर्दछ।</p>
+          </div>
+          <div class="why-box">
+            <h4>यात्रा सुरक्षालाई उच्च प्राथमिकता</h4>
+            <p>२४/७ ग्राउन्ड सपोर्ट सहित सम्पूर्ण यात्रु निगरानीमा राखिन्छन्। आकस्मिक उद्धार र उपचारको तयारी सधैं गरिन्छ।</p>
+          </div>
+          <div class="why-box">
+            <h4>पुरस्कृत सेवा र यात्रा पछि सहयोग</h4>
+            <p>हामी तीर्थयात्रा सेवा क्षेत्रमा सम्मानित छौं। हाम्रो साथ यात्रा पछि पनि जारी रहन्छ।</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <div class="safety-wrapper">
+    <!-- Left Side: Full Safety Info -->
+    <div class="safety-left">
+      <h2>🛡️ कैलाश मानसरोवर यात्राको सुरक्षाको लागि</h2>
+      <p>
+        <strong>KailashYatra Pvt. Ltd.</strong> मा तपाईंको सुरक्षा हाम्रो उच्च प्राथमिकता हो। 🚑<br><br>
+        💨 उच्च उचाइमा अनुकुलन आवश्यक हुन्छ।<br>
+        🧘‍♂️ यात्रा अघि हल्का योग र सासप्रश्वास अभ्यास गर्नुहोस्।<br>
+        🏥 सम्पूर्ण मेडिकल जाँच आवश्यक हुन्छ।<br>
+        🧤 न्यानो कपडा: ऊन, ज्याकेट, पञ्जा, थर्मल र छड अनिवार्य छन्।<br>
+        🚱 पानी प्रशस्त पिउनुहोस्, मदिरा वा धूम्रपान नगर्नुहोस्।<br>
+        📞 २४x७ आपतकालीन सेवा र प्राथमिक उपचार उपलब्ध हुनेछ।<br>
+        🙏 स्थानीय परम्पराको सम्मान गर्नुहोस् र गाइडको निर्देशन पालन गर्नुहोस्।
+      </p>
+    </div>
+  
+    <!-- Right Side: Sticky Toggle Column -->
+    <div class="safety-right">
+      <div class="toggle-stack">
+        <!-- Toggle 1 -->
+        <div class="toggle-card" onclick="toggleSafetyBox('box1', 'arrow1')">
+          <div class="toggle-header">
+            <span>ℹ️ छोटो सुरक्षा सुझाव</span>
+            <span id="arrow1">▼</span>
+          </div>
+          <div class="toggle-body" id="box1">
+            <p>उच्च उचाइको लागि तयार हुनुहोस् 💨। प्रशस्त पानी पिउनुहोस् 🚰, गाइडको पालना गर्नुहोस् 👣, राम्रोसँग विश्राम लिनुहोस् 💤।</p>
+          </div>
+        </div>
+  
+        <!-- Toggle 2 -->
+        <div class="toggle-card" onclick="toggleSafetyBox('box2', 'arrow2')">
+          <div class="toggle-header">
+            <span>🧘 अनुकुलन सुझाव</span>
+            <span id="arrow2">▼</span>
+          </div>
+          <div class="toggle-body" id="box2">
+            <p>पहिलो दिन ढिलो हिँड्नुहोस् 🐢। गहिरो सास लिनुहोस्, तातो कपडा लगाउनुहोस्, र मेहनतजन्य काम नगर्नुहोस्।</p>
+          </div>
+        </div>
+  
+        <!-- Toggle 3 -->
+        <div class="toggle-card" onclick="toggleSafetyBox('box3', 'arrow3')">
+          <div class="toggle-header">
+            <span>🩺 स्वास्थ्य जानकारी</span>
+            <span id="arrow3">▼</span>
+          </div>
+          <div class="toggle-body" id="box3">
+            <p>यदि तपाईलाई कुनै पुरानो रोग छ भने जानकारी दिनुहोस्। अक्सिजन र आपतकालीन उद्धार उपलब्ध छ।</p>
+          </div>
+        </div>
+  
+        <!-- Toggle 4 -->
+        <div class="toggle-card" onclick="toggleSafetyBox('box4', 'arrow4')">
+          <div class="toggle-header">
+            <span>🎒 प्याकिङ सूची</span>
+            <span id="arrow4">▼</span>
+          </div>
+          <div class="toggle-body" id="box4">
+            <p>न्यानो लुगा, पावर बैंक, हिँड्ने छड, परिचयपत्र अनिवार्य छन्। प्लास्टिकका बोतलहरू प्रतिबन्धित छन्।</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+<!-- Floating Button -->
+<div class="enquiry-button" onclick="toggleEnquiryForm()">Quick Enquiry</div>
+
+<!-- Enquiry Form -->
+<div class="enquiry-form-container" id="enquiryForm">
+  <button class="close-btn" onclick="toggleEnquiryForm()">×</button>
+  <h3>Quick Enquiry</h3>
+  <form name="quick-enquiry" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="#" onsubmit="handleSubmit(event)">
+    <input type="hidden" name="form-name" value="quick-enquiry" />
+    <p hidden>
+      <label>Don’t fill this out: <input name="bot-field" /></label>
+    </p>
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <textarea name="message" placeholder="Your Message" rows="3" required></textarea>
+    <button type="submit">Send</button>
+    <div class="confirmation" id="confirmationMsg" style="display: none;">✔️ Enquiry submitted! Please check your email.</div>
+  </form>
+</div>
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  footer {
+    width: 100%;
+    background: linear-gradient(to right, #bd5602);
+    color: #fff;
+    padding: 50px 0 30px;
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  .row {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .col {
+    flex-basis: 25%;
+    padding: 20px;
+  }
+
+  .col:nth-child(2),
+  .col:nth-child(3) {
+    flex-basis: 25%;
+  }
+
+  .footer_logo {
+    width: 130px;
+    position: relative;
+    top: -23px;
+    left: -20px;
+  }
+
+  .footer_about {
+    position: relative;
+    top: -23px;
+  }
+
+  .col h3 {
+    width: fit-content;
+    margin-bottom: 60px;
+    position: relative;
+  }
+
+  .footer_email {
+    width: fit-content;
+    border-bottom: 1px solid #f66335;
+    margin: 20px 0;
+  }
+
+  .col ul li {
+    list-style: none;
+    margin-bottom: 12px;
+  }
+
+  .col ul li a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .col form {
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #f66335;
+    margin-bottom: 50px;
+  }
+
+  .col form .icon {
+    font-size: 18px;
+    margin-right: 10px;
+  }
+
+  .col form input {
+    width: 100%;
+    background: transparent;
+    color: #ccc;
+    border: 0;
+    outline: none;
+  }
+
+  .col form button {
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+  }
+
+  .col form button .icon_right {
+    font-size: 16px;
+    color: #ccc;
+  }
+
+  .col .social_icons {
+    display: flex;
+  }
+
+  .col .social_icons .social_icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: #fff;
+    background: #f66335;
+    margin-right: 15px;
+    padding: 5px;
+    cursor: pointer;
+  }
+
+  hr {
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 20px auto;
+  }
+
+  footer .copyright {
+    text-align: center;
+  }
+
+  .bottom_line {
+    width: 100%;
+    height: 5px;
+    background: #767676;
+    border-radius: 3px;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    overflow: hidden;
+  }
+
+  .bottom_line span {
+    width: 15px;
+    height: 100%;
+    background: #f66335;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    animation: moveline 2s linear infinite;
+  }
+
+  @keyframes moveline {
+    0% {
+      left: -20px;
+    }
+    100% {
+      left: 100%;
+    }
+  }
+</style>
+</head>
+<body>
+
+<footer>
+  <div class="row">
+    <div class="col">
+      <img src="images/vvfdd-removebg-preview.png" class="footer_logo" alt="MuktiYatra Logo">
+      <p class="footer_about">
+        With over 20 years of dedicated service, MuktiYatra is the world’s most trusted Kailash Mansarovar Yatra tour operator, offering a transformative spiritual journey that connects pilgrims with the divine and leads them towards liberation and inner peace.
+      </p>
+    </div>
+    <div class="col">
+      <h3>Office
+        <div class="bottom_line"><span></span></div>
+      </h3>
+      <p>Guhyeshwari Shaktipeeth Temple</p>
+      <p class="footer_email">kailashyatra365@gmail.com</p>
+      <h4>+977-9823669370 (Whatsapp/Viber)<br>+977-9761726460</h4>
+    </div>
+    <div class="col">
+      <h3>Links
+        <div class="bottom_line"><span></span></div>
+      </h3>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="destination.html">DESTINATIONS</a></li>
+        <li><a href="contact.html">CONTACT US</a></li>
+      </ul>
+    </div>
+    <div class="col">
+      <h3>Newsletter
+        <div class="bottom_line"><span></span></div>
+      </h3>
+      <form>
+        <ion-icon class="icon" name="mail"></ion-icon>
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit">
+          <ion-icon class="icon_right" name="arrow-round-forward"></ion-icon>
+        </button>
+      </form>
+      <div class="social_icons">
+        <a href="https://facebook.com/" target="_blank">
+          <ion-icon class="social_icon" name="logo-facebook"></ion-icon>
+        </a>
+        <a href="https://wa.me/9823669370" target="_blank">
+          <ion-icon class="social_icon" name="logo-whatsapp"></ion-icon>
+        </a>
+        <a href="#" target="_blank">
+          <ion-icon class="social_icon" name="logo-twitter"></ion-icon>
+        </a>
+        <a href="https://www.instagram.com/kailashyatra.official/" target="_blank">
+          <ion-icon class="social_icon" name="logo-instagram"></ion-icon>
+        </a>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <p class="copyright">MuktiYatra Pvt. Ltd Ⓒ 2005 - 2025, All Rights Reserved</p>
+</footer>
+  <script>
+      window.onscroll = function() {stickyNavbar()};
+  var navbar = document.querySelector(".navbar");
+  var sticky = navbar.offsetTop;
+
+  function stickyNavbar() {
+    if (window.pageYOffset > sticky) {
+      navbar.classList.add("sticky");
+    } else {
+      navbar.classList.remove("sticky");
+    }
+  }
+  function toggleEnquiryForm() {
+    const form = document.getElementById('enquiryForm');
+    form.style.display = form.style.display === 'block' ? 'none' : 'block';
+  }
+
+  function handleSubmit(event) {
+    event.preventDefault();
+    const form = event.target;
+    const formData = new FormData(form);
+
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData).toString(),
+    })
+    .then(() => {
+      document.getElementById('confirmationMsg').style.display = 'block';
+      fetch("/.netlify/functions/send-confirmation-email", {
+        method: "POST",
+        body: JSON.stringify({
+          email: formData.get("email"),
+          name: formData.get("name")
+        }),
+        headers: {
+          "Content-Type": "application/json"
+        }
+      });
+      form.reset();
+    })
+    .catch((error) => alert("Failed to submit enquiry. Please try again."));
+  }
+  </script>
+  
+  <script>
+    document.querySelectorAll(".tab-btn").forEach(btn => {
+      btn.addEventListener("click", () => {
+        document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
+        document.querySelectorAll(".tab-content").forEach(c => c.classList.remove("active"));
+        btn.classList.add("active");
+        document.getElementById(btn.dataset.tab).classList.add("active");
+      });
+    });
+
+    function toggleExpertisePopup() {
+      const popup = document.getElementById("expertisePopup");
+      popup.style.display = popup.style.display === "block" ? "none" : "block";
+    }
+
+    function toggleSafetyBox(bodyId, arrowId) {
+      const box = document.getElementById(bodyId);
+      const arrow = document.getElementById(arrowId);
+      box.classList.toggle('show');
+      arrow.textContent = box.classList.contains('show') ? '▲' : '▼';
+    }
+
+  function openItineraryPopup() {
+    document.getElementById('itineraryPopup').style.display = 'flex';
+  }
+
+  function closeItineraryPopup() {
+    document.getElementById('itineraryPopup').style.display = 'none';
+  }
+</script>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/67f3e3f065eaaf1908c52eae/1io8b4p6f';
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
+  })();
+  </script>
+  <!--End of Tawk.to Script-->
+</body>
+</html>

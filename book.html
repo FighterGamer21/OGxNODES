@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book Your Kailash Mansarovar Yatra</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f7f7f7;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 600px;
+      background: #fff;
+      margin: 50px auto;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #222;
+      margin-bottom: 20px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      font-weight: 600;
+      margin: 10px 0 5px;
+    }
+
+    input, select, textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+      width: 100%;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    button {
+      background: #007b5e;
+      color: white;
+      padding: 12px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 10px;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #005a42;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        margin: 20px;
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Book Your Kailash Yatra</h2>
+    <form name="booking" method="POST" data-netlify="true" action="/thank-you.html">
+      <input type="hidden" name="form-name" value="booking" />
+  
+      <div class="form-group">
+        <label for="fullName">Full Name *</label>
+        <input type="text" id="fullName" name="Full Name" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="email">Email Address *</label>
+        <input type="email" id="email" name="Email" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="phone">Phone Number *</label>
+        <input type="tel" id="phone" name="Phone" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="nationality">Nationality *</label>
+        <input type="text" id="nationality" name="Nationality" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="noOfPersons">Number of Persons *</label>
+        <input type="number" id="noOfPersons" name="No of Persons" min="1" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="preferredDate">Preferred Travel Date *</label>
+        <input type="date" id="preferredDate" name="Preferred Travel Date" required>
+      </div>
+  
+      <div class="form-group">
+        <label for="package">Select Package *</label>
+        <select id="package" name="Selected Package" required>
+          <option value="">-- Select a Package --</option>
+          <option value="amarnath-tour">Amarnath Tour</option>
+          <option value="badimalika-bhagwati">Badimalika Bhagwati</option>
+          <option value="buddhist-pilgrimages-tour">Buddhist Pilgrimages Tour</option>
+          <option value="chaardham">Char Dham</option>
+          <option value="divine-kailash-mansarovar">Divine Kailash Mansarovar</option>
+          <option value="festive-bathing">Festive Bathing</option>
+          <option value="four-aerial-kailash">Four Aerial Kailash</option>
+          <option value="full-moon-celebration">Full Moon Celebration</option>
+          <option value="gosainkunda-spiritual-treak">Gosainkunda Spiritual Treak</option>
+          <option value="holy-kailash">Holy Kailash</option>
+          <option value="holy-kailash-high">Holy Kailash High</option>
+          <option value="holy-kailash-lasha">Holy Kailash Lasha</option>
+          <option value="holy-kailash-lasha-luxury">Holy Kailash Lasha Luxury</option>
+          <option value="holy-kailash-luxury">Holy Kailash Luxury</option>
+          <option value="holy-kailash-nepalganj-high">Holy Kailash Nepalganj High</option>
+          <option value="holy-kailash-nepalganj-luxury">Holy Kailash Nepalganj Luxury</option>
+          <option value="holy-kailash-nepalgunj">Holy Kailash Nepalgunj</option>
+          <option value="holy-mansarovar-lake">Holy Mansarovar Lake</option>
+          <option value="kailash-mansarovar-everest-basecamp">Kailash Mansarovar Everest Basecamp</option>
+          <option value="kailash-mansarovar-guangzhou">Kailash Mansarovar Guangzhou</option>
+          <option value="kailash-mansarovar-lake-yatra">Kailash Mansarovar Lake Yatra</option>
+          <option value="kailash-mansarovar-narayanbalhi">Kailash Mansarovar Narayanbalhi</option>
+          <option value="Kailash-Mansarovar-Pitra-Shraddha-Yatra">Kailash Mansarovar Pitra Shraddha Yatra</option>
+          <option value="kailash-mansarovar-yatra">Kailash Mansarovar Yatra</option>
+          <option value="kedarnath-badrinath">Kedarnath Badrinath</option>
+          <option value="lumbini-tour">Lumbini Tour</option>
+          <option value="mount-kailash-aerial">Mount Kailash Aerial</option>
+          <option value="nepali-sakti-peeths">Nepali Sakti Peeths</option>
+          <option value="night-chanting-ritual">Night Chanting Ritual</option>
+          <option value="pashupati-janakpur-tour">Pashupati Janakpur Tour</option>
+          <option value="pashupatinath-muktinath">Pashupatinath Muktinath</option>
+          <option value="pashupatinath-muktinath-damodarkunda">Pashupatinath Muktinath Damodarkunda</option>
+          <option value="pashupatinath-tour">Pashupatinath Tour</option>
+          <option value="pitra-narayanbalhi">Pitra Narayanbalhi</option>
+          <option value="saga-dawa">Saga Dawa</option>
+          <option value="shiv-sadhana">Shiv Sadhana</option>
+          <option value="shiv-sadhana-kailash">Shiv Sadhana Kailash</option>
+          <option value="shiv-tantra-sadana">Shiv Tantra Sadana</option>
+          <option value="shrwan-shiv-puran">Shrwan Shiv Puran</option>
+          <option value="shrwan-special-bhakti">Shrwan Special Bhakti</option>
+          <option value="spiritual-art">Spiritual Art</option>
+          <option value="supreme-divine-journey">Supreme Divine Journey</option>
+          <option value="supreme-holy-divine-dashain">Supreme Holy Divine Dashain</option>
+          <option value="supreme-holy-divine-dipawali">Supreme Holy Divine Dipawali</option>
+          <option value="supreme-holy-divine-holi-celebration">Supreme Holy Divine Holi Celebration</option>
+          <option value="supreme-holy-divine-mahashivratri">Supreme Holy Divine Mahashivratri</option>
+          <option value="supreme-holy-divine-nag-panchami">Supreme Holy Divine Nag Panchami</option>
+          <option value="supreme-divine-journey-high-end">Supreme Divine Journey High End</option>
+          <option value="tibetan-festival">Tibetan Festival</option>
+        </select>
+
+      <div class="form-group">
+        <label for="accommodation">Accommodation Preference</label>
+        <select id="accommodation" name="Accommodation">
+          <option value="Budget">Budget (3 Star Hotels)</option>
+          <option value="Standard">Standard (4 Star Hotels)</option>
+          <option value="Deluxe">Deluxe (5 Star Hotels)</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Additional Notes</label>
+        <textarea id="message" name="Message" rows="4" placeholder="Any specific request or information..."></textarea>
+      </div>
+
+      <button type="submit">Submit Booking</button>
+    </form>
+  </div>
+
+</body>
+</html>

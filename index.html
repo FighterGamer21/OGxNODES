@@ -1,256 +1,2954 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>OGxNODES - Minecraft Hosting</title>
-  <style>
-    /* General Styles */
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      background: linear-gradient(to right, #4facfe, #00f2fe);
-      color: #333;
-    }
-
-    .container {
-      width: 90%;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-
-    header {
-      background: #ff5733;
-      color: #fff;
-      padding: 1rem 0;
-    }
-
-    header .logo {
-      font-size: 2rem;
-      font-weight: bold;
-    }
-
-    header .nav-links {
-      list-style: none;
-      display: flex;
-      justify-content: flex-end;
-    }
-
-    header .nav-links li {
-      margin: 0 1rem;
-    }
-
-    header .nav-links a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    #hero {
-      text-align: center;
-      padding: 4rem 0;
-      color: #fff;
-      background: linear-gradient(to bottom, #1c92d2, #f2fcfe);
-    }
-
-    #hero .btn {
-      background: #28a745;
-      color: #fff;
-      padding: 0.75rem 1.5rem;
-      text-decoration: none;
-      border-radius: 5px;
-      font-weight: bold;
-    }
-
-    #features {
-      padding: 2rem 0;
-    }
-
-    .features-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 1.5rem;
-    }
-
-    #pricing {
-      background: #f7f7f7;
-      padding: 2rem 0;
-    }
-
-    .pricing-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1.5rem;
-    }
-
-    .plan {
-      background: #fff;
-      padding: 1rem;
-      border: 2px solid #ddd;
-      border-radius: 8px;
-      text-align: center;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    }
-
-    footer {
-      background: #333;
-      color: #fff;
-      text-align: center;
-      padding: 1rem 0;
-    }
-
-    footer a {
-      color: #00f2fe;
-      text-decoration: none;
-    }
-
-    @media (max-width: 768px) {
-      header .nav-links {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
-      header .nav-links li {
-        margin: 0.5rem 0;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kailash Yatra | Deep Spritual</title>
 </head>
 <body>
-  <header>
-    <div class="container">
-      <h1 class="logo">OGxNODES</h1>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="#features">Features</a></li>
-          <li><a href="#pricing">Pricing</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+    
+    .hero-video-section {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      font-family: 'Inter', sans-serif;
+    }
+    
+    .hero-video-section video {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -2;
+    }
+    
+    .hero-overlay {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 20%, rgba(0, 0, 0, 0.6) 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 0 20px;
+      z-index: 1;
+    }
+    
+    .hero-text {
+      color: #fff;
+      max-width: 800px;
+      padding: 20px 40px;
+      background: rgba(0, 0, 0, 0.4);
+      border-radius: 16px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+      animation: fadeInUp 1s ease both;
+    }
+    
+    .hero-text h1 {
+      font-size: 3.2rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+    
+    .hero-text p {
+      font-size: 1.2rem;
+      color: #e0e0e0;
+      margin-bottom: 30px;
+    }
+    
+    .cta-button {
+      display: inline-block;
+      padding: 12px 28px;
+      background-color: #ffd700;
+      color: #000;
+      font-weight: 600;
+      font-size: 1rem;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+    
+    .cta-button:hover {
+      background-color: #e6b800;
+    }
+    
+    @media (max-width: 768px) {
+      .hero-text h1 {
+        font-size: 2rem;
+      }
+    
+      .hero-text p {
+        font-size: 1rem;
+      }
+    
+      .hero-text {
+        padding: 15px;
+      }
+    }
+    
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    .yatra-body-wrapper {
+    margin: 0;
+    background: #e2720a;
+    font-family: 'Segoe UI', sans-serif;
+    }
+    
+    .yatra-section {
+    padding: 50px 20px;
+    max-width: 1280px;
+    margin: 0 auto;
+    }
+    
+    .yatra-title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    color: #f8f8f8;
+    margin-bottom: 30px;
+    border-bottom: 3px solid #ff0000;
+    display: inline-block;
+    padding-bottom: 6px;
+    }
+    
+    .yatra-slider-container {
+    position: relative;
+    overflow: hidden;
+    }
+    
+    .yatra-slider-track {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding-bottom: 10px;
+    scroll-snap-type: x mandatory;
+    }
+    
+    .yatra-slider-track::-webkit-scrollbar {
+    display: none;
+    }
+    
+    .yatra-card {
+    flex: 0 0 280px;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    scroll-snap-align: center;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    }
+    
+    .yatra-card:hover {
+    transform: translateY(-5px);
+    }
+    
+    .yatra-card-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    }
+    
+    .yatra-card-body {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fdfdfd;
+    border-top: 1px solid #e0e0e0;
+    border-radius: 0 0 16px 16px;
+    }
+    
+    .yatra-card-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1e1e1e;
+    margin-bottom: 12px;
+    line-height: 1.4;
+    height: 42px;
+    overflow: hidden;
+    }
+    
+    .yatra-card-text {
+    font-size: 13.5px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 18px;
+    flex-grow: 1;
+    text-align: left;
+    }
+    
+    .yatra-button {
+    align-self: flex-start;
+    background: #e53935;
+    color: #fff;
+    font-size: 13px;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    text-decoration: none;
+    }
+    
+    .yatra-arrows {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    pointer-events: none;
+    }
+    
+    .yatra-arrow-btn {
+    background: #ffffff;
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: auto;
+    transition: all 0.2s ease;
+    }
+    
+    .yatra-arrow-btn:hover {
+    background: #f5f5f5;
+    }
+    
+    @media (max-width: 768px) {
+    .yatra-section {
+    padding: 30px 10px;
+    }
+    
+    .yatra-title {
+    font-size: 22px;
+    }
+    
+    .yatra-card {
+    flex: 0 0 250px;
+    }
+    
+    .yatra-card-img {
+    height: 150px;
+    }
+    }
+    
+    .package-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1400px;
+    margin: auto;
+    padding: 40px 0;
+    }
+    
+    .package-box {
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    transition: all 0.35s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid transparent;
+    position: relative;
+    }
+    
+    .package-box:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.15);
+    border-image: linear-gradient(135deg, #002244, #d4af37) 1;
+    }
+    
+    .package-image {
+    height: 220px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    }
+    .package-section {
+    background-color: #b85505; /* Change this to any color you want */
+    padding: 60px 20px;
+    }
+    
+    
+    .image-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.15), rgba(0,0,0,0.55));
+    }
+    
+    .package-info {
+    padding: 22px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    }
+    
+    .duration-tag,
+    .location-tag,
+    .price-tag {
+    display: inline-block;
+    background: #002244;
+    color: #fff;
+    padding: 6px 14px;
+    border-radius: 50px;
+    font-size: 13px;
+    margin: 4px 4px 12px 0;
+    }
+    
+    .title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    }
+    
+    .description {
+    font-size: 14px;
+    color: #444;
+    line-height: 1.6;
+    flex-grow: 1;
+    margin-bottom: 20px;
+    }
+    
+    .read-button,
+    .book-button {
+    display: inline-block;
+    margin-top: 5px;
+    padding: 10px 16px;
+    font-size: 14px;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: all 0.3s ease-in-out;
+    font-weight: 600;
+    }
+    
+    .read-button {
+    background: transparent;
+    color: #002244;
+    border: 1px solid #002244;
+    margin-right: 10px;
+    }
+    
+    .read-button:hover {
+    background: #002244;
+    color: #fff;
+    }
+    
+    .book-button {
+    background: #d4af37;
+    color: white;
+    }
+    
+    .book-button:hover {
+    background: #002244;
+    color: white;
+    }
+    
+    /* Basic Styles */
+    body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #d14e0d;
+    }
+    
+    /* Main container with side padding */
+    .container {
+    width: 100%;
+    padding: 50px 20px;
+    box-sizing: border-box;
+    }
+    
+    /* Tab switcher */
+    .tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    }
+    
+    .tab-button {
+    background-color: #c57e14;
+    color: white;
+    border: none;
+    padding: 14px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    margin: 0 10px;
+    transition: background-color 0.3s ease;
+    }
+    
+    .tab-button:hover {
+    background-color: #45a049;
+    }
+    
+    .tab-button.active {
+    background-color: #2e8b57;
+    }
+    
+    /* Package containers */
+    .packages {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    }
+    
+    /* Individual package card */
+    .package {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .package:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    }
+    
+    .package img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 10px;
+    }
+    
+    /* Package content styling */
+    .package-content {
+    padding: 15px 0 0;
+    }
+    
+    .package-content h3 {
+    margin: 10px 0;
+    font-size: 22px;
+    color: #333;
+    }
+    
+    .package-content p {
+    color: #777;
+    font-size: 16px;
+    line-height: 1.5;
+    }
+    
+    /* Details below description */
+    .details {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    font-size: 16px;
+    color: #555;
+    }
+    
+    .details span {
+    margin-bottom: 5px;
+    }
+    
+    /* Read More Button */
+    .btn-readmore {
+    margin-top: 15px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 5px;
+    }
+    
+    .btn-readmore:hover {
+    background-color: #45a049;
+    }
+    
+    /* === Entire Section Wrapper (for both containers) === */
+    #feedback-map-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 40px 20px;
+    background: var(--section-bg); /* <== This changes full section bg */
+    color: #000;
+    justify-content: center;
+    border-radius: 16px;
+    border: 1px solid #ddd;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    }
+    
+    /* === Feedback Container === */
+    .feedback-side {
+    flex: 1;
+    min-width: 350px;
+    max-width: 600px;
+    background: #eb7303;
+    padding: 30px;
+    border-radius: 16px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);
+    }
+    
+    /* === Map Container === */
+    .map-side {
+    flex: 1;
+    min-width: 350px;
+    max-width: 600px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 16px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);
+    text-align: center;
+    }
+    
+    
+    .feedback-side h2, .feedback-side h3 {
+    margin-bottom: 20px;
+    color: #e67e22;
+    }
+    
+    #feedbackForm input,
+    #feedbackForm select,
+    #feedbackForm textarea {
+    width: 100%;
+    padding: 10px 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    background: #ffffff;
+    color: #000;
+    box-sizing: border-box;
+    }
+    
+    .phone-flex {
+    display: flex;
+    gap: 10px;
+    }
+    
+    #feedbackForm textarea {
+    resize: vertical;
+    min-height: 100px;
+    }
+    
+    #feedbackForm label {
+    display: block;
+    margin-top: 10px;
+    font-weight: 500;
+    color: #333;
+    }
+    
+    #feedbackForm button {
+    background-color: #e67e22;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+    }
+    
+    #feedbackForm button:hover {
+    background-color: #cf6200;
+    }
+    
+    #feedbackList {
+    margin-top: 30px;
+    }
+    
+    #feedbackList div {
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    padding: 15px;
+    margin-bottom: 20px;
+    background: #fff;
+    color: #333;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+    
+    #feedbackList img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    display: block;
+    }
+    
+    #feedbackList p {
+    margin: 5px  0;
+    line-height: 1.4;
+    font-size: 15px;
+    }
+    
+    #feedbackList button {
+    margin-top: 10px;
+    background: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    }
+    
+    #feedbackList button:hover {
+    background: #c0392b;
+    }
+    
+    /* === Map Container Styling === */
+    .map-side {
+    flex: 1;
+    min-width: 350px;
+    max-width: 600px;
+    background: var(--map-bg);
+    padding: 30px;
+    border-radius: 16px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);
+    text-align: center;
+    }
+    
+    .map-side img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    }
+    
+    .section-title {
+    font-size: 24px;
+    color: #34495e;
+    margin-bottom: 10px;
+    }
+    
+    .subtitle {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #666;
+    }
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    
+    body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #413d3d;
+    }
+    
+    /* Support Bar */
+    .support-bar {
+    background-color: #be5f06; /* Dark Blue */
+    color: #ecf0f1;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    }
+    
+    .support-bar a {
+    color: #ecf0f1;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+    }
+    
+    .support-bar a:hover {
+    color: #00ffff;
+    }
+    
+    /* Navbar */
+    .navbar {
+    background-color: #be5f06; /* Dark Blue */
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; /* Default position before becoming sticky */
+    z-index: 999;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+    
+    .navbar .logo img {
+    height: 120px; /* Increased logo size */
+    }
+    
+    .nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 30px;
+    }
+    
+    .nav-links li {
+    display: inline-block;
+    }
+    
+    .nav-links a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 12px 18px;
+    display: inline-block;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+    
+    .nav-links a:hover {
+    background-color: #3498db;
+    color: #fff;
+    transform: scale(1.05);
+    }
+    
+    /* Search Bar */
+    .search-bar {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    background-color: #ecf0f1;
+    border-radius: 6px;
+    padding: 3px 10px;
+    width: 160px;
+    transition: width 0.3s ease;
+    position: relative;
+    }
+    
+    .search-bar input {
+    border: none;
+    background: transparent;
+    font-size: 14px;
+    padding: 8px;
+    width: 130px;
+    outline: none;
+    transition: width 0.3s ease;
+    }
+    
+    .search-bar input:focus {
+    width: 180px; /* Expands the search input when focused */
+    padding: 8px 15px;
+    }
+    
+    /* Sticky class styles */
+    .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Keep it on top of other elements */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional shadow for sticky state */
+    }
+    
+    /* Gods Images Section */
+    .gods-section {
+    background-color: #be5f06;
+    padding: 30px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 0; /* Removed gap between support bar and this section */
+    }
+    
+    .gods-section img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #3498db;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .gods-section img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(52, 152, 219, 0.7);
+    }
+    
+    /* Mantra Section */
+    .mantra-bar {
+    background-color: #be5f06;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 0; /* Removed gap between this and other sections */
+    }
+    
+    /* Mobile Responsive Design */
+    @media (max-width: 768px) {
+    .navbar {
+    flex-direction: column;
+    text-align: center;
+    }
+    
+    .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    }
+    
+    .nav-links a {
+    padding: 10px 15px;
+    font-size: 16px;
+    }
+    
+    .search-bar {
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 0;
+    }
+    
+    .search-bar input {
+    width: 85%;
+    }
+    }
+    
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(214, 107, 7, 0.3),rgba(12,3,51,0.3)), url(background.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    padding: 0 5%;
+    overflow-x: hidden;
+}
+nav{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav .logo{
+    width: 100px;
+}
+nav ul li{
+    list-style:none;
+    display: inline-block;
+    margin-left: 40px;
+}
+nav ul li a{
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+    padding: 0 10px;
+}
+nav ul li a:after{
+    content:"";
+    position: absolute;
+    background-color: #f66335;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
 
-  <section id="hero">
-    <div class="container">
-      <h2>Your Premier Minecraft Server Hosting Solution</h2>
-      <p>High-performance servers with powerful tools and easy setup.</p>
-      <a href="#pricing" class="btn">Choose Your Plan</a>
-    </div>
-  </section>
+.content{
+    color: #fff;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.content h1{
+    font-size: 120px;
+    line-height: 140px;
+    font-weight: 600;
+    opacity: 0;
+}
+.content p{
+    line-height: 28px;
+    opacity: 0;
+}
+.links{
+    margin-top: 30px;
+    opacity: 0;
+}
+.links button {
+    width: 200px;
+    padding: 15px 0;
+    margin: 0 15px;
+    text-align: center;
+    transition: 0.5s;
+    font-weight: 600;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #f66335;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 25px;
+    background: transparent;
+}
+.anim{
+    animation: slideUp 1s linear forwards;
+    animation-delay: 1s;
+}
+@keyframes slideUp{
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+p.anim{
+    animation-delay: 2s;
+}
+.links.anim{
+    animation-delay: 3s;
+}
+@media (min-aspect-ratio: 16/9){
+    .video{
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9){
+    .video{
+        width: auto;
+        height: 100%;
+    }
+}
+.content button span{
+    background: #f66335;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+.content button:hover span{
+    width: 100%;
+}
+.content button:hover{
+    border: 0;
+}
+footer{
+    width: 100%;
+    background: linear-gradient(to right,#a53f04);
+    color: #000000;
+    padding: 50px 0 30px;
+    font-size: 13px;
+    line-height: 20px;
+}
+.row{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.col{
+    flex-basis: 25%;
+    padding: 20px;
+}
+.col:nth-child(2), .col:nth-child(3){
+    flex-basis: 25%;
+}
+.footer_logo{
+    width: 130px;
+    position: relative;
+    top: -23px;
+    left: -20px;
+}
+.footer_about{
+    position: relative;
+    top: -23px;
+}
+.col h3{
+    width: fit-content;
+    margin-bottom: 60px;
+    position: relative;
+}
+.footer_email{
+    width: fit-content;
+    border-bottom: 1px solid #f66335;
+    margin: 20px 0;
+}
+.col ul li{
+    list-style: none;
+    margin-bottom: 12px;
+}
+.col ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+.col form{
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #f66335;
+    margin-bottom: 50px;
+}
+.col form .icon{
+    font-size: 18px;
+    margin-right: 10px;
+}
+.col form input{
+    width: 100%;
+    background: transparent;
+    color: #ccc;
+    border: 0;
+    outline: none;
+}
+.col form button{
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+.col form button .icon_right{
+    font-size: 16px;
+    color: #ccc;
+}
+.col .social_icons .social_icon{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: #fff;
+    background: #f66335;
+    margin-right: 15px;
+    padding: 5px;
+    cursor: pointer;
+}
+hr{
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 20px auto;
+}
+footer .copyright{
+    text-align: center;
+}
+.bottom_line{
+    width: 100%;
+    height: 5px;
+    background: #767676;
+    border-radius: 3px;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    overflow: hidden;
+}
+.bottom_line span{
+    width: 15px;
+    height: 100%;
+    background: #f66335;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    animation: moveline 2s linear infinite;
+}
+@keyframes moveline{
+    0%{
+        left:-20px;
+    }
+    100%{
+        left:100%;
+    }
+}
+    /* ===== Enhancements for Cross-Browser Compatibility and Responsive Support ===== */
+    
+    /* Ensure video background fallback for older browsers */
+    .hero-video-section video {
+      object-fit: cover;
+      -o-object-fit: cover;
+      -webkit-object-fit: cover;
+    }
+    
+    /* More consistent font rendering */
+    body, html {
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    
+    /* Responsive font sizing */
+    @media (max-width: 480px) {
+      .hero-text h1 {
+        font-size: 1.6rem;
+      }
+    
+      .hero-text p {
+        font-size: 0.95rem;
+      }
+    
+      .cta-button {
+        padding: 10px 20px;
+        font-size: 0.95rem;
+      }
+    
+      .package-container {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 20px;
+      }
+    
+      .package-image {
+        height: 160px;
+      }
+    
+      .tab-button {
+        font-size: 16px;
+        padding: 12px 16px;
+      }
+    
+      .read-button,
+      .book-button {
+        font-size: 13px;
+        padding: 8px 12px;
+      }
+    
+      .btn-readmore {
+        font-size: 15px;
+      }
+    
+      .yatra-card {
+        flex: 0 0 220px;
+      }
+    
+      .yatra-card-img {
+        height: 130px;
+      }
+    }
+    
+    /* Flex wrap enforcement */
+    .navbar,
+    .tabs,
+    .footer-sections,
+    .gods-section {
+      flex-wrap: wrap;
+    }
+    
+    /* Form and input improvements */
+    #feedbackForm input,
+    #feedbackForm textarea,
+    #feedbackForm select {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      transition: border-color 0.3s ease;
+    }
+    
+    /* Smooth transition on focus */
+    #feedbackForm input:focus,
+    #feedbackForm textarea:focus {
+      outline: none;
+      border-color: #ffa500;
+    }
+    
+    /* Make logos/images scale properly */
+    .logo img,
+    .gods-section img {
+      max-width: 100%;
+      height: auto;
+    }
+    
+    /* Support legacy browsers with fallback gradients */
+    .hero-overlay {
+      background: #000000;
+      background: linear-gradient(to bottom, rgba(0,0,0,0.1) 20%, rgba(0,0,0,0.6) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1A000000', endColorstr='#99000000', GradientType=0);
+    }
 
-  <section id="features">
-    <div class="container">
-      <h2>Features</h2>
-      <div class="features-grid">
-        <div>
-          <h3>99.9% Uptime</h3>
-          <p>Reliable servers to keep your Minecraft world online.</p>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom, #be5f06, #be5f06);
+      margin: 0;
+      padding: 0;
+    }
+    h2, h3 {
+      text-align: center;
+      color: #2c3e50;
+      margin: 20px 0;
+    }
+    .slider-container {
+      position: relative;
+      width: 95%;
+      margin: auto;
+      overflow: hidden;
+    }
+    .year-slider {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+    .year-slide {
+      min-width: 100%;
+      box-sizing: border-box;
+      padding: 20px;
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      margin-bottom: 30px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    thead {
+      background-color: #00796b;
+      color: white;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 12px;
+      text-align: center;
+      font-size: 16px;
+    }
+    .btn {
+      background-color: #00796b;
+      color: white;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .btn:hover {
+      background-color: #004d40;
+    }
+    .slider-nav {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .slider-nav button {
+      padding: 12px 25px;
+      margin: 0 10px;
+      background: #004d40;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .slider-nav button:hover {
+      background: #00251a;
+    }
+    #audio {
+  display: none;
+}
+#toggleAudio {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 20px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+#toggleAudio:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.kailash-section-wrapper {
+    background: linear-gradient(135deg, #c05803);
+    padding: 80px 20px;
+  }
+
+  .kailash-section {
+    display: flex;
+    flex-wrap: wrap;
+    background: #c05803;
+    border-radius: 20px;
+    padding: 60px;
+    margin: 0 auto;
+    max-width: 1300px;
+    box-shadow: 0 12px 32px rgba(0,0,0,0.08);
+    font-family: 'Inter', sans-serif;
+  }
+
+  .kailash-about, .kailash-facts {
+    flex: 1 1 50%;
+    padding: 40px;
+    background: white;
+    border-radius: 16px;
+    margin: 10px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.04);
+    transition: transform 0.3s ease;
+  }
+
+  .kailash-about:hover, .kailash-facts:hover {
+    transform: translateY(-4px);
+  }
+
+  .kailash-about h2, .kailash-facts h3 {
+    color: #19324d;
+    font-size: 26px;
+    margin-bottom: 24px;
+    border-bottom: 2px solid #007b9e;
+    padding-bottom: 10px;
+  }
+
+  .kailash-about p {
+    font-size: 16px;
+    color: #444;
+    line-height: 1.8;
+    margin-bottom: 18px;
+  }
+
+  .kailash-facts ul {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .kailash-facts li {
+    font-size: 15px;
+    padding: 12px 0;
+    border-bottom: 1px dashed #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .kailash-facts li strong {
+    color: #007b9e;
+    min-width: 160px;
+  }
+
+  @media (max-width: 992px) {
+    .kailash-about, .kailash-facts {
+      flex: 1 1 100%;
+    }
+  }
+
+  .spiritual-highlight {
+    background: linear-gradient(135deg, #c05803 0%, #c05803 100%);
+    padding: 80px 60px;
+    border-radius: 24px;
+    margin: 60px auto;
+    max-width: 1300px;
+    font-family: 'Inter', sans-serif;
+    box-shadow: 0 12px 32px rgba(0,0,0,0.06);
+  }
+
+  .highlight-header {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .highlight-header h2 {
+    font-size: 32px;
+    color: #1f2f3d;
+    border-bottom: 3px solid #007b9e;
+    display: inline-block;
+    padding-bottom: 8px;
+  }
+
+  .highlight-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+
+  .highlight-box {
+    background: white;
+    padding: 30px 28px;
+    border-radius: 16px;
+    flex: 1 1 300px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+  }
+
+  .highlight-box:hover {
+    transform: translateY(-6px);
+  }
+
+  .highlight-box h4 {
+    color: #19324d;
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+
+  .highlight-box p {
+    color: #444;
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  @media (max-width: 992px) {
+    .highlight-grid {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  .kailash-info-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    background: #c05803;
+    padding: 60px;
+    border-radius: 20px;
+    max-width: 1300px;
+    margin: 60px auto;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+    gap: 20px;
+    font-family: 'Inter', sans-serif;
+  }
+
+  .kailash-box {
+    background: white;
+    flex: 1 1 48%;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .kailash-box-header {
+    background-color: #007b9e;
+    color: #fff;
+    padding: 20px 30px;
+    font-size: 22px;
+    font-weight: 600;
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  .kailash-box-content {
+    padding: 30px;
+    flex: 1;
+  }
+
+  .kailash-box-content p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.8;
+    margin-bottom: 20px;
+  }
+
+  .kailash-box-content ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .kailash-box-content li {
+    padding: 12px 0;
+    border-bottom: 1px dashed #ddd;
+    display: flex;
+    justify-content: space-between;
+    color: #007b9e;
+    font-size: 15px;
+  }
+
+  .kailash-box-content li strong {
+    color: #19324d;
+    min-width: 180px;
+  }
+
+  .kailash-image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-bottom: 1px solid #eee;
+  }
+
+  .caption {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    padding: 10px 20px;
+  }
+
+  @media (max-width: 992px) {
+    .kailash-info-section {
+      flex-direction: column;
+      padding: 30px;
+    }
+
+    .kailash-box {
+      width: 100%;
+    }
+  }
+
+  .kailash-glance-section {
+    background: #c24e01;
+    padding: 80px 20px;
+    font-family: 'Inter', sans-serif;
+  }
+
+  .kailash-glance-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .kailash-glance-title {
+    font-size: 32px;
+    color: #19324d;
+    margin-bottom: 50px;
+    font-weight: 600;
+  }
+
+  .glance-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 40px;
+  }
+
+  .glance-item {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 16px;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+  }
+
+  .glance-item:hover {
+    transform: translateY(-5px);
+  }
+
+  .glance-icon {
+    font-size: 36px;
+    color: #007b9e;
+    margin-bottom: 15px;
+  }
+
+  .glance-label {
+    font-size: 17px;
+    font-weight: 500;
+    color: #19324d;
+    margin-bottom: 6px;
+  }
+
+  .glance-desc {
+    font-size: 14px;
+    color: #555;
+  }
+    </style>
+<script src="weather.js"></script>
+<!-- Support Bar -->
+<div class="support-bar">
+  <a href="tel:+ 977">📞 Call Us: +977 9849834756</a>
+  | 
+  <a href="https://wa.me/9849834756" target="_blank">💬 WhatsApp Support</a>
+  | 
+  <a href="mailto:kailashyatra365@gmail.com">✉ Email Support</a>
+</div>
+
+<!-- Mantra Bar -->
+<div class="mantra-bar">
+  <p><strong></strong> "Om Tryambakam Yajamahe Sugandhim Pushtivardhanam, Urvarukamiva Bandhanan Mrityor Mukshiya Maamritat"</p>
+  <p><strong></strong> "ॐ त्र्यंबकं यजामहे सुगंधिं पुष्टिवर्धनम्, उर्वारुकमिव बन्धनान्मृत्योर्मोक्षीय मांमृतात्।"</p>
+</div>
+
+<!-- Gods Images Section -->
+<div class="gods-section">
+  <img src="images/Shiv-Image.png" alt="Lord Shiva">
+  <img src="images/Narayan-Image.jpg" alt="Lord Narayan">
+  <img src="images/Ganesh-Image.jpg" alt="Lord Ganesh">
+  <img src="images/Mahakali-Image.jpeg" alt="Goddess Mahakali">
+  <img src="images/Durga-Image.png" alt="Goddess Durga">
+  <img src="images/Rishabh-Image.jpg" alt="Rishabh">
+  <img src="images/Buddha-Image.png" alt="Buddha">
+  <img src="images/Murugan-Image.png" alt="Lord Murugan">
+</div>
+
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="logo">
+    <img src="images/Kailash-Yatra-Images.png" alt="Kailash Yatra">
+  </div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="destination.html">Destinations</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="terms-conditions">Terms & Conditions</a></li>
+  </ul>
+  <div class="search-bar">
+    <input type="text" placeholder="Search..." id="searchInput">
+  </div>
+</nav> 
+
+    <section class="hero-video-section">
+        <video autoplay muted loop playsinline>
+          <source src="images/kailash-clip.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <div class="hero-overlay">
+          <div class="hero-text">
+            <h1>✨ Experience the Divine Journey</h1>
+            <p>Kailash Mansarovar Yatra – A once-in-a-lifetime spiritual adventure.</p>
+            <a href="book.html" class="cta-button">Book Your Yatra</a>
+          </div>
         </div>
-        <div>
-          <h3>Easy Management</h3>
-          <p>Pterodactyl Panel for effortless control of your server.</p>
-        </div>
-        <div>
-          <h3>Secure Payments</h3>
-          <p>Supports UPI, Google Pay, Credit Cards, and Esewa.</p>
+      </section>
+      <h2>Kailash Full Moon Fixed Departures <br>Group Joining</h2>
+      <h3>2025 - 2026 - 2027</h3>
+    
+      <div class="slider-container">
+        <div class="year-slider" id="yearSlider">
+          <!-- 2025 Slide -->
+          <div class="year-slide">
+            <h2>Year: 2025</h2>
+            <table>
+              <thead>
+                <tr><th>Month</th><th>Full Moon Date</th><th>Status</th><th>Action</th></tr>
+              </thead>
+              <tbody id="table-2025"></tbody>
+            </table>
+          </div>
+    
+          <!-- 2026 Slide -->
+          <div class="year-slide">
+            <h2>Year: 2026</h2>
+            <table>
+              <thead>
+                <tr><th>Month</th><th>Full Moon Date</th><th>Status</th><th>Action</th></tr>
+              </thead>
+              <tbody id="table-2026"></tbody>
+            </table>
+          </div>
+    
+          <!-- 2027 Slide -->
+          <div class="year-slide">
+            <h2>Year: 2027</h2>
+            <table>
+              <thead>
+                <tr><th>Month</th><th>Full Moon Date</th><th>Status</th><th>Action</th></tr>
+              </thead>
+              <tbody id="table-2027"></tbody>
+            </table>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    
+      <div class="slider-nav">
+        <button onclick="slide(-1)">&laquo; Prev</button>
+        <button onclick="slide(1)">Next &raquo;</button>
+      </div>
 
-  <section id="pricing">
-    <div class="container">
-      <h2>Pricing Plans</h2>
-      <div class="pricing-grid">
-        <div class="plan">
-          <h3>Starter</h3>
-          <p>$5/month</p>
-          <ul>
-            <li>2 GB RAM</li>
-            <li>50 GB Storage</li>
-            <li>1 Server</li>
-          </ul>
-          <button onclick="saveInfo('Starter')">Select</button>
-        </div>
-        <div class="plan">
-          <h3>Pro</h3>
-          <p>$15/month</p>
-          <ul>
-            <li>8 GB RAM</li>
-            <li>200 GB Storage</li>
-            <li>5 Servers</li>
-          </ul>
-          <button onclick="saveInfo('Pro')">Select</button>
-        </div>
-        <div class="plan">
-          <h3>Ultimate</h3>
-          <p>$30/month</p>
-          <ul>
-            <li>32 GB RAM</li>
-            <li>1 TB Storage</li>
-            <li>Unlimited Servers</li>
-          </ul>
-          <button onclick="saveInfo('Ultimate')">Select</button>
+      
+      <section class="yatra-body-wrapper">
+        <!-- Dynamic Content Rendered via Script -->
+      </section>
+      <div style="text-align: center; margin: 40px 0;">
+        <div style="display: inline-block; font-size: 2rem; font-weight: bold; color: #012c15; text-transform: uppercase; border-bottom: 3px solid #000000; padding-bottom: 5px;">
+          Nepal Holy Divine Yatra
         </div>
       </div>
-    </div>
-  </section>
+           
+      <div class="package-section">
 
-  <section id="contact">
-    <div class="container">
-      <h2>Contact Us</h2>
-      <form id="contact-form">
-        <label for="name">Name:</label>
-        <input type="text" id="name" placeholder="Your Name" required>
-        <label for="email">Email:</label>
-        <input type="email" id="email" placeholder="Your Email" required>
-        <label for="message">Message:</label>
-        <textarea id="message" placeholder="Your Message" required></textarea>
-        <button type="submit" class="btn">Submit</button>
-      </form>
-    </div>
-  </section>
+        <div class="package-container">
+          <!-- Package 1 -->
+          <div class="package-box" data-aos="fade-up">
+            <div class="package-image" style="background-image: url('images/Kailash-Mansarovar-LAke.jpeg');">
+              <div class="image-overlay"></div>
+            </div>
+            <div class="package-info">
+              <span class="duration-tag"><i class="fa-solid fa-clock"></i> ७ दिन</span>
+              <span class="location-tag"><i class="fa-solid fa-location-dot"></i> मानसरोवर ताल</span>
+              <span class="price-tag"><i class="fa-solid fa-tag"></i> NPR 1,30,000</span>
+              <div class="title">कैलाश मानसरोवर ताल यात्रा</div>
+              <div class="description">
+                यस विशेष ७ दिने यात्रा मार्फत तपाईंलाई पवित्र मानसरोवर तालको अद्भुत दृश्यावलोकन र प्राकृतिक सौन्दर्यमा अवगाहन गर्ने अवसर प्राप्त हुनेछ। 
+                यहाँ तपाईंलाई धार्मिक ऊर्जा र आध्यात्मिक शान्तिको अनुभव हुनेछ, जहाँ प्रत्येक पलले तपाईलाई साँचो भक्ति र शान्तिको मार्गमा अग्रसर बनाउछ। 
+                यो यात्रा प्रकृतिका काखमा तपाईलाई बलियो ऊर्जा र आत्मविश्वासको पुनर्निर्माण गर्न मद्दत गर्नेछ।
+              </div>
+              <a href="kailash-mansarovar-lake-yatra.html" class="read-button">थप जानकारी</a>
+              <a href="book.html" class="book-button">बुक गर्नुहोस्</a>
+            </div>
+          </div>
+      
+          <!-- Package 2 -->
+          <div class="package-box" data-aos="fade-up" data-aos-delay="100">
+            <div class="package-image" style="background-image: url('images/kailash-mansarovar.jpeg');">
+              <div class="image-overlay"></div>
+            </div>
+            <div class="package-info">
+              <span class="duration-tag"><i class="fa-solid fa-clock"></i> ११ दिन</span>
+              <span class="location-tag"><i class="fa-solid fa-location-dot"></i> कैलाश पर्वत</span>
+              <span class="price-tag"><i class="fa-solid fa-tag"></i> NPR 1,65,000</span>
+              <div class="title">कैलाश मानसरोवर परिक्रमा यात्रा</div>
+              <div class="description">
+                १० दिनको यो यात्रा तपाईलाई पवित्र कैलाश पर्वत र मानसरोवर तालको लाजवाब धार्मिक अनुभव दिलाउने छ। 
+                यो यात्रा एक आध्यात्मिक यात्रा मात्र होइन, तपाईलाई एक नयाँ जीवन दृष्टिकोण र शान्ति खोज्नको लागि प्रेरित गर्ने अद्भुत अवसर पनि हो। 
+                तपाई यहाँ परम्परागत पूजा र ध्यानको अनुभव गर्नुहुनेछ, जुन तपाईको जीवनको अद्वितीय अध्याय हुनेछ।
+              </div>
+              <a href="kailash-mansarovar-yatra.html" class="read-button">थप जानकारी</a>
+              <a href="book.html" class="book-button">बुक गर्नुहोस्</a>
+            </div>
+          </div>
+      
+          <!-- Package 3 -->
+          <div class="package-box" data-aos="fade-up" data-aos-delay="200">
+            <div class="package-image" style="background-image: url('images/kailash-mansarovar-yatra.jpg');">
+              <div class="image-overlay"></div>
+            </div>
+            <div class="package-info">
+              <span class="duration-tag"><i class="fa-solid fa-clock"></i> १६ दिन</span>
+              <span class="location-tag"><i class="fa-solid fa-location-dot"></i> ल्हासा + एवरेस्ट शिविर</span>
+              <span class="price-tag"><i class="fa-solid fa-tag"></i> NPR 2,40,000</span>
+              <div class="title">कैलाश मानसरोवर, सगरमाथा बेस क्याम्प र ल्हासा यात्रा</div>
+              <div class="description">
+                यो १५ दिने यात्रा तपाईलाई तिब्बतको ऐतिहासिक राजधानी ल्हासा र विश्वप्रसिद्ध एवरेस्ट बेस क्याम्पको यात्रा गराउनेछ। 
+                यहाँ तपाईलाई कालीगंको नदी, ल्हासा र अन्य धार्मिक स्थलहरूमा ध्यान र शान्तिको अनमोल अनुभव प्राप्त हुनेछ। 
+                एवरेस्ट बेस क्याम्पको सुन्दरताले तपाईलाई मानसिक र शारीरिक दृषटिकोनमा पुरा नविन अनुभव दिनेछ, जसले तपाईको साहसिक यात्रा र आध्यात्मिक उचाइको खण्डलाई एउटै उद्देश्यको दिशामा जोड्नेछ।
+              </div>
+              <a href="kailash-mansarovar-everest-basecamp.html" class="read-button">थप जानकारी</a>
+              <a href="book.html" class="book-button">बुक गर्नुहोस्</a>
+            </div>
+          </div>
+      
+          <!-- Package 4 -->
+          <div class="package-box" data-aos="fade-up" data-aos-delay="300">
+            <div class="package-image" style="background-image: url('images/kailash-mansarovar-pitra.jpg');">
+              <div class="image-overlay"></div>
+            </div>
+            <div class="package-info">
+              <span class="duration-tag"><i class="fa-solid fa-clock"></i> १३ दिन</span>
+              <span class="location-tag"><i class="fa-solid fa-location-dot"></i> धार्मिक कर्म स्थल</span>
+              <span class="price-tag"><i class="fa-solid fa-tag"></i> NPR 2,10,000</span>
+              <div class="title">पितृ/नारायणबली कर्म यात्रा</div>
+              <div class="description">
+                यो पवित्र यात्रा तपाईको पितृ दोष निवारण र पूर्वजहरूको शान्तिको लागि विशेष ध्यान र कर्म विधिहरूको अभ्यास गर्ने अवसर हो। 
+                तपाईले धार्मिक क्रियाकलाप र पुजन विधिहरूमा भाग लिने अवसर पाउनुहुनेछ, जसले तपाईलाई जीवनका विविध कठिनाइहरूबाट मुक्ति दिलाउनेछ। 
+                नारायणबली कर्म विधिको माध्यमबाट तपाईको जीवनमा नयाँ सकारात्मक ऊर्जा र शान्ति आउनेछ।
+              </div>
+              <a href="pitra-narayanbali.html" class="read-button">थप जानकारी</a>
+              <a href="book.html" class="book-button">बुक गर्नुहोस्</a>
+            </div>
+          </div>
+      
+        </div>
+      
+      </div>
+      
+    
+<!-- Tabs for Nepal and India -->
+<div class="tabs">
+  <button class="tab-button active" id="nepal-tab">Nepal Divine Tour</button>
+  <button class="tab-button" id="india-tab">India Divine Tour</button>
+</div>
 
-  <footer>
-    <div class="container">
-      <p>&copy; 2024 OGxNODES. All rights reserved. <a href="#">Privacy Policy</a></p>
+<!-- Nepal Divine Tour Packages -->
+<div id="nepal-content" class="package-section">
+    <div class="packages">
+        <!-- Nepal Packages -->
+        <div class="package">
+            <img src="images/pashupatinath.jpeg" alt="Pashupatinath Temple">
+            <div class="package-content">
+                <h3>Pashupatinath Temple Tour (3N 4D)</h3>
+                <p>Embark on a divine journey to Pashupatinath Temple, a UNESCO World Heritage site in Kathmandu.</p>
+                <div class="details">
+                    <span><strong>Duration:</strong> 3N 4D</span>
+                    <span><strong>Altitude:</strong> 1310m</span>
+                    <span><strong>Days:</strong> 4</span>
+                </div>
+                <a href="pashupatinath-tour.html">
+                  <button class="btn-readmore">Read More</button>
+                </a>
+                </div>
+        </div>
+
+        <div class="package">
+            <img src="images/janakpur.jpg" alt="Pashupatinath & Janakpur Tour">
+            <div class="package-content">
+                <h3>Pashupatinath & Janakpur Tour (4N 5D)</h3>
+                <p>Explore two of Nepal's most sacred religious sites, Pashupatinath Temple and Janakpur.</p>
+                <div class="details">
+                    <span><strong>Duration:</strong> 4N 5D</span>
+                    <span><strong>Altitude:</strong> 1000m</span>
+                    <span><strong>Days:</strong> 5</span>
+                </div>
+                <a href="pashupati-janakpur-tour.html">
+                  <button class="btn-readmore">Read More</button>
+                </a>              
+              </div>
+        </div>
+
+        <div class="package">
+            <img src="images/gosaikunda-spiritual-3.jpg" alt="Gosaikunda Spiritual Tour/Trek">
+            <div class="package-content">
+                <h3>Gosaikunda Spiritual Tour/Trek (7D)</h3>
+                <p>Explore the sacred lake of Gosaikunda, located at an altitude of 4,380 meters in the Langtang National Park.</p>
+                <div class="details">
+                    <span><strong>Duration:</strong> 7D</span>
+                    <span><strong>Altitude:</strong> 4380m</span>
+                    <span><strong>Days:</strong> 7</span>
+                </div>
+                <a href="gosaikunda-spritual-treak.html">
+                  <button class="btn-readmore">Read More</button>
+                </a>              
+              </div>
+        </div>
+
+        <div class="package">
+            <img src="images/bhairav-kunda-banner.jpg" alt="Bhairavkunda Spiritual Tour/Trek">
+            <div class="package-content">
+                <h3>Bhairavkunda Spiritual Tour/Trek (7D)</h3>
+                <p>Journey to Bhairavkunda, a sacred pilgrimage site, surrounded by breathtaking mountains and landscapes.</p>
+                <div class="details">
+                    <span><strong>Duration:</strong> 7D</span>
+                    <span><strong>Altitude:</strong> 4100m</span>
+                    <span><strong>Days:</strong> 7</span>
+                </div>
+                <a href="bhairavkunda-spritual.html">
+                  <button class="btn-readmore">Read More</button>
+                </a>              
+              </div>
+        </div>
+
+        <div class="package">
+            <img src="images/Badimalika-Temple-nepal.jpg" alt="Badimalika Bhagwati Spiritual Tour/Trek">
+            <div class="package-content">
+                <h3>Badimalika Bhagwati Spiritual Tour/Trek (10N 11D)</h3>
+                <p>Visit the sacred Badimalika Temple, a divine pilgrimage site in the western region of Nepal.</p>
+                <div class="details">
+                    <span><strong>Duration:</strong> 10N 11D</span>
+                    <span><strong>Altitude:</strong> 4100m</span>
+                    <span><strong>Days:</strong> 11</span>
+                </div>
+                <a href="badimalika-bhagwati.html">
+                  <button class="btn-readmore">Read More</button>
+                </a>              
+              </div>
+        </div>
+
+        <div class="package">
+            <img src="images/muktinath.jpg" alt="Pashupatinath & Muktinath Divine Tour">
+            <div class="package-content">
+                <h3>Pashupatinath & Muktinath Divine Tour (6N 7D)</h3>
+                <p>Visit two of Nepal's most revered temples, Pashupatinath and Muktinath, on a spiritual journey.</p>
+                <div class="details">
+                    <span><strong>Duration:</strong> 6N 7D</span>
+                    <span><strong>Altitude:</strong> 3710m</span>
+                    <span><strong>Days:</strong> 7</span>
+                </div>
+                <a href="pashupatinath-muktinath.html">
+                  <button class="btn-readmore">Read More</button>
+                </a>              
+              </div>
+        </div>
+
+        <div class="package">
+            <img src="images/damodar-kunda-trek.jpg" alt="Pashupatinath, Muktinath & Damodarkunda Spiritual Trek">
+            <div class="package-content">
+                <h3>Pashupatinath, Muktinath & Damodarkunda Spiritual Trek (10D)</h3>
+                <p>A unique spiritual trek to three of Nepal’s most revered sacred sites: Pashupatinath, Muktinath, and Damodarkunda.</p>
+                <div class="details">
+                    <span><strong>Duration:</strong> 10D</span>
+                    <span><strong>Altitude:</strong> 4600m</span>
+                    <span><strong>Days:</strong> 10</span>
+                </div>
+                <a href="pashupatinath-muktinath-damodarkunda.html">
+                  <button class="btn-readmore">Read More</button>
+                </a>              
+              </div>
+        </div>
+
+        <div class="package">
+            <img src="images/shiv-shakti-circuit.jpg" alt="Nepal Sakti Peeth Tour">
+            <div class="package-content">
+                <h3>Nepal Sakti Peeth Tour (21D)</h3>
+                <p>Explore the sacred Sakti Peeths of Nepal, journeying through divine and mystical temples across the country.</p>
+                <div class="details">
+                    <span><strong>Duration:</strong> 21D</span>
+                    <span><strong>Altitude:</strong> 3000m</span>
+                    <span><strong>Days:</strong> 21</span>
+                </div>
+                <a href="nepali-sakti-peeths.html">
+                  <button class="btn-readmore">Read More</button>
+                </a>              
+              </div>
+        </div>
+
+        <div class="package">
+            <img src="images/lumbini.jpeg" alt="Lumbini Tour">
+            <div class="package-content">
+                <h3>Lumbini Tour (3N 4D)</h3>
+                <p>Visit the birthplace of Lord Buddha, a UNESCO World Heritage site, in Lumbini.</p>
+                <div class="details">
+                    <span><strong>Duration:</strong> 3N 4D</span>
+                    <span><strong>Altitude:</strong> 600m</span>
+                    <span><strong>Days:</strong> 4</span>
+                </div>
+                <a href="lumbini-tour.html">
+                  <button class="btn-readmore">Read More</button>
+                </a>              
+              </div>
+        </div>
+
+        <div class="package">
+            <img src="images/kailash.png" alt="Four Kailash Ariel Tour">
+            <div class="package-content">
+                <h3>Four Kailash Ariel Tour</h3>
+                <p>An aerial tour to visit the four sacred Kailash peaks.</p>
+                <div class="details">
+                    <span><strong>Duration:</strong> TBD</span>
+                    <span><strong>Altitude:</strong> 5100m</span>
+                    <span><strong>Days:</strong> 2 HRS FLIGHT</span>
+                </div>
+                <a href="four-aerial-kailash.html">
+                  <button class="btn-readmore">Read More</button>
+                </a>              
+              </div>
+        </div>
+
+        <div class="package">
+            <img src="images/buddhist-pilgrimage-tour.png" alt="Buddhist Pilgrimages Tour">
+            <div class="package-content">
+                <h3>Buddhist Pilgrimages Tour (8D)</h3>
+                <p>Explore the key Buddhist pilgrimage sites in India and Nepal, including Bodh Gaya, Lumbini, and more.</p>
+                <div class="details">
+                    <span><strong>Duration:</strong> 8D</span>
+                    <span><strong>Altitude:</strong> 1500m</span>
+                    <span><strong>Days:</strong> 8</span>
+                </div>
+                <a href="buddhist-pilgrimages-tour.html">
+                  <button class="btn-readmore">Read More</button>
+                </a>              
+              </div>
+        </div>
+        
+        <div class="package">
+            <img src="images/aerial.png" alt="Mount Kailash Ariel Darshan Tour">
+            <div class="package-content">
+                <h3>Mount Kailash Aerial Dur Darshan Tour - Via Nepalgunj (2D)</h3>
+                <p>Take an aerial tour to witness the majestic Mount Kailash from the skies, a once-in-a-lifetime experience.</p>
+                <div class="details">
+                    <span><strong>Duration:</strong> 7D</span>
+                    <span><strong>Altitude:</strong> 6638m</span>
+                    <span><strong>Days:</strong> 2</span>
+                </div>
+                <a href="mount-kailash-aerial.html">
+                  <button class="btn-readmore">Read More</button>
+                </a>              
+              </div>
+        </div>
+        
+
     </div>
-  </footer>
+</div>
+
+<!-- India Divine Tour Packages -->
+<div id="india-content" class="package-section" style="display: none;">
+    <div class="packages">
+        <!-- India Packages -->
+        <div class="package">
+            <img src="images/Dwadash-12-Jyotirlinga-Tour-India4.webp" alt="12 Jyotiling Tour">
+            <div class="package-content">
+                <h3>12 Jyotiling Tour (21D)</h3>
+                <p>Visit the twelve sacred Jyotilingas, the most revered shrines of Lord Shiva in India.</p>
+                <div class="details">
+                    <span><strong>Duration:</strong> 21D</span>
+                    <span><strong>Altitude:</strong> 3500m</span>
+                    <span><strong>Days:</strong> 21</span>
+                </div>
+                <button class="btn-readmore">Read More</button>
+            </div>
+        </div>
+
+        <div class="package">
+          <img src="images/128.jpg" alt="12 Jyotiling, 51 Saktipeeths, 108 Siddhapeeths & 4 Addi Saktipeeths Mokshya Tour">
+          <div class="package-content">
+              <h3>12 Jyotiling, 51 Saktipeeths, 108 Siddhapeeths & 4 Addi Saktipeeths Mokshya Tour (108D)</h3>
+              <p>This ultimate pilgrimage tour takes you to the holiest sites in India, exploring the 12 Jyotilingas, 51 Saktipeeths, and more.</p>
+              <div class="details">
+                  <span><strong>Duration:</strong> 108D</span>
+                  <span><strong>Altitude:</strong> 1200m</span>
+                  <span><strong>Days:</strong> 108</span>
+              </div>
+              <a href="book.html">
+                  <button class="btn-readmore">Read More</button>
+              </a>
+          </div>
+      </div>
+      
+
+        <div class="package">
+            <img src="images/Kedarnath-Temple-Uttarakhand.webp" alt="Chaardhan Tour">
+            <div class="package-content">
+                <h3>Chaardham Tour (14D)</h3>
+                <p>Visit four sacred pilgrimage sites of India, covering the renowned Char Dhams.</p>
+                <div class="details">
+                    <span><strong>Duration:</strong> 14D</span>
+                    <span><strong>Altitude:</strong> 2200m</span>
+                    <span><strong>Days:</strong> 14</span>
+                </div>
+                <a href="chaardham.html">
+                  <button class="btn-readmore">Read More</button>
+                </a>              
+              </div>
+        </div>
+
+        <div class="package">
+            <img src="images/badrinath.jpg" alt="Kedarnath Tour">
+            <div class="package-content">
+                <h3>Kedarnath & Badrinath Divine Tour (10D)</h3>
+                <p>Explore the sacred Kedarnath Temple, located in the Indian Himalayas.</p>
+                <div class="details">
+                    <span><strong>Duration:</strong> 10D</span>
+                    <span><strong>Altitude:</strong> 3584m</span>
+                    <span><strong>Days:</strong> 10</span>
+                </div>
+                <a href="kedarnath-badrinath.html">
+                  <button class="btn-readmore">Read More</button>
+                </a>              
+              </div>
+        </div>
+
+        <div class="package">
+            <img src="images/amarnath-cave_shrine_charzan_holidays.webp" alt="Amarnath Cave Tour">
+            <div class="package-content">
+                <h3>Amarnath Cave Tour (8D)</h3>
+                <p>Embark on a sacred pilgrimage to the famous Amarnath Cave in the Himalayas.</p>
+                <div class="details">
+                    <span><strong>Duration:</strong> 8D</span>
+                    <span><strong>Altitude:</strong> 3888m</span>
+                    <span><strong>Days:</strong> 8</span>
+                </div>
+                <a href="amarnath-tour.html">
+                  <button class="btn-readmore">Read More</button>
+                </a>              
+              </div>
+        </div>
+
+        <div class="package">
+            <img src="images/kahakhya.jpg" alt="Kamakhya Saktipeeths Tour">
+            <div class="package-content">
+                <h3>Kamakhya Saktipeeths Tour (7D)</h3>
+                <p>Visit the sacred Kamakhya Temple in Assam, one of India's most famous Shakti Peeths.</p>
+                <div class="details">
+                    <span><strong>Duration:</strong> 7D</span>
+                    <span><strong>Altitude:</strong> 3120m</span>
+                    <span><strong>Days:</strong> 7</span>
+                </div>
+                <a href="kamashya-saktipeeths.html">
+                  <button class="btn-readmore">Read More</button>
+                </a>              
+              </div>
+        </div>
+
+        <div class="package">
+          <img src="images/ayodhya.png" alt="Varanasi, Ayodhya, Janakpur & Gorakhpur Triangle Divine Tour">
+          <div class="package-content">
+              <h3>Varanasi, Prayag, Ayodhya, Gorakhpur, Janakpur & Pashupatinath - Triangle Divine Tour (13D)</h3>
+              <p>Explore the sacred cities of Varanasi, Ayodhya, Janakpur, and Gorakhpur in one epic spiritual journey.</p>
+              <div class="details">
+                  <span><strong>Duration:</strong> 13D</span>
+                  <span><strong>Altitude:</strong> 300m</span>
+                  <span><strong>Days:</strong> 13</span>
+              </div>
+              <a href="vanarasi-prayag-ayodhya-gorakhpur-janakpur.html" class="btn-readmore">Read More</a>
+          </div>
+      </div>
+      
+
+        <div class="package">
+            <img src="images/buddhist-pilgrimage-tour-india-and-nepal.jpg" alt="Buddhist Pilgrimage Circuit Nepal–India Tour" />
+            <div class="package-content">
+              <h3>Buddhist Pilgrimage Circuit Nepal–India Tour (12D)</h3>
+              <p>
+                A divine journey through sacred Buddhist sites across Nepal and India, covering Lumbini, Bodhgaya, Sarnath, Kushinagar, and more. A deeply spiritual and cultural exploration.
+              </p>
+              <div class="details">
+                <span><strong>Duration:</strong> 12 Days</span>
+                <span><strong>Altitude:</strong> Up to 1,500m</span>
+                <span><strong>Days:</strong> 12</span>
+              </div>
+              <button class="btn-readmore">Read More</button>
+            </div>
+          </div>
+          
+    </div>
+</div>
+</div>
+
+<!-- India Divine Tour Packages -->
+<div id="india-content" class="package-section" style="display: none;">
+  <div class="packages">
+      <!-- India Packages -->
+      <div class="package">
+          <img src="images/Dwadash-12-Jyotirlinga-Tour-India4.webp" alt="12 Jyotiling Tour">
+          <div class="package-content">
+              <h3>12 Jyotiling Tour (21D)</h3>
+              <p>Visit the twelve sacred Jyotilingas, the most revered shrines of Lord Shiva in India.</p>
+              <div class="details">
+                  <span><strong>Duration:</strong> 21D</span>
+                  <span><strong>Altitude:</strong> 3500m</span>
+                  <span><strong>Days:</strong> 21</span>
+                  <span><strong>Price:</strong> $2200</span>
+              </div>
+              <button class="btn-readmore">Read More</button>
+          </div>
+      </div>
+  </div>
+</div>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+<div class="kailash-glance-section">
+  <div class="kailash-glance-container">
+    <h2 class="kailash-glance-title">Kailash Yatra at a Glance</h2>
+
+    <div class="glance-grid">
+      <div class="glance-item">
+        <div class="glance-icon"><i class="fas fa-mountain"></i></div>
+        <div class="glance-label">Mount Kailash</div>
+        <div class="glance-desc">6,638m sacred peak & abode of Lord Shiva.</div>
+      </div>
+      <div class="glance-item">
+        <div class="glance-icon"><i class="fas fa-water"></i></div>
+        <div class="glance-label">Lake Mansarovar</div>
+        <div class="glance-desc">Holy lake at 4,590m with spiritual purification.</div>
+      </div>
+      <div class="glance-item">
+        <div class="glance-icon"><i class="fas fa-walking"></i></div>
+        <div class="glance-label">Parikrama</div>
+        <div class="glance-desc">52km trekking around Kailash in 3 days.</div>
+      </div>
+      <div class="glance-item">
+        <div class="glance-icon"><i class="fas fa-temperature-low"></i></div>
+        <div class="glance-label">Climate</div>
+        <div class="glance-desc">Alpine dry weather: 5°C to -5°C in season.</div>
+      </div>
+      <div class="glance-item">
+        <div class="glance-icon"><i class="fas fa-calendar-check"></i></div>
+        <div class="glance-label">Best Time</div>
+        <div class="glance-desc">Ideal months: May to September.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="kailash-section-wrapper">
+  <div class="kailash-section">
+    <div class="kailash-about">
+      <h2>About Mount Kailash & Mansarovar</h2>
+      <p>
+        Mount Kailash (6,638 m), located in the far-western region of Tibet, holds immense religious and spiritual significance across Hinduism, Buddhism, Jainism, and Bon. Believed to be the abode of Lord Shiva, it is a place of divine power and spiritual transformation.
+      </p>
+      <p>
+        Beside it lies the sacred Lake Mansarovar (4,590 m), representing purity and divinity. Pilgrims perform holy dips and Parikrama around both the lake and mountain to cleanse their karma and achieve spiritual fulfillment.
+      </p>
+      <p>
+        The Kailash Yatra is more than just a pilgrimage — it is a deeply spiritual journey requiring devotion, mental strength, and physical endurance amid pristine high-altitude terrain.
+      </p>
+    </div>
+
+    <div class="kailash-facts">
+      <h3>Essential Travel & Altitude Information</h3>
+      <ul>
+        <li><strong>Location:</strong> Tibet Autonomous Region, China</li>
+        <li><strong>Mount Kailash Height:</strong> 6,638 meters (21,778 ft)</li>
+        <li><strong>Lake Mansarovar Height:</strong> 4,590 meters (15,060 ft)</li>
+        <li><strong>Parikrama Length:</strong> Approx. 52 km (3 Days)</li>
+        <li><strong>Highest Point:</strong> Dolma La Pass – 5,630 meters (18,471 ft)</li>
+        <li><strong>Ideal Visiting Time:</strong> May to September</li>
+        <li><strong>Climate:</strong> Dry alpine weather, sudden snow possible</li>
+        <li><strong>Avg Day Temp:</strong> 5°C – 18°C</li>
+        <li><strong>Avg Night Temp:</strong> -5°C or lower</li>
+        <li><strong>Accessible From:</strong> Nepal (Simikot or Gyirong) & Mainland China</li>
+        <li><strong>Required Documents:</strong> Tibet Travel Permit & Group Chinese Visa</li>
+        <li><strong>Religious Importance:</strong> Hindu, Buddhist, Jain & Bon traditions</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+<div class="spiritual-highlight">
+  <div class="highlight-header">
+    <h2>Why Choose Us for Your Kailash Yatra</h2>
+  </div>
+  <div class="highlight-grid">
+    <div class="highlight-box">
+      <h4>Trusted Pilgrimage Partner</h4>
+      <p>Over a decade of experience in organizing spiritual and high-altitude pilgrimages with a focus on safety, comfort, and devotion.</p>
+    </div>
+    <div class="highlight-box">
+      <h4>Experienced Guides & Support</h4>
+      <p>Certified local experts, high-altitude professionals, and multilingual guides accompany you for a worry-free journey.</p>
+    </div>
+    <div class="highlight-box">
+      <h4>Spiritual & Cultural Immersion</h4>
+      <p>Deeply meaningful experiences combining sacred rituals, ancient temples, local traditions, and divine landscapes.</p>
+    </div>
+    <div class="highlight-box">
+      <h4>All-Inclusive & Custom Packages</h4>
+      <p>From luxurious comfort tours to adventurous treks — tailored itineraries that suit your pace, preference, and devotion.</p>
+    </div>
+    <div class="highlight-box">
+      <h4>Focus on Health & Safety</h4>
+      <p>We prioritize your well-being with altitude preparation, first aid, emergency protocols, and contingency planning.</p>
+    </div>
+  </div>
+</div>
+
+<div class="kailash-info-section">
+  <!-- Text Section -->
+  <div class="kailash-box">
+    <div class="kailash-box-header">📘 About Kailash & Mansarovar</div>
+    <div class="kailash-box-content">
+      <p>
+        Mount Kailash (6,638 meters) in the remote regions of Tibet is regarded as one of the most sacred sites in Hinduism, Buddhism, Jainism, and Bon. It is believed to be the divine abode of Lord Shiva, making it a dream pilgrimage for countless devotees.
+      </p>
+      <p>
+        Just nearby lies Lake Mansarovar (4,590 meters), believed to have been created in the mind of Lord Brahma, symbolizing purity and enlightenment. The entire journey is a spiritual test of endurance and faith.
+      </p>
+      <ul>
+        <li><strong>Altitude:</strong> Kailash – 6,638m, Mansarovar – 4,590m</li>
+        <li><strong>Best Travel Season:</strong> May to September</li>
+        <li><strong>Parikrama Route:</strong> Approx. 52 km trek around Kailash</li>
+        <li><strong>Dolma La Pass:</strong> Highest point – 5,630 meters</li>
+        <li><strong>Access Points:</strong> Nepal (via Simikot / Gyirong) & China</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Image Section -->
+  <div class="kailash-box">
+    <div class="kailash-box-header">🖼️ Sacred Landscape View</div>
+    <div class="kailash-image-container">
+      <img src="images/Kailash-Mansarovar-LAke.jpeg" alt="Mount Kailash and Lake Mansarovar" />
+    </div>
+    <div class="caption">
+      A stunning glimpse of Mount Kailash and Lake Mansarovar — the heart of the spiritual yatra.
+    </div>
+  </div>
+</div>
+<!-- 📝 Feedback + 🗺️ Map Container -->
+<section id="feedback-map-container">
+  <!-- Feedback Form + Feedback List -->
+  <div class="feedback-side">
+    <h2>📝 Give Your Valuable Opinions!!</h2>
+    <form id="feedbackForm" data-netlify="true" name="feedback" enctype="multipart/form-data">
+      <input type="hidden" name="form-name" value="feedback">
+
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="text" name="country" placeholder="Country" required>
+      <input type="text" name="city" placeholder="City" required>
+
+      <div class="phone-flex">
+        <select id="countryCode" name="countryCode" required></select>
+        <input type="tel" name="mobile" placeholder="Phone Number" required>
+      </div>
+
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="feedback" placeholder="Your Feedback" required></textarea>
+
+      <label for="image">Upload Image:</label>
+      <input type="file" id="image" accept="image/*" required>
+
+      <button type="submit">Submit Feedback</button>
+    </form>
+
+    <h3>📢 Our Clients Say</h3>
+    <div id="feedbackList"></div>
+  </div>
+
+  <!-- Map Section -->
+  <div class="map-side">
+    <h2 class="section-title">🧭 Kailash Mansarovar Yatra Route Map</h2>
+    <p class="subtitle">Explore the spiritual path step-by-step.</p>
+    <div id="map">
+      <img src="images/kailash-route-map.jpeg" alt="Kailash Mansarovar Yatra Route Map" />
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="row">
+      <div class="col">
+          <img src="images/vvfdd-removebg-preview.png" class="footer_logo">
+          <p class="footer_about">With over 20 years of dedicated service, MuktiYatra is the world’s most trusted Kailash Mansarovar Yatra tour operator, offering a transformative spiritual journey that connects pilgrims with the divine and leads them towards liberation and inner peace
+          </p>
+      </div>
+      <div class="col">
+          <h3>Office <div class="bottom_line"><span></span></div></h3>
+          <p>Guhyeshwari Shaktipeeth Temple</p>
+          <p></p>
+          <p></p>
+          <p class="footer_email">kailashyatra365@gmail.com</p>
+          <h4>+977-9823669370 (Whatsapp/Viber) <br>+977-9761726460 </h4>
+      </div>
+      <div class="col">
+          <h3>Links <div class="bottom_line"><span></span></div></h3>
+          <ul>
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="about.html">ABOUT</a></li>
+              <li><a href="destination.html">DESTINATIONS</a></li>
+              <li><a href="contact.html">CONTACT US</a></li>
+          </ul>
+      </div>
+      <div class="col">
+          <h3>Newsletter <div class="bottom_line"><span></span></div></h3>
+          <form>
+              <ion-icon class="icon" name="mail"></ion-icon>
+              <input type="email" placeholder="Enter your email" required>
+              <button type="submit"><ion-icon class="icon_right" name="arrow-round-forward"></ion-icon></button>
+          </form>
+          <div class="social_icons">
+              <a href="" target="_blank">
+                  <ion-icon class="social_icon" name="logo-facebook"></ion-icon>
+              </a>
+              <a href="https://wa.me/9823669370" target="_blank">
+                  <ion-icon class="social_icon" name="logo-whatsapp"></ion-icon>
+              </a>
+              <a href="Soon" target="_blank">
+                  <ion-icon class="social_icon" name="logo-twitter"></ion-icon>
+              </a>
+              <a href="https://www.instagram.com/kailashyatra.official/" target="_blank">
+                  <ion-icon class="social_icon" name="logo-instagram"></ion-icon>
+              </a>
+          </div>                
+      </div>
+  </div>
+  <hr>
+  <p class="copyright">MuktiYatra Pvt. Ltd Ⓒ 2005 - 2025, All Rights Reserved</p>
+</footer> 
+  <audio id="bgMusic" loop>
+    <source src="music/cc.mp3" type="audio/mp3">
+  </audio>
+  
+  <button id="toggleAudio">🔇</button>  
+  
+
 
   <script>
-    document.getElementById('contact-form').addEventListener('submit', function (e) {
-      e.preventDefault();
-      const name = document.getElementById('name').value;
-      const email = document.getElementById('email').value;
-      const message = document.getElementById('message').value;
+const bgMusic = document.getElementById("bgMusic");
+const toggleBtn = document.getElementById("toggleAudio");
 
-      const contactBlob = new Blob([
-        `Contact Form Submission:\n\nName: ${name}\nEmail: ${email}\nMessage: ${message}\nSubmitted On: ${new Date().toLocaleString()}\n`],
-        { type: 'text/plain' });
+let isPlaying = false;
 
-      const link = document.createElement('a');
-      link.href = URL.createObjectURL(contactBlob);
-      link.download = `Contact_Submission_${name.replace(/\s+/g, '_')}.txt`;
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
+// Enable audio only after user interaction (bypass autoplay restrictions)
+window.addEventListener("click", () => {
+  if (!isPlaying) {
+    bgMusic.play();
+    bgMusic.muted = false;
+    toggleBtn.textContent = "🔊";
+    isPlaying = true;
+  }
+}, { once: true }); // only run once on first click
 
-      alert('Thank you for contacting us! Your submission has been saved.');
+// Toggle button for pause/unpause
+toggleBtn.addEventListener("click", (e) => {
+  e.stopPropagation(); // prevent triggering window click again
+  if (isPlaying) {
+    bgMusic.pause();
+    toggleBtn.textContent = "🔇";
+  } else {
+    bgMusic.play();
+    bgMusic.muted = false;
+    toggleBtn.textContent = "🔊";
+  }
+  isPlaying = !isPlaying;
+});
+
+  </script>
+  
+  
+
+<script>
+      let currentSlide = 0;
+    const slider = document.getElementById('yearSlider');
+    const table2025 = document.getElementById('table-2025');
+    const months2025 = [
+      { month: "January", date: "January 13, 2025" },
+      { month: "February", date: "February 12, 2025" },
+      { month: "March", date: "March 14, 2025" },
+      { month: "April", date: "April 13, 2025" },
+      { month: "May", date: "May 12, 2025" },
+      { month: "June", date: "June 11, 2025" },
+      { month: "July", date: "July 10, 2025" },
+      { month: "August", date: "August 9, 2025" },
+      { month: "September", date: "September 7, 2025" },
+      { month: "October", date: "October 7, 2025" },
+      { month: "November", date: "November 5, 2025" },
+      { month: "December", date: "December 5, 2025" }
+    ];
+
+    const months2026 = [
+      { month: "January", date: "January 10, 2026" },
+      { month: "February", date: "February 9, 2026" },
+      { month: "March", date: "March 11, 2026" },
+      { month: "April", date: "April 10, 2026" },
+      { month: "May", date: "May 10, 2026" },
+      { month: "June", date: "June 8, 2026" },
+      { month: "July", date: "July 8, 2026" },
+      { month: "August", date: "August 6, 2026" },
+      { month: "September", date: "September 4, 2026" },
+      { month: "October", date: "October 3, 2026" },
+      { month: "November", date: "November 2, 2026" },
+      { month: "December", date: "December 1, 2026" }
+    ];
+
+    const months2027 = [
+      { month: "January", date: "January 30, 2027" },
+      { month: "February", date: "February 28, 2027" },
+      { month: "March", date: "March 30, 2027" },
+      { month: "April", date: "April 28, 2027" },
+      { month: "May", date: "May 27, 2027" },
+      { month: "June", date: "June 26, 2027" },
+      { month: "July", date: "July 25, 2027" },
+      { month: "August", date: "August 24, 2027" },
+      { month: "September", date: "September 23, 2027" },
+      { month: "October", date: "October 22, 2027" },
+      { month: "November", date: "November 21, 2027" },
+      { month: "December", date: "December 21, 2027" }
+    ];
+
+// Function to display months with available departure dates
+function displayMonths(year, months) {
+  const table = document.getElementById(`table-${year}`);
+  months.forEach(item => {
+    const encodedDate = encodeURIComponent(item.date);
+    const joinButton = `
+      <a href="moon-book.html?date=${encodedDate}">
+        <button class="btn">Join</button>
+      </a>`;
+    const row = document.createElement('tr');
+    row.innerHTML = `<td>${item.month}</td><td>${item.date}</td><td>Seats Available</td><td>${joinButton}</td>`;
+    table.appendChild(row);
+  });
+}
+
+
+    // Display months for each year
+    displayMonths(2025, months2025);
+    displayMonths(2026, months2026);
+    displayMonths(2027, months2027);
+
+    function slide(direction) {
+      const totalSlides = document.querySelectorAll('.year-slide').length;
+      currentSlide += direction;
+      if (currentSlide < 0) currentSlide = totalSlides - 1;
+      if (currentSlide >= totalSlides) currentSlide = 0;
+      slider.style.transform = `translateX(-${currentSlide * 100}%)`;
+    }
+
+    function joinTrip(date) {
+      alert(`You have selected the trip for departure date: ${date}`);
+    }
+</script>
+      <script>
+        const yatraData = [
+          {
+            title: "The Holy Kailash Mansarovar Lake - Budget Yatra",
+            packages: [
+              { title: "The Holy Kailash Mansarovar Tour Via Kathmandu (12 - 14 Days)", img: "images/kailash-mansarovar-yatra.jpg", link: "holy-kailash.html" },
+              { title: "The Holy Kailash Mansarovar Tour Lhasa (12 - 15 Days)", img: "images/kailash-lasha-1.jpeg", link: "holy-kailash-lasha.html" },
+              { title: "The Holy Kailash Mansarovar Tour Via Nepalganj (10 Days)", img: "images/kailash-heli.jpeg", link: "holy-kailash-nepalgunj.html" },
+              { title: "The Holy Kailash Mansarovar Lake Tour (7 Days)", img: "images/mansarovar-lake-4.jpeg", link: "holy-mansarovar-lake.html" },
+              { title: "Kailash Mansarovar Tour Via Guangzhou (15 Days)", img: "images/guangzhou.jpg", link: "kailash-mansarovar-guangzhou.html" },
+            ]
+          },
+          {
+            title: "The Holy Kailash Mansarovar Lake - Luxury Yatra",
+            packages: [
+              { title: "The Holy Kailash Mansarovar Tour Via Kathmandu (14 Days)", img: "images/kailash-nepalganj-luxury-1.jpeg", link: "holy-kailash-luxury.html" },
+              { title: "The Holy Kailash Mansarovar Tour Via Lhasa (13 - 17 Days)", img: "images/kailash-mounain-lasha.jpeg", link: "holy-kailash-lhasa-luxury.html" },
+              { title: "The Holy Kailash Mansarovar Tour Via Nepalganj (10 - 13 Days)", img: "images/kailash-nepalganj-luxury-2.jpeg", link: "holy-kailash-nepalganj-luxury.html" },
+              { title: "Muktinath, Pashupatinath and Kailash Mansarovar Supreme Divine Journey (18 - 21 Days)", img: "images/supreme-divine.jpeg", link: "supreme-divine-journey.html" },
+            ]
+          },
+          {
+            title: "The Holy Kailash Mansarovar Lake - High End Yatra",
+            packages: [
+              { title: "The Holy Kailash Mansarovar Tour Via Kathmandu (13 - 15 Days)", img: "images/kailash-mansarovar1.jpeg", link: "holy-kailash-high.html" },
+              { title: "The Holy Kailash Mansarovar Tour Via Lhasa (15 Days)", img: "images/kailash-mounain-lasha.jpeg", link: "holy-kailash-lhasa-high.html" },
+              { title: "The Holy Kailash Mansarovar Tour Via Nepalganj (11 Days)", img: "images/kailash-heli.jpeg", link: "holy-kailash-nepalganj-high.html" },
+              { title: "Muktinath, Pashupatinath and Kailash Mansarovar Supreme Divine Journey (21 Days)", img: "images/kailash-nepalgunj2.jpeg", link: "supreme-divine-journey-high-end.html" },
+            ]
+          },
+          {
+            title: "The Holy Festival Celebration At Kailash Mansarovar Lake",
+            packages: [
+              { title: "The Supreme Holy Divine Maha-Shivaratri Celebration (13 - 15 Days)", img: "images/divine.jpeg", link: "supreme-holy-divine-mahashivaratri.html" },
+              { title: "The Supreme Holy Divine Holi Celebration (13 - 15 Days)", img: "images/divine-2.jpeg", link: "supreme-holy-divine-holi-celebration.html" },
+              { title: "The Supreme Holy Divine Nag Panchami Puja (13 - 15 Days)", img: "images/Mansarovar-Lake.jpeg", link: "supreme-holy-divine-nag-panchami.html" },
+              { title: "The Supreme Holy Divine Dashara/Dashain Celebration (13 - 15 Days)", img: "images/kailash-mansarovar.jpeg", link: "supreme-holy-divine-dashain.html" },
+              { title: "The Supreme Holy Divine Dipawali Celebration (13 - 15 Days)", img: "images/kailash-lasha-2.jpeg", link: "supreme-holy-divine-dipawali.html" },
+              { title: "Saga Dawa Festival Tour (14 Days)", img: "images/Kailash-Mansarovar-LAke.jpeg", link: "saga-dawa.html" },
+              { title: "Full Moon Celebration Yatra (14 Days)", img: "images/Mansarovar-Lake-4.jpeg", link: "full-moon-celebration.html" },
+              { title: "Spiritual Art & Music Fest (14 Days)", img: "images/kailash-nepalganj-luxury-2.jpeg", link: "spritual-art.html" },
+              { title: "Festive Bathing Ritual Special (14 Days)", img: "images/Kailash-Mansarovar1.jpeg", link: "festive-bathing.html" },
+              { title: "Tibetan Festival Journey (14 Days)", img: "images/kailash-nepalgunj.jpeg", link: "tibetan-festival.html" },
+            ]
+          },
+          {
+            title: "The Holy Tantra Sadana & Special Program Kailash Yatra",
+            packages: [
+              { title: "Sharawan Month Shiv Puran Program", img: "images/kailash-shiv-puran.png", link: "shrawan-shiv-puran.html" },
+              { title: "Sharawan Month Special Bhakti 32 Days Program", img: "images/Kailash-Mansarovar-LAke.jpeg", link: "shrawan-special-bhakti.html" },
+              { title: "Divine Kailash Mansarovar Lake Yatra", img: "images/kailash-mansarovar.jpeg", link: "divine-kailash-mansarovar.html" },
+              { title: "Night Chanting Ritual Route", img: "images/nightchanting.jpg", link: "night-chanting-ritual.html" },
+            ]
+          },
+          {
+            title: "Special Holy Divine Yatra Event At Kailash Mansarovar Lake",
+            packages: [
+              { title: "Shiv Sadhana Kailash Mansarovar Yatra - 18 Days", img: "images/sadhana.png", link: "shiv-sadhana.html" },
+              { title: "Shiv/Tantra Sadhana Kailash Mansarovar - 31 Days", img: "images/sadhana-tantra.jpg", link: "shiv-tantra-sadhana.html" },
+              { title: "Kailash Mansarovar Pitra Shraddha Yatra (11 Days)", img: "images/kailash-mansarovar-pitra.jpg", link: "Kailash-Mansarovar-Pitra-Shraddha.html" },
+              { title: "Kailash Mansarovar Narayanbali Karma Yatra (13 Days)", img: "images/narayanbali.jpg", link: "kailash-mansarovar-narayanbali.html" },
+            ]
+          }
+        ];
+      
+        const wrapper = document.querySelector('.yatra-body-wrapper');
+      
+        const renderYatra = () => {
+          yatraData.forEach((section) => {
+            const sectionElement = document.createElement('section');
+            sectionElement.classList.add('yatra-section');
+      
+            const title = document.createElement('h2');
+            title.classList.add('yatra-title');
+            title.textContent = section.title;
+      
+            const sliderContainer = document.createElement('div');
+            sliderContainer.classList.add('yatra-slider-container');
+      
+            const track = document.createElement('div');
+            track.classList.add('yatra-slider-track');
+      
+            section.packages.forEach((packageItem) => {
+              const card = document.createElement('div');
+              card.classList.add('yatra-card');
+      
+              const img = document.createElement('img');
+              img.classList.add('yatra-card-img');
+              img.src = packageItem.img;
+              img.alt = packageItem.title;
+      
+              const cardBody = document.createElement('div');
+              cardBody.classList.add('yatra-card-body');
+      
+              const cardTitle = document.createElement('h3');
+              cardTitle.classList.add('yatra-card-title');
+              cardTitle.textContent = packageItem.title;
+      
+              const cardText = document.createElement('p');
+              cardText.classList.add('yatra-card-text');
+              cardText.textContent = packageItem.description || "Explore this sacred journey.";
+      
+              const button = document.createElement('a');
+              button.classList.add('yatra-button');
+              button.href = packageItem.link;
+              button.textContent = 'Read More';
+      
+              cardBody.append(cardTitle, cardText, button);
+              card.append(img, cardBody);
+              track.appendChild(card);
+            });
+      
+            const arrows = document.createElement('div');
+            arrows.classList.add('yatra-arrows');
+      
+            const prevButton = document.createElement('button');
+            prevButton.classList.add('yatra-arrow-btn');
+            prevButton.innerHTML = '←';
+            prevButton.addEventListener('click', () => {
+              track.scrollBy({ left: -300, behavior: 'smooth' });
+            });
+      
+            const nextButton = document.createElement('button');
+            nextButton.classList.add('yatra-arrow-btn');
+            nextButton.innerHTML = '→';
+            nextButton.addEventListener('click', () => {
+              track.scrollBy({ left: 300, behavior: 'smooth' });
+            });
+      
+            arrows.append(prevButton, nextButton);
+      
+            sliderContainer.append(track, arrows);
+            sectionElement.append(title, sliderContainer);
+            wrapper.appendChild(sectionElement);
+          });
+        };
+      
+        renderYatra();
+
+          // Tab functionality
+  const nepalTab = document.getElementById("nepal-tab");
+  const indiaTab = document.getElementById("india-tab");
+  const nepalContent = document.getElementById("nepal-content");
+  const indiaContent = document.getElementById("india-content");
+
+  nepalTab.addEventListener("click", () => {
+      nepalTab.classList.add("active");
+      indiaTab.classList.remove("active");
+      nepalContent.style.display = "block";
+      indiaContent.style.display = "none";
+  });
+
+  indiaTab.addEventListener("click", () => {
+      indiaTab.classList.add("active");
+      nepalTab.classList.remove("active");
+      indiaContent.style.display = "block";
+      nepalContent.style.display = "none";
+  });
+
+  // === Populate Country Code Dropdown ===
+const countrySelect = document.getElementById("countryCode");
+const countryCodes = [
+  { name: "Afghanistan", code: "+93", emoji: "🇦🇫" },
+  { name: "Albania", code: "+355", emoji: "🇦🇱" },
+  { name: "Algeria", code: "+213", emoji: "🇩🇿" },
+  { name: "Andorra", code: "+376", emoji: "🇦🇩" },
+  { name: "Angola", code: "+244", emoji: "🇦🇴" },
+  { name: "Antigua and Barbuda", code: "+1-268", emoji: "🇦🇬" },
+  { name: "Argentina", code: "+54", emoji: "🇦🇷" },
+  { name: "Armenia", code: "+374", emoji: "🇦🇲" },
+  { name: "Australia", code: "+61", emoji: "🇦🇺" },
+  { name: "Austria", code: "+43", emoji: "🇦🇹" },
+  { name: "Azerbaijan", code: "+994", emoji: "🇦🇿" },
+  { name: "Bahamas", code: "+1-242", emoji: "🇧🇸" },
+  { name: "Bahrain", code: "+973", emoji: "🇧🇭" },
+  { name: "Bangladesh", code: "+880", emoji: "🇧🇩" },
+  { name: "Barbados", code: "+1-246", emoji: "🇧🇧" },
+  { name: "Belarus", code: "+375", emoji: "🇧🇾" },
+  { name: "Belgium", code: "+32", emoji: "🇧🇪" },
+  { name: "Belize", code: "+501", emoji: "🇧🇿" },
+  { name: "Benin", code: "+229", emoji: "🇧🇯" },
+  { name: "Bhutan", code: "+975", emoji: "🇧🇹" },
+  { name: "Bolivia", code: "+591", emoji: "🇧🇴" },
+  { name: "Bosnia and Herzegovina", code: "+387", emoji: "🇧🇦" },
+  { name: "Botswana", code: "+267", emoji: "🇧🇼" },
+  { name: "Brazil", code: "+55", emoji: "🇧🇷" },
+  { name: "Brunei", code: "+673", emoji: "🇧🇳" },
+  { name: "Bulgaria", code: "+359", emoji: "🇧🇬" },
+  { name: "Burkina Faso", code: "+226", emoji: "🇧🇫" },
+  { name: "Burundi", code: "+257", emoji: "🇧🇮" },
+  { name: "Cambodia", code: "+855", emoji: "🇰🇭" },
+  { name: "Cameroon", code: "+237", emoji: "🇨🇲" },
+  { name: "Canada", code: "+1", emoji: "🇨🇦" },
+  { name: "Cape Verde", code: "+238", emoji: "🇨🇻" },
+  { name: "Central African Republic", code: "+236", emoji: "🇨🇫" },
+  { name: "Chad", code: "+235", emoji: "🇹🇩" },
+  { name: "Chile", code: "+56", emoji: "🇨🇱" },
+  { name: "China", code: "+86", emoji: "🇨🇳" },
+  { name: "Colombia", code: "+57", emoji: "🇨🇴" },
+  { name: "Comoros", code: "+269", emoji: "🇰🇲" },
+  { name: "Costa Rica", code: "+506", emoji: "🇨🇷" },
+  { name: "Croatia", code: "+385", emoji: "🇭🇷" },
+  { name: "Cuba", code: "+53", emoji: "🇨🇺" },
+  { name: "Cyprus", code: "+357", emoji: "🇨🇾" },
+  { name: "Czech Republic", code: "+420", emoji: "🇨🇿" },
+  { name: "Denmark", code: "+45", emoji: "🇩🇰" },
+  { name: "Djibouti", code: "+253", emoji: "🇩🇯" },
+  { name: "Dominica", code: "+1-767", emoji: "🇩🇲" },
+  { name: "Dominican Republic", code: "+1-809", emoji: "🇩🇴" },
+  { name: "Ecuador", code: "+593", emoji: "🇪🇨" },
+  { name: "Egypt", code: "+20", emoji: "🇪🇬" },
+  { name: "El Salvador", code: "+503", emoji: "🇸🇻" },
+  { name: "Equatorial Guinea", code: "+240", emoji: "🇬🇶" },
+  { name: "Eritrea", code: "+291", emoji: "🇪🇷" },
+  { name: "Estonia", code: "+372", emoji: "🇪🇪" },
+  { name: "Eswatini", code: "+268", emoji: "🇸🇿" },
+  { name: "Ethiopia", code: "+251", emoji: "🇪🇹" },
+  { name: "Fiji", code: "+679", emoji: "🇫🇯" },
+  { name: "Finland", code: "+358", emoji: "🇫🇮" },
+  { name: "France", code: "+33", emoji: "🇫🇷" },
+  { name: "Gabon", code: "+241", emoji: "🇬🇦" },
+  { name: "Gambia", code: "+220", emoji: "🇬🇲" },
+  { name: "Georgia", code: "+995", emoji: "🇬🇪" },
+  { name: "Germany", code: "+49", emoji: "🇩🇪" },
+  { name: "Ghana", code: "+233", emoji: "🇬🇭" },
+  { name: "Greece", code: "+30", emoji: "🇬🇷" },
+  { name: "Grenada", code: "+1-473", emoji: "🇬🇩" },
+  { name: "Guatemala", code: "+502", emoji: "🇬🇹" },
+  { name: "Guinea", code: "+224", emoji: "🇬🇳" },
+  { name: "Guinea-Bissau", code: "+245", emoji: "🇬🇼" },
+  { name: "Guyana", code: "+592", emoji: "🇬🇾" },
+  { name: "Haiti", code: "+509", emoji: "🇭🇹" },
+  { name: "Honduras", code: "+504", emoji: "🇭🇳" },
+  { name: "Hungary", code: "+36", emoji: "🇭🇺" },
+  { name: "Iceland", code: "+354", emoji: "🇮🇸" },
+  { name: "India", code: "+91", emoji: "🇮🇳" },
+  { name: "Indonesia", code: "+62", emoji: "🇮🇩" },
+  { name: "Iran", code: "+98", emoji: "🇮🇷" },
+  { name: "Iraq", code: "+964", emoji: "🇮🇶" },
+  { name: "Ireland", code: "+353", emoji: "🇮🇪" },
+  { name: "Israel", code: "+972", emoji: "🇮🇱" },
+  { name: "Italy", code: "+39", emoji: "🇮🇹" },
+  { name: "Jamaica", code: "+1-876", emoji: "🇯🇲" },
+  { name: "Japan", code: "+81", emoji: "🇯🇵" },
+  { name: "Jordan", code: "+962", emoji: "🇯🇴" },
+  { name: "Kazakhstan", code: "+7", emoji: "🇰🇿" },
+  { name: "Kenya", code: "+254", emoji: "🇰🇪" },
+  { name: "Kiribati", code: "+686", emoji: "🇰🇮" },
+  { name: "Kuwait", code: "+965", emoji: "🇰🇼" },
+  { name: "Kyrgyzstan", code: "+996", emoji: "🇰🇬" },
+  { name: "Laos", code: "+856", emoji: "🇱🇦" },
+  { name: "Latvia", code: "+371", emoji: "🇱🇻" },
+  { name: "Lebanon", code: "+961", emoji: "🇱🇧" },
+  { name: "Lesotho", code: "+266", emoji: "🇱🇸" },
+  { name: "Liberia", code: "+231", emoji: "🇱🇷" },
+  { name: "Libya", code: "+218", emoji: "🇱🇾" },
+  { name: "Liechtenstein", code: "+423", emoji: "🇱🇮" },
+  { name: "Lithuania", code: "+370", emoji: "🇱🇹" },
+  { name: "Luxembourg", code: "+352", emoji: "🇱🇺" },
+  { name: "Madagascar", code: "+261", emoji: "🇲🇬" },
+  { name: "Malawi", code: "+265", emoji: "🇲🇼" },
+  { name: "Malaysia", code: "+60", emoji: "🇲🇾" },
+  { name: "Maldives", code: "+960", emoji: "🇲🇻" },
+  { name: "Mali", code: "+223", emoji: "🇲🇱" },
+  { name: "Malta", code: "+356", emoji: "🇲🇹" },
+  { name: "Marshall Islands", code: "+692", emoji: "🇲🇭" },
+  { name: "Mauritania", code: "+222", emoji: "🇲🇷" },
+  { name: "Mauritius", code: "+230", emoji: "🇲🇺" },
+  { name: "Mexico", code: "+52", emoji: "🇲🇽" },
+  { name: "Micronesia", code: "+691", emoji: "🇫🇲" },
+  { name: "Moldova", code: "+373", emoji: "🇲🇩" },
+  { name: "Monaco", code: "+377", emoji: "🇲🇨" },
+  { name: "Mongolia", code: "+976", emoji: "🇲🇳" },
+  { name: "Montenegro", code: "+382", emoji: "🇲🇪" },
+  { name: "Morocco", code: "+212", emoji: "🇲🇦" },
+  { name: "Mozambique", code: "+258", emoji: "🇲🇿" },
+  { name: "Myanmar (Burma)", code: "+95", emoji: "🇲🇲" },
+  { name: "Namibia", code: "+264", emoji: "🇳🇦" },
+  { name: "Nauru", code: "+674", emoji: "🇳🇷" },
+  { name: "Nepal", code: "+977", emoji: "🇳🇵" },
+  { name: "Netherlands", code: "+31", emoji: "🇳🇱" },
+  { name: "New Zealand", code: "+64", emoji: "🇳🇿" },
+  { name: "Nicaragua", code: "+505", emoji: "🇳🇮" },
+  { name: "Niger", code: "+227", emoji: "🇳🇪" },
+  { name: "Nigeria", code: "+234", emoji: "🇳🇬" },
+  { name: "North Korea", code: "+850", emoji: "🇰🇵" },
+  { name: "North Macedonia", code: "+389", emoji: "🇲🇰" },
+  { name: "Norway", code: "+47", emoji: "🇳🇴" },
+  { name: "Oman", code: "+968", emoji: "🇴🇲" },
+  { name: "Pakistan", code: "+92", emoji: "🇵🇰" },
+  { name: "Palau", code: "+680", emoji: "🇵🇼" },
+  { name: "Panama", code: "+507", emoji: "🇵🇦" },
+  { name: "Papua New Guinea", code: "+675", emoji: "🇵🇬" },
+  { name: "Paraguay", code: "+595", emoji: "🇵🇾" },
+  { name: "Peru", code: "+51", emoji: "🇵🇪" },
+  { name: "Philippines", code: "+63", emoji: "🇵🇭" },
+  { name: "Poland", code: "+48", emoji: "🇵🇱" },
+  { name: "Portugal", code: "+351", emoji: "🇵🇹" },
+  { name: "Qatar", code: "+974", emoji: "🇶🇦" },
+  { name: "Romania", code: "+40", emoji: "🇷🇴" },
+  { name: "Russia", code: "+7", emoji: "🇷🇺" },
+  { name: "Rwanda", code: "+250", emoji: "🇷🇼" },
+  { name: "Saint Kitts and Nevis", code: "+1-869", emoji: "🇰🇳" },
+  { name: "Saint Lucia", code: "+1-758", emoji: "🇱🇨" },
+  { name: "Saint Vincent and the Grenadines", code: "+1-784", emoji: "🇻🇨" },
+  { name: "Samoa", code: "+685", emoji: "🇼🇸" },
+  { name: "San Marino", code: "+378", emoji: "🇸🇲" },
+  { name: "Sao Tome and Principe", code: "+239", emoji: "🇸🇹" },
+  { name: "Saudi Arabia", code: "+966", emoji: "🇸🇦" },
+  { name: "Senegal", code: "+221", emoji: "🇸🇳" },
+  { name: "Serbia", code: "+381", emoji: "🇷🇸" },
+  { name: "Seychelles", code: "+248", emoji: "🇸🇨" },
+  { name: "Sierra Leone", code: "+232", emoji: "🇸🇱" },
+  { name: "Singapore", code: "+65", emoji: "🇸🇬" },
+  { name: "Slovakia", code: "+421", emoji: "🇸🇰" },
+  { name: "Slovenia", code: "+386", emoji: "🇸🇮" },
+  { name: "Solomon Islands", code: "+677", emoji: "🇸🇧" },
+  { name: "Somalia", code: "+252", emoji: "🇸🇴" },
+  { name: "South Africa", code: "+27", emoji: "🇿🇦" },
+  { name: "South Korea", code: "+82", emoji: "🇰🇷" },
+  { name: "South Sudan", code: "+211", emoji: "🇸🇸" },
+  { name: "Spain", code: "+34", emoji: "🇪🇸" },
+  { name: "Sri Lanka", code: "+94", emoji: "🇱🇰" },
+  { name: "Sudan", code: "+249", emoji: "🇸🇩" },
+  { name: "Suriname", code: "+597", emoji: "🇸🇷" },
+  { name: "Sweden", code: "+46", emoji: "🇸🇪" },
+  { name: "Switzerland", code: "+41", emoji: "🇨🇭" },
+  { name: "Syria", code: "+963", emoji: "🇸🇾" },
+  { name: "Taiwan", code: "+886", emoji: "🇹🇼" },
+  { name: "Tajikistan", code: "+992", emoji: "🇹🇯" },
+  { name: "Tanzania", code: "+255", emoji: "🇹🇿" },
+  { name: "Thailand", code: "+66", emoji: "🇹🇭" },
+  { name: "Timor-Leste", code: "+670", emoji: "🇹🇱" },
+  { name: "Togo", code: "+228", emoji: "🇹🇬" },
+  { name: "Tonga", code: "+676", emoji: "🇹🇴" },
+  { name: "Trinidad and Tobago", code: "+1-868", emoji: "🇹🇹" },
+  { name: "Tunisia", code: "+216", emoji: "🇹🇳" },
+  { name: "Turkey", code: "+90", emoji: "🇹🇷" },
+  { name: "Turkmenistan", code: "+993", emoji: "🇹🇲" },
+  { name: "Tuvalu", code: "+688", emoji: "🇹🇻" },
+  { name: "Uganda", code: "+256", emoji: "🇺🇬" },
+  { name: "Ukraine", code: "+380", emoji: "🇺🇦" },
+  { name: "United Arab Emirates", code: "+971", emoji: "🇦🇪" },
+  { name: "United Kingdom", code: "+44", emoji: "🇬🇧" },
+  { name: "United States", code: "+1", emoji: "🇺🇸" },
+  { name: "Uruguay", code: "+598", emoji: "🇺🇾" },
+  { name: "Uzbekistan", code: "+998", emoji: "🇺🇿" },
+  { name: "Vanuatu", code: "+678", emoji: "🇻🇺" },
+  { name: "Vatican City", code: "+379", emoji: "🇻🇦" },
+  { name: "Venezuela", code: "+58", emoji: "🇻🇪" },
+  { name: "Vietnam", code: "+84", emoji: "🇻🇳" },
+  { name: "Yemen", code: "+967", emoji: "🇾🇪" },
+  { name: "Zambia", code: "+260", emoji: "🇿🇲" },
+  { name: "Zimbabwe", code: "+263", emoji: "🇿🇼" }
+];
+if (countrySelect) {
+  countryCodes.forEach(c => {
+    const opt = document.createElement("option");
+    opt.value = c.code;
+    opt.textContent = `${c.emoji} ${c.name} (${c.code})`;
+    countrySelect.appendChild(opt);
+  });
+}
+
+// === Submit Feedback Form ===
+document.getElementById("feedbackForm")?.addEventListener("submit", async (e) => {
+  e.preventDefault();
+  const form = e.target;
+  const formData = new FormData(form);
+  const image = document.getElementById("image").files[0];
+  if (!image) return;
+
+  const reader = new FileReader();
+  reader.onload = async () => {
+    const feedback = {
+      name: formData.get("name"),
+      country: formData.get("country"),
+      city: formData.get("city"),
+      countryCode: formData.get("countryCode"),
+      mobile: formData.get("mobile"),
+      email: formData.get("email"),
+      feedback: formData.get("feedback"),
+      image: reader.result,
+      date: new Date().toLocaleDateString()
+    };
+
+    const res = await fetch("/.netlify/functions/submitFeedback", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(feedback)
     });
 
-    function saveInfo(plan) {
-      const blob = new Blob([
-        `Plan Selected: ${plan}\nDate: ${new Date().toLocaleString()}\n`],
-        { type: 'text/plain' });
-
-      const a = document.createElement('a');
-      a.href = URL.createObjectURL(blob);
-      a.download = `${plan}_plan_info.txt`;
-      document.body.appendChild(a);
-      a.click();
-      document.body.removeChild(a);
+    const data = await res.json();
+    if (data.message === "Feedback submitted successfully.") {
+      displayFeedback();
+      form.reset();
+      countrySelect && (countrySelect.selectedIndex = 0);
     }
+  };
+  reader.readAsDataURL(image);
+});
+
+// === Load Feedback ===
+async function displayFeedback() {
+  const res = await fetch("/.netlify/functions/getFeedback");
+  const feedbacks = await res.json();
+  const list = document.getElementById("feedbackList");
+  if (!list) return;
+  list.innerHTML = "";
+  feedbacks.forEach((f, i) => {
+    list.innerHTML += `
+      <div>
+        <img src="${f.image}" alt="User Image">
+        <p><strong>${f.name}</strong> (${f.country}, ${f.city})</p>
+        <p>📅 ${f.date}</p>
+        <p>📞 ${f.countryCode} ${f.mobile} | ✉️ ${f.email}</p>
+        <p>🗣️ "${f.feedback}"</p>
+        <button onclick="removeFeedback(${i})">Remove</button>
+      </div>`;
+  });
+}
+
+function removeFeedback(i) {
+  alert("To support removal, backend delete setup is needed.");
+}
+
+window.addEventListener("load", displayFeedback);
+
+// JavaScript
+window.onscroll = function () {
+  const navbar = document.querySelector(".navbar");
+
+  if (navbar) {
+    const navbarOffsetTop = navbar.offsetTop;
+    if (window.pageYOffset > navbarOffsetTop) {
+      navbar.classList.add("sticky");
+    } else {
+      navbar.classList.remove("sticky");
+    }
+  }
+};
+
+
+      </script>
+      <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/67f3e3f065eaaf1908c52eae/1io8b4p6f';
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
+  })();
   </script>
+  <!--End of Tawk.to Script-->
 </body>
 </html>

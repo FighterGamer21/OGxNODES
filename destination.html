@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Destinations | Tour Packages</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #c25b07;
+      color: #050505;
+    }
+
+    header {
+      background-color: #c25b07;
+      color: #fff;
+      padding: 24px;
+      text-align: center;
+      font-size: 28px;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+
+    .search-container {
+      max-width: 800px;
+      margin: 30px auto 10px;
+      display: flex;
+      justify-content: center;
+      padding: 0 20px;
+    }
+
+    .search-container input {
+      width: 100%;
+      padding: 14px 18px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 30px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      transition: 0.3s ease;
+    }
+
+    .search-container input:focus {
+      outline: none;
+      border-color: #1a1a2e;
+      box-shadow: 0 0 10px rgba(26, 26, 46, 0.2);
+    }
+
+    .packages-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .package-card {
+      background-color: #fff;
+      border-radius: 14px;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      position: relative;
+    }
+
+    .package-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 14px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    .package-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .package-card .content {
+      padding: 18px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .package-card h3 {
+      margin: 0 0 10px;
+      font-size: 20px;
+      color: #1a1a2e;
+    }
+
+    .badge {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      background-color: #ff6b6b;
+      color: #fff;
+      padding: 6px 10px;
+      font-size: 12px;
+      border-radius: 6px;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+
+    .badge.budget {
+      background-color: #20c997;
+    }
+
+    .badge.luxury {
+      background-color: #ffc107;
+    }
+
+    .badge.festival {
+      background-color: #6f42c1;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      margin-top: 15px;
+    }
+
+    .buttons a {
+      flex: 1;
+      text-align: center;
+      background-color: #1a1a2e;
+      color: #fff;
+      padding: 10px;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 500;
+      transition: background-color 0.3s;
+    }
+
+    .buttons a:hover {
+      background-color: #0f3460;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        font-size: 24px;
+      }
+
+      .package-card h3 {
+        font-size: 18px;
+      }
+
+      .search-container input {
+        font-size: 14px;
+      }
+
+      .buttons a {
+        font-size: 13px;
+        padding: 8px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>Explore Our Tour Packages</header>
+
+  <div class="search-container">
+    <input type="text" id="searchInput" placeholder="Search your destination...">
+  </div>
+
+  <div class="packages-container" id="packages">
+
+    <!-- All packages below -->
+    <div class="package-card">
+        <img src="images/amarnath-cave_shrine_charzan_holidays.webp" alt="Amarnath Tour">
+        <div class="content">
+          <h3>Amarnath Tour</h3>
+          <div class="buttons">
+            <a href="amarnath-tour.html">Read More</a>
+            <a href="book.html?pkg=amarnath-tour">Book Now</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="package-card">
+        <img src="images/Kedarnath-Temple-Uttarakhand.webp" alt="Kedarnath Badrinath">
+        <div class="content">
+          <h3>Kedarnath Badrinath</h3>
+          <div class="buttons">
+            <a href="kedarnath-badrinath.html">Read More</a>
+            <a href="book.html?pkg=kedarnath-badrinath">Book Now</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="package-card">
+        <img src="images/chardham.webp" alt="Chaar Dham Yatra">
+        <div class="content">
+          <h3>Chaar Dham Yatra</h3>
+          <div class="buttons">
+            <a href="chaardham.html">Read More</a>
+            <a href="book.html?pkg=chaardham">Book Now</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="package-card">
+        <img src="images/gosaikunda-spiritual-3.jpg" alt="Gosaikunda Spiritual Trek">
+        <div class="content">
+          <h3>Gosaikunda Spiritual Trek</h3>
+          <div class="buttons">
+            <a href="gosaikunda-spiritual-treak.html">Read More</a>
+            <a href="book.html?pkg=gosaikunda-spiritual-treak">Book Now</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="package-card">
+        <img src="images/kailash-mansarovar-yatra.jpg" alt="Holy Kailash">
+        <div class="content">
+          <h3>Holy Kailash</h3>
+          <div class="buttons">
+            <a href="holy-kailash.html">Read More</a>
+            <a href="book.html?pkg=holy-kailash">Book Now</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="package-card">
+        <img src="images/kailash-mansarovar.jpeg" alt="Holy Kailash High Route">
+        <div class="content">
+          <h3>Holy Kailash High Route</h3>
+          <div class="buttons">
+            <a href="holy-kailash-high.html">Read More</a>
+            <a href="book.html?pkg=holy-kailash-high">Book Now</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="package-card">
+        <img src="images/kailash-lasha-1.jpeg" alt="Holy Kailash via Lhasa">
+        <div class="content">
+          <h3>Holy Kailash via Lhasa</h3>
+          <div class="buttons">
+            <a href="holy-kailash-lasha.html">Read More</a>
+            <a href="book.html?pkg=holy-kailash-lasha">Book Now</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="package-card">
+        <img src="images/kailash-lasha-2.jpeg" alt="Holy Kailash Lasha High">
+        <div class="content">
+          <h3>Holy Kailash Lasha High</h3>
+          <div class="buttons">
+            <a href="holy-kailash-lasha-high.html">Read More</a>
+            <a href="book.html?pkg=holy-kailash-lasha-high">Book Now</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="package-card">
+        <img src="images/holy-kailash-lasha-luxury.jpg" alt="Holy Kailash Lasha Luxury">
+        <div class="content">
+          <h3>Holy Kailash Lasha Luxury</h3>
+          <div class="buttons">
+            <a href="holy-kailash-lasha-luxury.html">Read More</a>
+            <a href="book.html?pkg=holy-kailash-lasha-luxury">Book Now</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="package-card">
+        <img src="images/holy-kailash-nepalgunj.jpg" alt="Holy Kailash via Nepalgunj">
+        <div class="content">
+          <h3>Holy Kailash via Nepalgunj</h3>
+          <div class="buttons">
+            <a href="holy-kailash-nepalgunj.html">Read More</a>
+            <a href="book.html?pkg=holy-kailash-nepalgunj">Book Now</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="package-card">
+        <img src="images/holy-kailash-nepalgunj-high.jpg" alt="Holy Kailash Nepalgunj High">
+        <div class="content">
+          <h3>Holy Kailash Nepalgunj High</h3>
+          <div class="buttons">
+            <a href="holy-kailash-nepalgunj-high.html">Read More</a>
+            <a href="book.html?pkg=holy-kailash-nepalgunj-high">Book Now</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="package-card">
+        <img src="images/holy-mansarovar-lake.jpg" alt="Holy Mansarovar Lake">
+        <div class="content">
+          <h3>Holy Mansarovar Lake</h3>
+          <div class="buttons">
+            <a href="holy-mansarovar-lake.html">Read More</a>
+            <a href="book.html?pkg=holy-mansarovar-lake">Book Now</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="package-card">
+        <img src="images/kailash-mansarovar-lake-yatra.jpg" alt="Kailash Mansarovar Lake Yatra">
+        <div class="content">
+          <h3>Kailash Mansarovar Lake Yatra</h3>
+          <div class="buttons">
+            <a href="kailash-mansarovar-lake-yatra.html">Read More</a>
+            <a href="book.html?pkg=kailash-mansarovar-lake-yatra">Book Now</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="package-card">
+        <img src="images/kailash-mansarovar-yatra.jpg" alt="Kailash Mansarovar Yatra">
+        <div class="content">
+          <h3>Kailash Mansarovar Yatra</h3>
+          <div class="buttons">
+            <a href="kailash-mansarovar-yatra.html">Read More</a>
+            <a href="book.html?pkg=kailash-mansarovar-yatra">Book Now</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="package-card">
+        <img src="images/kailash-mansarovar-everest-basecamp.jpg" alt="Kailash + Everest Basecamp">
+        <div class="content">
+          <h3>Kailash + Everest Basecamp</h3>
+          <div class="buttons">
+            <a href="kailash-mansarovar-everest-basecamp.html">Read More</a>
+            <a href="book.html?pkg=kailash-mansarovar-everest-basecamp">Book Now</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="package-card">
+        <img src="images/kailash-mansarovar-narayanbali.jpg" alt="Kailash Mansarovar Narayanbali">
+        <div class="content">
+          <h3>Kailash Mansarovar Narayanbali</h3>
+          <div class="buttons">
+            <a href="kailash-mansarovar-narayanbali.html">Read More</a>
+            <a href="book.html?pkg=kailash-mansarovar-narayanbali">Book Now</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="package-card">
+        <img src="images/kailash-mansarovar-guangzhou.jpg" alt="Kailash via Guangzhou">
+        <div class="content">
+          <h3>Kailash via Guangzhou</h3>
+          <div class="buttons">
+            <a href="kailash-mansarovar-guangzhou.html">Read More</a>
+            <a href="book.html?pkg=kailash-mansarovar-guangzhou">Book Now</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="package-card">
+        <img src="images/Kailash-Mansarovar-Pitra-Shraddha-Yatra.jpg" alt="Pitra Shraddha Kailash Yatra">
+        <div class="content">
+          <h3>Pitra Shraddha Kailash Yatra</h3>
+          <div class="buttons">
+            <a href="Kailash-Mansarovar-Pitra-Shraddha-Yatra.html">Read More</a>
+            <a href="book.html?pkg=Kailash-Mansarovar-Pitra-Shraddha-Yatra">Book Now</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="package-card">
+        <img src="images/buddhist-pilgrimages-tour.jpg" alt="Buddhist Pilgrimages Tour">
+        <div class="content">
+          <h3>Buddhist Pilgrimages Tour</h3>
+          <div class="buttons">
+            <a href="buddhist-pilgrimages-tour.html">Read More</a>
+            <a href="book.html?pkg=buddhist-pilgrimages-tour">Book Now</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="package-card">
+        <img src="images/lumbini-tour.jpg" alt="Lumbini Tour">
+        <div class="content">
+          <h3>Lumbini Tour</h3>
+          <div class="buttons">
+            <a href="lumbini-tour.html">Read More</a>
+            <a href="book.html?pkg=lumbini-tour">Book Now</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="package-card">
+        <img src="images/nepali-sakti-peeths.jpg" alt="Nepali Sakti Peeths">
+        <div class="content">
+          <h3>Nepali Sakti Peeths</h3>
+          <div class="buttons">
+            <a href="nepali-sakti-peeths.html">Read More</a>
+            <a href="book.html?pkg=nepali-sakti-peeths">Book Now</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="package-card">
+        <img src="images/pashupatinath-tour.jpg" alt="Pashupatinath Tour">
+        <div class="content">
+          <h3>Pashupatinath Tour</h3>
+          <div class="buttons">
+            <a href="pashupatinath-tour.html">Read More</a>
+            <a href="book.html?pkg=pashupatinath-tour">Book Now</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="package-card">
+        <img src="images/pashupatinath-muktinath-damodarkunda.jpg" alt="Pashupatinath Muktinath Damodarkunda">
+        <div class="content">
+          <h3>Pashupatinath Muktinath Damodarkunda</h3>
+          <div class="buttons">
+            <a href="pashupatinath-muktinath-damodarkunda.html">Read More</a>
+            <a href="book.html?pkg=pashupatinath-muktinath-damodarkunda">Book Now</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="package-card">
+        <img src="images/supreme-holy-divine-mahashivaratri.jpg" alt="Supreme Holy Divine Mahashivaratri">
+        <div class="content">
+          <h3>Supreme Holy Divine Mahashivaratri</h3>
+          <div class="buttons">
+            <a href="supreme-holy-divine-mahashivaratri.html">Read More</a>
+            <a href="book.html?pkg=supreme-holy-divine-mahashivaratri">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+  </div>
+
+  <script>
+    const searchInput = document.getElementById("searchInput");
+    const packageCards = document.querySelectorAll(".package-card");
+
+    searchInput.addEventListener("input", function () {
+      const query = this.value.toLowerCase();
+      packageCards.forEach(card => {
+        const title = card.querySelector("h3").textContent.toLowerCase();
+        card.style.display = title.includes(query) ? "block" : "none";
+      });
+    });
+  </script>
+</body>
+</html>
